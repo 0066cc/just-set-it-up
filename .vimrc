@@ -4,6 +4,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'rakr/vim-one'
 Plugin 'kyoz/purify'
 Plugin 'arcticicestudio/nord-vim'
@@ -80,7 +81,6 @@ set scrolloff=12
 set encoding=utf-8
 set incsearch
 set t_Co=256
-color gruvbox
 set showmode
 set showmatch
 set showcmd
@@ -228,8 +228,10 @@ let g:ale_lint_on_enter = 1
 highlight ALEErrorSign ctermbg=NONE ctermfg=red
 highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 hi Error ctermfg=Yellow guifg=Red
-set background=dark
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 let g:gruvbox_bold = 1
 let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_contrast_light = 'soft'
+
+set background=light
+colorscheme PaperColor
