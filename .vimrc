@@ -235,3 +235,6 @@ nmap <silent> gr <Plug>(coc-references)
 
         set background=dark
         colorscheme gruvbox
+        set tw=80 
+        set  fo+=t 
+        set wm=0
