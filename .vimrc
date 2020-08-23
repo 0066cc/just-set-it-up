@@ -8,6 +8,8 @@ call vundle#begin()
     Plugin 'rakr/vim-one'
     Plugin 'kyoz/purify'
     Plugin 'arcticicestudio/nord-vim'
+    Plugin 'camspiers/animate.vim'
+    Plugin 'camspiers/lens.vim'
     Plugin 'morhetz/gruvbox'
     Plugin 'rhysd/vim-grammarous'
     Plugin 'ap/vim-css-color'
