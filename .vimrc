@@ -172,7 +172,6 @@ nmap <silent> gr <Plug>(coc-references)
     highlight clear ALEErrorSign
 
         function! LinterStatus() abort
-        let l:counts = ale#statusline#Count(bufnr(''))
 
         let l:all_errors = l:counts.error + l:counts.style_error
         let l:all_non_errors = l:counts.total - l:all_errors
@@ -182,9 +181,9 @@ nmap <silent> gr <Plug>(coc-references)
             \   all_non_errors,
             \   all_errors
             \)
+            let l:counts = ale#statusline#Count(bufnr(''))
             endfunction
 
-            set statusline=%{LinterStatus()}
             highlight clear ALEWarningSign
             set cursorline
             hi CursorLine cterm=underline ctermfg=white
@@ -233,8 +232,40 @@ nmap <silent> gr <Plug>(coc-references)
         let g:gruvbox_contrast_dark = 'hard'
         let g:gruvbox_contrast_light = 'soft'
 
+    fun! s:wpm() abort
+        if get(b:, 'wpm_start', 0) is 0
+            let b:wpm_start = [reltime(), wordcount()]
+        else
+            let l:time = reltime(b:wpm_start[0])
+                let l:words = wordcount()['words'] - b:wpm_start[1]['words']
+                unlet b:wpm_start
+                echom printf('%s WPM; in %s seconds you typed %s words',
+                                         \ l:words / max([1, l:time[0] / 60]), l:time[0], l:words)
+                endif
+    endfun
+
+                command! WPM call s:wpm()
+
+                augroup wpm 
+                autocmd! 
+                autocmd InsertEnter * :WPM 
+                autocmd InsertLeave * :WPM 
+                augroup end
+
         set background=dark
         colorscheme gruvbox
-        set tw=80 
+        set tw=120
         set  fo+=t 
         set wm=0
+        set statusline=
+        set statusline+=%7*\[%n]                                  "buffernr
+        set statusline+=%1*\ %<%F\                                "File+path
+        set statusline+=%2*\ %y\                                  "FileType
+        set statusline+=%3*\ %{''.(&fenc!=''?&fenc:&enc).''}      "Encoding
+        set statusline+=%3*\ %{(&bomb?\",BOM\":\"\")}\            "Encoding2
+        set statusline+=%4*\ %{&ff}\                              "FileFormat (dos/unix..) 
+        set statusline+=%5*\ %{&spelllang}\%{HighlightSearch()}\  "Spellanguage & Highlight on?
+        set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\             "Rownumber/total (%)
+        set statusline+=%9*\ col:%03c\                            "Colnr
+        set statusline+=%0*\ \ %m%r%w\ %P\ \                      "Modified? Readonly? Top/bot.
+        set statusline=%{LinterStatus()}
