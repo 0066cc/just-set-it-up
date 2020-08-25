@@ -38,32 +38,40 @@ URxvt.matcher.button: 		1
 *VT100.colorULMode:                   true
 *VT100.colorUL:                       magenta
 *VT100.veryBoldColors:                6
+! special
+*.foreground:   #dedede
+*.background:   #181818
+*.cursorColor:  #dedede
 
+! black
+*.color0:       #38393a
+*.color8:       #525252
 
-*foreground:                          #eddcd3
-*background:                          #181512
+! red
+*.color1:       #894747
+*.color9:       #c26862
 
-! Black                               Black !
-*color0:                              #252525
-*color8:                              #454545
-! Red                                 Red   !
-*color1:                              #CD546C
-*color9:                              #EF545F
-! Green                               Green !
-*color2:                              #A5AF86
-*color10:                             #BDC79E
-! Yellow                              Yellow!
-*color3:                              #CD7860
-*color11:                             #E88773
-! Blue                                Blue  !
-*color4:                              #7A9388
-*color12:                             #94B1A3
-! Magenta                             Magenta
-*color5:                              #917154
-*color13:                             #989584
-! Cyan                                Cyan  !
-*color6:                              #767D75
-*color14:                             #9DA69E
-! White                               White !
-*color7:                              #C2C2A8
-*color15:                             #DBDAC1
+! green
+*.color2:       #c5a85e
+*.color10:      #dfba6f
+
+! yellow
+*.color3:       #528f9e
+*.color11:      #6baec1
+
+! blue
+*.color4:       #63757f
+*.color12:      #7397a1
+
+! magenta
+*.color5:       #864049
+*.color13:      #a3535e
+
+! cyan
+*.color6:       #aa904d
+*.color14:      #c9b06a
+
+! white
+*.color7:       #dedede
+*.color15:      #d1cbb1
+
