@@ -1,4 +1,4 @@
-set nocompatible 
+set nocompatible
 filetype plugin on
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -105,8 +105,8 @@ nmap <silent> gr <Plug>(coc-references)
                       set foldcolumn=0
                       set ff=unix
                       set fo+=t
-                      set wrap 
-                      set linebreak 
+                      set wrap
+                      set linebreak
                       syntax enable" Syntax highlighting
                       " MarkDown
                       let vim_markdown_preview_github=1
@@ -128,7 +128,7 @@ nmap <silent> gr <Plug>(coc-references)
     set formatoptions+=r
     nmap <F3> i<C-R>=strftime("%d\/%m-%H:%M")<CR><Esc>
     imap <F3> <C-R>=strftime("%d\/%m-%H:%M")<CR>
-    au BufNewFile,BufRead *.kt  setf kotlin 
+    au BufNewFile,BufRead *.kt  setf kotlin
 
     " Goyo
     function! s:goyo_enter()
@@ -189,7 +189,7 @@ nmap <silent> gr <Plug>(coc-references)
             set cursorline
             hi CursorLine cterm=underline ctermfg=white
             let g:airline_theme='papercolor'
-            set nocursorcolumn 
+            set nocursorcolumn
             let g:airline#extensions#tabline#enabled = 1
             let g:airline_powerline_fonts = 1
             let g:hybrid_custom_term_colors = 1
@@ -200,7 +200,7 @@ nmap <silent> gr <Plug>(coc-references)
 
             augroup CursorLine
             au!
-            au VimEnter,WinEnter,BufWinEnter * setlocal cursorline 
+            au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
             au WinLeave * setlocal nocursorline
             augroup END
             let b:ale_warn_about_trailing_whitespace = 0
@@ -220,7 +220,7 @@ nmap <silent> gr <Plug>(coc-references)
         \    'html': ['prettier']
             \}
     let g:ale_javascript_prettier_options = '--single-quote --trailing-comma all'
-        let g:ale_lint_on_enter = 1 
+        let g:ale_lint_on_enter = 1
         let g:ale_fix_on_save = 1
         let g:neoformat_try_formatprg = 1
         let g:ale_lint_on_text_changed = 'never'
@@ -238,3 +238,5 @@ nmap <silent> gr <Plug>(coc-references)
 
     let g:better_whitespace_enabled=0
         let g:strip_whitespace_on_save=1
+        let g:strip_whitespace_confirm=0
+
