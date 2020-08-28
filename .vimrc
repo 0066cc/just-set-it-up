@@ -109,7 +109,7 @@ nmap <silent> gr <Plug>(coc-references)
                       set linebreak
                       syntax enable" Syntax highlighting
                       " MarkDown
-                      let vim_markdown_preview_github=1
+                      let vim_markdown_preview_github=0
                       let vim_markdown_preview_toggle=0
                       let vim_markdown_preview_temp_file=0
                       autocmd BufEnter *.md exec 'noremap <F4> :!mdless %:p<CR>'
