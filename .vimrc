@@ -3,6 +3,7 @@ filetype plugin on
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
+    Plugin 'lervag/vimtex'
     Plugin 'ycm-core/YouCompleteMe'
     Plugin 'NLKNguyen/papercolor-theme'
     Plugin 'rakr/vim-one'
@@ -24,8 +25,8 @@ call vundle#begin()
     Plugin 'vim-airline/vim-airline'
     Plugin 'Raimondi/delimitMate'
     Plugin 'wakatime/vim-wakatime'
+    Plugin 'stefanhepp/pplatex'
     Plugin 'junegunn/goyo.vim'
-    Plugin 'lervag/vimtex'
     Plugin 'JamshedVesuna/vim-markdown-preview'
     Plugin 'vimwiki/vimwiki'
     Plugin 'mzlogin/vim-markdown-toc'
