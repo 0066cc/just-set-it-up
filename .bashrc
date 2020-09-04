@@ -113,13 +113,24 @@ debian_chroot=$(cat /etc/debian_chroot)
     exec tmux
     fi
 
-    export ANDROID_HOME=$HOME/Android/Sdk
-    export PATH=$PATH:$ANDROID_HOME/emulator
-    export PATH=$PATH:$ANDROID_HOME/tools
-    export PATH=$PATH:$ANDROID_HOME/tools/bin
-    export PATH=$PATH:$ANDROID_HOME/platform-tools
-    export JAVA_HOME=/bin/android-studio/jre
-    export REACT_EDITOR=vim
-    export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-    export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
-    export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+thanks() {
+    clear
+        printf "Thanks for watching!\nMore content available at OtherM.cc\n"
+}
+
+    demo() {
+            tmuxBar
+            clear
+            cat $1 | fakeType.sh
+            sleep 1
+            thanks
+    }
+
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export JAVA_HOME=/bin/android-studio/jre
+export REACT_EDITOR=vim
