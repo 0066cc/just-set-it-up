@@ -99,6 +99,7 @@ debian_chroot=$(cat /etc/debian_chroot)
     alias gp='git pull'
     alias x='exit'
     alias q='exit'
+    alias tmuxBar='tmux set status off'
     alias yt='youtube-dl --extract-audio -R "infinite" -c --console-title --no-call-home --audio-format mp3 --output "%(title)s.%(ext)s" '
     alias ytd=' youtube-dl -R "infinite" -c --console-title --no-call-home --embed-thumbnail'
     alias m='make'
