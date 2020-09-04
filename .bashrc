@@ -119,3 +119,6 @@ if ! shopt -oq posix; then
 	export PATH=$PATH:$ANDROID_HOME/platform-tools
     export JAVA_HOME=/bin/android-studio/jre
     export REACT_EDITOR=vim
+    export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+    export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
+    export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
