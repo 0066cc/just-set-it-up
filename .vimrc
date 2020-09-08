@@ -99,7 +99,6 @@ nmap <silent> gr <Plug>(coc-references)
     set wrapscan
     set ignorecase
     set smartcase
-    set lazyredraw
     set title
     setlocal cindent
     setlocal cino=j1,(0,ws,Ws
