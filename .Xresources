@@ -4,7 +4,7 @@ URxvt.saveLines:512
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 0
 
-Xft.dpi:                      108 
+Xft.dpi:                      108
 Xft.antialias:        		1
 Xft.autohint:                   1
 Xft.hinting:                    1
@@ -19,9 +19,9 @@ URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
 URxvt.scrollBar:                false
 URxvt.loginShell:               true
-URxvt.internalBorder:	35	
+URxvt.internalBorder:	5
 URxvt.perl-ext:	 		default,matcher
-URxvt.url-launcher:            google-chrome	
+URxvt.url-launcher:            google-chrome
 URxvt*fading:  0
 URxvt.transparent: false
 URxvt.shading: 20
