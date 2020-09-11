@@ -25,7 +25,7 @@ URxvt.url-launcher:            google-chrome
 URxvt*fading:  0
 URxvt.transparent: false
 URxvt.shading: 20
-URxvt.Geometry: 80x73
+URxvt.Geometry: 120x96
 URxvt.tintColor: #ffffff
 URxvt.matcher.button: 		1
 
@@ -39,35 +39,33 @@ URxvt.matcher.button: 		1
 *VT100.colorUL:                       magenta
 *VT100.veryBoldColors:                6
 
-*.foreground: #DDCCBB
+*.foreground: #0066cc
 
-!*.background: #30251D
-
-*background: #101010
+*background: #FFF
 
 
 !black
-*color0:     #393939
-*color8:     #AF875F
+*color0:     #000
+*color8:     #001a33
 !red
-*color1:     #BF1E2D
-*color9:     #E7212A
+*color1:     #0059b3
+*color9:     #66b3ff
 !green
-*color2:     #9DBA3A
-*color10:    #A9C938
+*color2:     #0059b3
+*color10:    #0080ff
 !yellow
-*color3:     #F5B915
-*color11:    #F7D325
+*color3:     #0059b3
+*color11:    #0059b3
 !blue
-*color4:     #1CA1DB
-*color12:    #00AFDA
+*color4:     #0066cc
+*color12:    #0066cc
 !magenta
-*color5:     #652F90
-*color13:    #894E9F
+*color5:     #0059b3
+*color13:    #0059b3
 !cyan
-*color6:     #EA7D24
-*color14:    #F79321
+*color6:     #0059b3
+*color14:    #0059b3
 !white
-*color7:     #E7E8E9
-*color15:    #F3F3F4
+*color7:     #4da6ff
+*color15:    #99ccff
 
