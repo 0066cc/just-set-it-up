@@ -40,7 +40,7 @@ URxvt.matcher.button: 		1
 *VT100.veryBoldColors:                6
 
 *.foreground:   #fbf0d2
-*.background:   #000
+*.background:   #000000
 *.cursorColor:  #839496
 
 *.color0:       #282828
