@@ -12,6 +12,7 @@ call vundle#begin()
     Plugin 'arcticicestudio/nord-vim'
     Plugin 'morhetz/gruvbox'
     Plugin 'rhysd/vim-grammarous'
+    Plugin 'robertmeta/nofrils'
     Plugin 'ap/vim-css-color'
     Plugin 'cocopon/iceberg.vim'
     Plugin 'VundleVim/Vundle.vim'
@@ -33,11 +34,8 @@ call vundle#begin()
     Plugin 'mzlogin/vim-markdown-toc'
     call vundle#end()            " required
 
-    " Remap keys for applying codeAction to the current line.
 nmap <leader>ac  <Plug>(coc-codeaction)
-    " Apply AutoFix to problem on the current line.
 nmap <leader>qf  <Plug>(coc-fix-current)
-    " Show autocomplete when Tab is pressed
 inoremap <silent><expr> <Tab> coc#refresh()
 
 
@@ -196,8 +194,8 @@ nmap <silent> gr <Plug>(coc-references)
             let g:hybrid_custom_term_colors = 1
             let g:hybrid_reduced_contrast = 1
 
-            hi CursorLine   cterm=underline ctermbg=NONE ctermfg=NONE guibg=darkred guifg=white
-            "hi CursorColumn cterm=underline ctermbg=NONE ctermfg=yellow guibg=darkred guifg=white
+            hi CursorLine   cterm=underline ctermbg=white ctermfg=black guibg=darkred guifg=white
+            "hi CursorColumn cterm=underline ctermbg=white ctermfg=yellow guibg=darkred guifg=white
 
             augroup CursorLine
             au!
@@ -235,9 +233,10 @@ nmap <silent> gr <Plug>(coc-references)
         let g:gruvbox_contrast_light = 'soft'
 
         set background=dark
-        colorscheme plain-cterm
+        colorscheme nofrils-dark
 
     let g:better_whitespace_enabled=0
         let g:strip_whitespace_on_save=1
         let g:strip_whitespace_confirm=0
 
+        let g:nofrils_heavylinenumbers=1
