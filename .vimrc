@@ -29,6 +29,7 @@ call vundle#begin()
     Plugin 'junegunn/goyo.vim'
     Plugin 'JamshedVesuna/vim-markdown-preview'
     Plugin 'vimwiki/vimwiki'
+    Plugin 'andreypopp/vim-colors-plain'
     Plugin 'mzlogin/vim-markdown-toc'
     call vundle#end()            " required
 
@@ -234,7 +235,7 @@ nmap <silent> gr <Plug>(coc-references)
         let g:gruvbox_contrast_light = 'soft'
 
         set background=dark
-        colorscheme ron
+        colorscheme plain-cterm
 
     let g:better_whitespace_enabled=0
         let g:strip_whitespace_on_save=1

@@ -2,7 +2,8 @@
 URxvt.saveLines:512
 
 URxvt.cursorBlink: 1
-URxvt.cursorUnderline: 0
+URxvt.cursorUnderline: 1
+URxvt*font:          xft:Cherry-8
 
 Xft.dpi:                      108
 Xft.antialias:        		1
@@ -29,48 +30,45 @@ URxvt.Geometry: 120x96
 URxvt.tintColor: #ffffff
 URxvt.matcher.button: 		1
 
-*cursorColor:                         #917154
-*colorIT:                             #E3AB8D
-*colorBD:                             #F0E5DF
-*colorUL:                             #cd546c
-*VT100.colorBDMode:                   true
-*VT100.colorBD:                       red
-*VT100.colorULMode:                   true
-*VT100.colorUL:                       magenta
-*VT100.veryBoldColors:                6
 
-*.foreground:   #fbf0d2
-*.background:   #000000
-*.cursorColor:  #839496
+#define base00 #000000
+#define base01 #303030
+#define base02 #353535
+#define base03 #4A4A4A
+#define base04 #787878
+#define base05 #EEFFFF
+#define base06 #EEFFFF
+#define base07 #FFFFFF
+#define base08 #F07178
+#define base09 #F78C6C
+#define base0A #FDF200
+#define base0B #13CA91
+#define base0C #79ffe1
+#define base0D #7898FB
+#define base0E #ff3299
+#define base0F #FF5370
 
-*.color0:       #282828
-*.color8:       #454545
+!  URxvt
+!  ! ------------------------------------------------------------------------------
+!
+*foreground:   base05
+*background:   base00
+*cursorColor:  base05
 
-! red
-*.color1:       #e93c93
-*.color9:       #a87181
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
 
-! green
-*.color2:       #00a17c
-*.color10:      #76a571
-
-! yellow
-*.color3:       #f79031
-*.color11:      #d0a845
-
-! blue
-*.color4:       #00c0ce
-*.color12:      #008ba5
-
-! magenta
-*.color5:       #86458b
-*.color13:      #a0446c
-
-! cyan
-*.color6:       #8eb173
-*.color14:      #007d62
-
-! white
-*.color7:       #d3cab3
-*.color15:      #f4f3e2
-
+*color8:       base03
+*color9:       base09
+*color10:      base01
+*color11:      base02
+*color12:      base04
+*color13:      base06
+*color14:      base0F
+*color15:      base07
