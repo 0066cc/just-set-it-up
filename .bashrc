@@ -113,12 +113,12 @@ debian_chroot=$(cat /etc/debian_chroot)
     exec tmux
     fi
 
-thanks() {
+function thanks() {
     clear
-        printf "Thanks for watching!\nMore content available at OtherM.cc\n"
+        printf "Thanks for watching!\nMore content available at 0066cc.com\n"
 }
 
-    demo() {
+    function demo() {
             tmuxBar
             clear
             cat $1 | fakeType.sh
@@ -126,6 +126,8 @@ thanks() {
             thanks
     }
 
+export -f demo
+export -f thanks
 
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
