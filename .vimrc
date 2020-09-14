@@ -187,7 +187,7 @@ nmap <silent> gr <Plug>(coc-references)
             highlight clear ALEWarningSign
             set cursorline
             hi CursorLine cterm=underline ctermfg=white
-            let g:airline_theme='papercolor'
+            let g:airline_theme='wombat'
             set nocursorcolumn
             let g:airline#extensions#tabline#enabled = 1
             let g:airline_powerline_fonts = 1
@@ -233,7 +233,7 @@ nmap <silent> gr <Plug>(coc-references)
         let g:gruvbox_contrast_light = 'soft'
 
         set background=dark
-        colorscheme nofrils-dark
+        colorscheme gruvbox
 
     let g:better_whitespace_enabled=0
         let g:strip_whitespace_on_save=1
