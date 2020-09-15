@@ -106,7 +106,7 @@ debian_chroot=$(cat /etc/debian_chroot)
     alias pdf='zathura '
     alias sleepy='sudo systemctl suspend'
     alias nw='feh --randomize --bg-fill ~/Pictures/Wallpaper/ ~/Pictures/Wallpaper/'
-    alias cstrict="gcc -std=c99 -Os -Wall -Wextra -pedantic -fno-strict-aliasing -march=native"
+    alias minecraft="/bin/minecraft-launcher/minecraft-launcher"
     alias android="bash /usr/bin/android-studio/bin/studio.sh"
     alias androiddev="bash /usr/bin/android-studio-dev/bin/studio.sh"
     if [[ ! $TERM =~ screen ]]; then
