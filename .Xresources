@@ -3,7 +3,7 @@ URxvt.saveLines:512
 
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
-URxvt*font:          xft:ctrld-8
+URxvt*font:          xft:terminus-8
 
 Xft.dpi:                      108
 Xft.antialias:        		1
