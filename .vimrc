@@ -28,14 +28,14 @@ call vundle#begin()
     Plugin 'wakatime/vim-wakatime'
     Plugin 'stefanhepp/pplatex'
     Plugin 'junegunn/goyo.vim'
-    Plugin 'JamshedVesuna/vim-markdown-preview'
+    Plugin 'reroche/vim-markdown-preview'
     Plugin 'vimwiki/vimwiki'
     Plugin 'andreypopp/vim-colors-plain'
     Plugin 'mzlogin/vim-markdown-toc'
     call vundle#end()            " required
 
-nmap <leader>ac  <Plug>(coc-codeaction)
-nmap <leader>qf  <Plug>(coc-fix-current)
+    nmap <leader>ac  <Plug>(coc-codeaction)
+    nmap <leader>qf  <Plug>(coc-fix-current)
 inoremap <silent><expr> <Tab> coc#refresh()
 
 
@@ -110,7 +110,8 @@ nmap <silent> gr <Plug>(coc-references)
                       " MarkDown
                       let vim_markdown_preview_github=1
                       let vim_markdown_preview_toggle=1
-                      let vim_markdown_preview_temp_file=0
+                      let vim_markdown_preview_temp_file=1
+                      let vim_markdown_preview_pandoc=1
                       autocmd BufEnter *.md exec 'noremap <F4> :!mdless %:p<CR>'
                       let vim_markdown_preview_hotkey='<F5>'
                       au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
@@ -120,7 +121,7 @@ nmap <silent> gr <Plug>(coc-references)
                       let g:vimwiki_auto_chdir = 1
                       let g:markdown_fold_style = 'nested'
                       let g:vmt_auto_update_on_save = 1
-                      let g:vimwiki_list = [{'path': '~/Documents/git/Life/wiki/', 'auto_tags':1, 'syntax': 'markdown', 'ext': '.md'}]
+    let g:vimwiki_list = [{'path': '~/Documents/git/Life/wiki/', 'auto_tags':1, 'syntax': 'markdown', 'ext': '.md'}]
     let g:vimwiki_hl_headers = 1
     " Misc
     set autoindent
@@ -235,8 +236,7 @@ nmap <silent> gr <Plug>(coc-references)
         set background=dark
         colorscheme gruvbox
 
-    let g:better_whitespace_enabled=0
+        let g:better_whitespace_enabled=0
         let g:strip_whitespace_on_save=1
         let g:strip_whitespace_confirm=0
-
         let g:nofrils_heavylinenumbers=1

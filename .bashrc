@@ -113,18 +113,18 @@ debian_chroot=$(cat /etc/debian_chroot)
     exec tmux
     fi
 
-function thanks() {
-    clear
-        printf "Thanks for watching!\nMore content available at 0066cc.com\n"
-}
-
-    function demo() {
-            tmuxBar
-            clear
-            cat $1 | fakeType.sh
-            sleep 1
-            thanks
+    function thanks() {
+        clear
+            printf "Thanks for watching!\nMore content available at 0066cc.com\n"
     }
+
+function demo() {
+        tmuxBar
+        clear
+        expand $1 | bash fakeType.sh
+        sleep 1
+        thanks
+}
 
 export -f demo
 export -f thanks
