@@ -136,3 +136,4 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export JAVA_HOME=/bin/android-studio/jre
 export REACT_EDITOR=vim
+export MAIL=mutt
