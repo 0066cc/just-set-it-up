@@ -1,5 +1,5 @@
 set nocompatible
-filetype plugin on
+filetype plugin indent on
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
@@ -19,7 +19,6 @@ call vundle#begin()
     Plugin 'pangloss/vim-javascript'    " JavaScript support
     Plugin 'leafgarland/typescript-vim' " TypeScript syntax
     Plugin 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
-    Plugin 'mattn/emmet-vim'
     Plugin 'frazrepo/vim-rainbow'
     Plugin 'dense-analysis/ale'
     Plugin 'vim-airline/vim-airline-themes'
