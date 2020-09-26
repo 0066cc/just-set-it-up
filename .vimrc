@@ -80,7 +80,7 @@ nmap <silent> gr <Plug>(coc-references)
     set scrolloff=12
     set encoding=utf-8
     set incsearch
-    set t_Co=256
+"    set t_Co=256
     set showmode
     set showmatch
     set showcmd
@@ -233,8 +233,8 @@ nmap <silent> gr <Plug>(coc-references)
         let g:gruvbox_contrast_dark = 'hard'
         let g:gruvbox_contrast_light = 'soft'
 
-        set background=dark
-        colorscheme gruvbox
+        "set background=dark
+        colorscheme nord
 
         let g:better_whitespace_enabled=0
         let g:strip_whitespace_on_save=1
