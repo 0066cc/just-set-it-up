@@ -30,22 +30,31 @@ URxvt.Geometry: 120x96
 URxvt.tintColor: #ffffff
 URxvt.matcher.button: 		1
 
-URxvt.foreground:   #E8DFD6
-URxvt.background:   #021B21
-URxvt.cursorColor:  #ffffff
-URxvt.color0:       #032C36
-URxvt.color8:       #065F73
-URxvt.color1:       #C2454E
-URxvt.color9:       #EF5847
-URxvt.color2:       #7CBF9E
-URxvt.color10:      #A2D9B1
-URxvt.color3:       #8A7A63
-URxvt.color11:      #BEB090
-URxvt.color4:       #2E3340
-URxvt.color12:      #61778D
-URxvt.color5:       #FF5879
-URxvt.color13:      #FF99A1
-URxvt.color6:       #44B5B1
-URxvt.color14:      #9ED9D8
-URxvt.color7:       #F2F1B9
-URxvt.color15:      #F6F6C9
+*foreground:   #F2C2CA
+*background:  #242424
+*cursorColor:  #ffffff
+*colorUL:      #C5CCA3
+
+*color0:       #4C4C4C
+*color8:       #333333
+
+*color1:       #E65C73
+*color9:       #FF6680
+
+*color2:       #C5CCA3
+*color10:      #C7E6B8
+
+*color3:       #B8CCA3
+*color11:      #BBCC9A
+*color4:       #CC7AB1
+*color12:      #CC8FCC
+
+*color5:       #E673AC
+*color13:      #CC52A3
+
+*color6:       #CCA3B1
+*color14:      #CC8FA3
+
+*color7:       #F2C2CA
+*color15:      #F2E6E8
+
