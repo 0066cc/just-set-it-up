@@ -3,7 +3,7 @@ URxvt.saveLines:512
 
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
-URxvt*font:          xft:dweep-8
+URxvt*font:          xft:scientifica-8
 
 Xft.dpi:                      108
 Xft.antialias:        		1
@@ -14,7 +14,7 @@ Xft.lcdfilter:                 full
 Xft.rgba:                       rgb
 
 URxvt.lineSpace:                -1
-URxvt.letterSpace:              0
+URxvt.letterSpace:              1
 URxvt.skipScroll:               true
 URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
