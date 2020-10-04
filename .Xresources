@@ -2,7 +2,7 @@
 URxvt.saveLines:512
 
 URxvt.cursorBlink: 1
-URxvt.cursorUnderline: 1
+URxvt.cursorUnderline: 0
 URxvt*font:          xft:scientifica-8
 
 Xft.dpi:                      108
@@ -13,7 +13,7 @@ Xft.hintstyle:                 full
 Xft.lcdfilter:                 full
 Xft.rgba:                       rgb
 
-URxvt.lineSpace:                -1
+URxvt.lineSpace:                0
 URxvt.letterSpace:              1
 URxvt.skipScroll:               true
 URxvt.iso14755:                 false
@@ -53,7 +53,7 @@ URxvt.matcher.button: 		1
 #else
 *.background:   base00
 #endif
-*.cursorColor:  #ffffff
+*.cursorColor:  #ebdbb2
 
 *.color0:       base00
 *.color1:       base08
