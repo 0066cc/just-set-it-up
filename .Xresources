@@ -24,51 +24,43 @@ URxvt.internalBorder:	25
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:            google-chrome
 URxvt*fading:  0
-URxvt.transparent: true
-URxvt.shading: 45
+URxvt.transparent: false
+URxvt.shading: 25
 URxvt.Geometry: 120x96
 URxvt.tintColor: #ffffff
 URxvt.matcher.button: 		1
 
-#define base00 #000000
-#define base01 #242422
-#define base02 #484844
-#define base03 #6c6c66
-#define base04 #918f88
-#define base05 #b5b3aa
-#define base06 #d9d7cc
-#define base07 #fdfbee
-#define base08 #ff6c60
-#define base09 #e9c062
-#define base0A #ffffb6
-#define base0B #a8ff60
-#define base0C #c6c5fe
-#define base0D #96cbfe
-#define base0E #ff73fd
-#define base0F #b18a3d
+*.foreground:   #f2e5cf
+*.background:   #282C32
+*.cursorColor:  #f2e5cf
 
-*.foreground:   #ffffff
-#ifdef background_opacity
-*.background:   [background_opacity]base00
-#else
-*.background:   base00
-#endif
-*.cursorColor:  #ffffff
+*.color0:       #9a9a9a
+*.color8:       #aaaaaa
 
-*.color0:       base00
-*.color1:       base08
-*.color2:       base0B
-*.color3:       base0A
-*.color4:       base0D
-*.color5:       base0E
-*.color6:       base0C
-*.color7:       base05
+! red
+*.color1:       #f73028
+*.color9:       #f73027
 
-*.color8:       base03
-*.color9:       base08
-*.color10:      base0B
-*.color11:      base0A
-*.color12:      base0D
-*.color13:      base0E
-*.color14:      base0C
-*.color15:      base07
+! green
+*.color2:       #7fbfc9
+*.color10:      #75bec9
+
+! yellow
+*.color3:       #87c8bf
+*.color11:      #7dc8be
+
+! blue
+*.color4:       #4d9caf
+*.color12:      #459baf
+
+! magenta
+*.color5:       #aca8bf
+*.color13:      #a5a0bf
+
+! cyan
+*.color6:       #2bccd4
+*.color14:      #49d7e4
+
+! white
+*.color7:       #efe0c3
+*.color15:      #fdf3c3
