@@ -9,7 +9,7 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 18,
+    fontSize: 10,
 
     // font family with optional fallbacks
     fontFamily: '"JetBrains Mono", monospace',
@@ -27,10 +27,10 @@ module.exports = {
     letterSpacing: 0,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: '#fff',
+//    cursorColor: '#3a3a3a',
 
     // terminal text color under BLOCK cursor
-    cursorAccentColor: '#000',
+ //   cursorAccentColor: '#000',
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
     cursorShape: 'BEAM',
@@ -39,17 +39,17 @@ module.exports = {
     cursorBlink: false,
 
     // color of the text
-    foregroundColor: '#006ad5',
+//    foregroundColor: '#006ad5',
 
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: '#fff',
+ //   backgroundColor: '#fff',
 
     // terminal selection color
-    selectionColor: 'rgba(248,28,229,0.3)',
+  //  selectionColor: 'rgba(248,28,229,0.3)',
 
     // border color (window, tabs)
-    borderColor: '#fff',
+   // borderColor: '#fff',
 
     // custom CSS to embed in the main window
     css: '',
@@ -67,7 +67,7 @@ module.exports = {
     showWindowControls: 'false',
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: '32px 32px',
+    padding: '5px 5px',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -90,7 +90,6 @@ module.exports = {
       lightCyan: '#68FDFE',
       lightWhite: '#FFFFFF',
     },
-    */
     colors: {
       black: '#000000',
       red: '#0059b3',
@@ -109,6 +108,7 @@ module.exports = {
       lightCyan: '#0059b3',
       lightWhite: '#99ccff',
     },
+    */
 
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
