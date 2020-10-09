@@ -23,9 +23,12 @@ URxvt.loginShell:               true
 URxvt.internalBorder:	25
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:            google-chrome
-URxvt*fading:  0
-URxvt.transparent: false
-URxvt.shading: 45
+URxvt*fading:  110
+URxvt*blurRadius:  0
+URxvt*depth:  0
+URxvt*inheritPixmap: true
+URxvt.transparent: true
+URxvt.shading: 65
 URxvt.Geometry: 120x96
 URxvt.tintColor: #ffffff
 URxvt.matcher.button: 		1

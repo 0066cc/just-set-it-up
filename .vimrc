@@ -81,7 +81,7 @@ nmap <silent> gr <Plug>(coc-references)
     set scrolloff=12
     set encoding=utf-8
     set incsearch
-    set t_Co=256
+    set t_Co=16
     set showmode
     set showmatch
     set showcmd
@@ -189,10 +189,9 @@ nmap <silent> gr <Plug>(coc-references)
             set cursorline
             hi CursorLine cterm=underline ctermfg=white
             let g:airline_theme='wombat'
-            set nocursorcolumn
             let g:airline#extensions#tabline#enabled = 1
             let g:airline_powerline_fonts = 1
-        let g:airline#extensions#wordcount#filetypes = '\vasciidoc|help|mail|markdown|markdown.pandoc|org|rst|tex|text'
+            let g:airline#extensions#wordcount#filetypes = '\vasciidoc|help|mail|markdown|markdown.pandoc|org|rst|tex|text'
             let g:hybrid_custom_term_colors = 1
             let g:hybrid_reduced_contrast = 1
 
@@ -234,10 +233,11 @@ nmap <silent> gr <Plug>(coc-references)
         let g:gruvbox_contrast_dark = 'hard'
         let g:gruvbox_contrast_light = 'soft'
 
-        set background=dark
-        colorscheme gruvbox
+        "set background=dark
+        colorscheme PaperColor
 
         let g:better_whitespace_enabled=0
         let g:strip_whitespace_on_save=1
         let g:strip_whitespace_confirm=0
         let g:nofrils_heavylinenumbers=1
+        set cursorcolumn
