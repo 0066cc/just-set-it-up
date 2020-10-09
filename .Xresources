@@ -30,7 +30,7 @@ URxvt.Geometry: 120x96
 URxvt.tintColor: #ffffff
 URxvt.matcher.button: 		1
 
-#define base00 #282828
+#define base00 #1a1a1a
 #define base01 #3c3836
 #define base02 #504945
 #define base03 #665c54
