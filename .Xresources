@@ -24,43 +24,58 @@ URxvt.internalBorder:	25
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:            google-chrome
 URxvt*fading:  0
-URxvt.transparent: true
+URxvt.transparent: false
 URxvt.shading: 45
 URxvt.Geometry: 120x96
 URxvt.tintColor: #ffffff
 URxvt.matcher.button: 		1
 
-*.foreground:   #f2e5cf
-*.background:   #282C32
-*.cursorColor:  #f2e5cf
+#define base00 #282828
+#define base01 #3c3836
+#define base02 #504945
+#define base03 #665c54
+#define base04 #bdae93
+#define base05 #d5c4a1
+#define base06 #ebdbb2
+#define base07 #fbf1c7
+#define base08 #fb4934
+#define base09 #fe8019
+#define base0A #fabd2f
+#define base0B #b8bb26
+#define base0C #8ec07c
+#define base0D #83a598
+#define base0E #d3869b
+#define base0F #d65d0e
 
-*.color0:       #9a9a9a
-*.color8:       #aaaaaa
+*.foreground:   base05
+#ifdef background_opacity
+*.background:   [background_opacity]base00
+#else
+*.background:   base00
+#endif
+*.cursorColor:  base05
 
-! red
-*.color1:       #f73028
-*.color9:       #f73027
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
 
-! green
-*.color2:       #7fbfc9
-*.color10:      #75bec9
+*.color8:       base03
+*.color9:       base08
+*.color10:      base0B
+*.color11:      base0A
+*.color12:      base0D
+*.color13:      base0E
+*.color14:      base0C
+*.color15:      base07
 
-! yellow
-*.color3:       #87c8bf
-*.color11:      #7dc8be
-
-! blue
-*.color4:       #4d9caf
-*.color12:      #459baf
-
-! magenta
-*.color5:       #aca8bf
-*.color13:      #a5a0bf
-
-! cyan
-*.color6:       #2bccd4
-*.color14:      #49d7e4
-
-! white
-*.color7:       #efe0c3
-*.color15:      #fdf3c3
+*.color16:      base09
+*.color17:      base0F
+*.color18:      base01
+*.color19:      base02
+*.color20:      base04
+*.color21:      base06
