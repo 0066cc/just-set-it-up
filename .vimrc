@@ -187,16 +187,15 @@ nmap <silent> gr <Plug>(coc-references)
 
             highlight clear ALEWarningSign
             set cursorline
+            set cursorcolumn
+
             hi CursorLine cterm=underline ctermfg=white
-            let g:airline_theme='wombat'
+            let g:airline_theme='lucius'
             let g:airline#extensions#tabline#enabled = 1
             let g:airline_powerline_fonts = 1
             let g:airline#extensions#wordcount#filetypes = '\vasciidoc|help|mail|markdown|markdown.pandoc|org|rst|tex|text'
             let g:hybrid_custom_term_colors = 1
             let g:hybrid_reduced_contrast = 1
-
-            hi CursorLine   cterm=underline ctermbg=white ctermfg=black guibg=darkred guifg=white
-            "hi CursorColumn cterm=underline ctermbg=white ctermfg=yellow guibg=darkred guifg=white
 
             augroup CursorLine
             au!
@@ -234,10 +233,14 @@ nmap <silent> gr <Plug>(coc-references)
         let g:gruvbox_contrast_light = 'soft'
 
         set background=dark
-        colorscheme nofrils-acme
+        colorscheme nord
 
         let g:better_whitespace_enabled=0
         let g:strip_whitespace_on_save=1
         let g:strip_whitespace_confirm=0
         let g:nofrils_heavylinenumbers=1
-        set cursorcolumn
+        hi CursorLine   cterm=underline ctermbg=black ctermfg=white guibg=darkred guifg=white
+        hi Cursorcolumn cterm=underline ctermbg=black ctermfg=white guibg=darkred guifg=white
+            set cursorline
+            set cursorcolumn
+
