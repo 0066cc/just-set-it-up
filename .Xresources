@@ -2,8 +2,8 @@
 URxvt.saveLines:512
 
 URxvt.cursorBlink: 1
-URxvt.cursorUnderline: 0
-URxvt*font:          xft:scientifica-8
+URxvt.cursorUnderline: 1
+URxvt*font:          xft:dweep-8
 
 Xft.dpi:                      108
 Xft.antialias:        		1
@@ -14,71 +14,61 @@ Xft.lcdfilter:                 full
 Xft.rgba:                       rgb
 
 URxvt.lineSpace:                0
-URxvt.letterSpace:              1
+URxvt.letterSpace:              0
 URxvt.skipScroll:               true
 URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
 URxvt.scrollBar:                false
 URxvt.loginShell:               true
-URxvt.internalBorder:	25
+URxvt.internalBorder:	15
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:            google-chrome
-URxvt*fading:  110
+URxvt*fading:  10
 URxvt*blurRadius:  0
-URxvt*depth:  0
+URxvt*depth:  32
 URxvt*inheritPixmap: true
 URxvt.transparent: true
-URxvt.shading: 65
+URxvt.shading: 100
 URxvt.Geometry: 120x96
-URxvt.tintColor: #ffffff
+URxvt.tintColor: #3a3a3a
 URxvt.matcher.button: 		1
 
-#define base00 #1a1a1a
-#define base01 #3c3836
-#define base02 #504945
-#define base03 #665c54
-#define base04 #bdae93
-#define base05 #d5c4a1
-#define base06 #ebdbb2
-#define base07 #fbf1c7
-#define base08 #fb4934
-#define base09 #fe8019
-#define base0A #fabd2f
-#define base0B #b8bb26
-#define base0C #8ec07c
-#define base0D #83a598
-#define base0E #d3869b
-#define base0F #d65d0e
 
-*.foreground:   base05
-#ifdef background_opacity
-*.background:   [background_opacity]base00
-#else
-*.background:   base00
-#endif
-*.cursorColor:  base05
+!special
+*background: #262729
+*foreground: #CECECE
+*cursorColor: #a0a0a0
 
-*.color0:       base00
-*.color1:       base08
-*.color2:       base0B
-*.color3:       base0A
-*.color4:       base0D
-*.color5:       base0E
-*.color6:       base0C
-*.color7:       base05
+!black
+*color0:    #25374A
+*color8:    #3A526B
+!red
+*color1:    #BD4A4A
+*color9:    #CC6666
+!green
+*color2:    #B7CE42
+*color10:   #BDE077
 
-*.color8:       base03
-*.color9:       base08
-*.color10:      base0B
-*.color11:      base0A
-*.color12:      base0D
-*.color13:      base0E
-*.color14:      base0C
-*.color15:      base07
+!yellow
+*color3: #FF0000
+*color11: #E04613
 
-*.color16:      base09
-*.color17:      base0F
-*.color18:      base01
-*.color19:      base02
-*.color20:      base04
-*.color21:      base06
+!blue
+*color4: #188ED8
+*color12: #73B6D0
+
+!magenta
+*color5:    #F26B9E
+*color13:   #ff5879
+!cyan
+*color6:    #72AD8C
+*color14:   #9FE3BC
+
+!white
+*color7: #CECECE
+*color15: #FAFAFA
+
+!Colored man pages
+URxvt.colorIT:  #9f8fbc
+URxvt.colorBD:  #9bc4bd
+URxvt.colorUL:  #b7ce42
