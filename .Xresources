@@ -1,8 +1,8 @@
 !~ URxvt Settings ~!
 URxvt.saveLines:512
 
-URxvt.cursorBlink: 1
-URxvt.cursorUnderline: 1
+URxvt.cursorBlink: 0
+URxvt.cursorUnderline: 0
 URxvt*font:          xft:dweep-8
 
 Xft.dpi:                      108
@@ -23,14 +23,14 @@ URxvt.loginShell:               true
 URxvt.internalBorder:	15
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:            google-chrome
-URxvt*fading:  10
+URxvt*fading:  99
 URxvt*blurRadius:  0
 URxvt*depth:  32
 URxvt*inheritPixmap: true
 URxvt.transparent: true
-URxvt.shading: 100
+URxvt.shading: 65
 URxvt.Geometry: 120x96
-URxvt.tintColor: #3a3a3a
+URxvt.tintColor: #ffffff
 URxvt.matcher.button: 		1
 
 
