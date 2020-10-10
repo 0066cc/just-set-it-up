@@ -23,7 +23,7 @@ URxvt.loginShell:               true
 URxvt.internalBorder:	15
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:            google-chrome
-URxvt*fading:  99
+URxvt*fading:  50
 URxvt*blurRadius:  0
 URxvt*depth:  32
 URxvt*inheritPixmap: true
