@@ -3,7 +3,8 @@ URxvt.saveLines:512
 
 URxvt.cursorBlink: 0
 URxvt.cursorUnderline: 0
-URxvt*font:          xft:dweep-8
+URxvt*font:          xft:Perfect DOS VGA 437-12
+!URxvt*font:          xft:dweep-8
 
 Xft.dpi:                      108
 Xft.antialias:        		1
