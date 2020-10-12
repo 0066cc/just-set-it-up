@@ -4,8 +4,8 @@ URxvt.saveLines:512
 URxvt.cursorBlink: 0
 URxvt.cursorUnderline: 0
 URxvt.boldFont:
-!URxvt*font:          xft:dweep-8
-URxvt*font:          xft:Perfect DOS VGA 437-9
+URxvt*font:          xft:dweep-8
+!URxvt*font:          xft:Perfect DOS VGA 437-9
 !URxvt*font:          xft:TI-99/4A-12
 !URxvt*font:          xft:Sinclair ZX Spectrum ES-6
 !URxvt*font:          xft:JetBrain Mono-8
@@ -18,8 +18,11 @@ Xft.hintstyle:                 full
 Xft.lcdfilter:                 full
 Xft.rgba:                       rgb
 
-URxvt.lineSpace:                -1
-URxvt.letterSpace:              -1
+!URxvt.lineSpace:                -1
+!URxvt.letterSpace:              -1
+URxvt.lineSpace:                0
+URxvt.letterSpace:             0
+
 URxvt.skipScroll:               true
 URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
@@ -28,50 +31,38 @@ URxvt.loginShell:               true
 URxvt.internalBorder:	25
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:            google-chrome
-URxvt*fading:  50
+URxvt*fading:  0
 URxvt*blurRadius:  0
-URxvt*depth:  32
+URxvt*depth:  0
 URxvt*inheritPixmap: true
 URxvt.transparent: true
-URxvt.shading: 45
+URxvt.shading: 170
 URxvt.Geometry: 120x96
-URxvt.tintColor: #9a9a9a
-!URxvt.tintColor: #0066cc
-URxvt.matcher.button: 		1
+URxvt.matcher.button: 1
 
-*.foreground:   #f8d8f8
-*.background:   #010101
-*.cursorColor:  #c7c7c7
-
-! black
-*.color0:       #1d2b53
-*.color8:       #1d2b53
-
+*.foreground: #4D4D4C
+*.background: #E7E8EB
+!black
+*.color0: #EDEDED
+*.color8: #969694
 ! red
-*.color1:       #ff004d
-*.color9:       #ff004d
-
+*.color1: #D7005F
+*.color9: #D7005F
 ! green
-*.color2:       #83769c
-*.color10:      #83769c
-
-! yellow
-*.color3:       #ffccaa
-*.color11:      #ffccaa
-
+*.color2: #718C00
+*.color10: #718C00
+! yellow / orange
+*.color3: #D75F00
+*.color11: #D75F00
 ! blue
-*.color4:       #29adff
-*.color12:      #29adff
-
+*.color4: #4271AE
+*.color12: #4271AE
 ! magenta
-*.color5:       #7e2553
-*.color13:      #7e2553
-
+*.color5: #8959A8
+*.color13: #8959A8
 ! cyan
-*.color6:       #ff77a8
-*.color14:      #ff77a8
-
+*.color6: #3E999F
+*.color14: #3E999F
 ! white
-*.color7:       #fff1e8
-*.color15:      #fff1e8
-
+*.color7: #F5F5F5
+*.color15: #2D2D2C
