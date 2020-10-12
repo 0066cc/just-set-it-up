@@ -7,7 +7,7 @@ URxvt.boldFont:
 !URxvt*font:          xft:dweep-8
 URxvt*font:          xft:Perfect DOS VGA 437-9
 !URxvt*font:          xft:TI-99/4A-12
-!URxvt*font:          xft:Sinclair ZX Spectrum ES-8
+!URxvt*font:          xft:Sinclair ZX Spectrum ES-6
 !URxvt*font:          xft:JetBrain Mono-8
 
 Xft.dpi:                      108
@@ -25,7 +25,7 @@ URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
 URxvt.scrollBar:                false
 URxvt.loginShell:               true
-URxvt.internalBorder:	15
+URxvt.internalBorder:	25
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:            google-chrome
 URxvt*fading:  50
