@@ -35,42 +35,43 @@ URxvt*inheritPixmap: true
 URxvt.transparent: true
 URxvt.shading: 45
 URxvt.Geometry: 120x96
-URxvt.tintColor: #6a6a6a
+URxvt.tintColor: #9a9a9a
+!URxvt.tintColor: #0066cc
 URxvt.matcher.button: 		1
 
-
-*.foreground:   #ffffff
-*.background:   #1e1e1e
-*.cursorColor:  #ffffff
+*.foreground:   #f8d8f8
+*.background:   #010101
+*.cursorColor:  #c7c7c7
 
 ! black
-*.color0:       #222222
-*.color8:       #333333
+*.color0:       #1d2b53
+*.color8:       #1d2b53
 
 ! red
-*.color1:       #ca4a4b
-*.color9:       #ca4a4b
+*.color1:       #ff004d
+*.color9:       #ff004d
 
 ! green
-*.color2:       #aa2a2a
-*.color10:      #aa2a2a
+*.color2:       #83769c
+*.color10:      #83769c
 
 ! yellow
-*.color3:       #830c0c
-*.color11:      #830c0c
+*.color3:       #ffccaa
+*.color11:      #ffccaa
 
 ! blue
-*.color4:       #ca4a4b
-*.color12:      #ca4a4b
+*.color4:       #29adff
+*.color12:      #29adff
 
 ! magenta
-*.color5:       #aa2a2a
-*.color13:      #aa2a2a
+*.color5:       #7e2553
+*.color13:      #7e2553
 
 ! cyan
-*.color6:       #830c0c
-*.color14:      #830c0c
+*.color6:       #ff77a8
+*.color14:      #ff77a8
 
 ! white
-*.color7:       #ffffff
-*.color15:      #ffffff
+*.color7:       #fff1e8
+*.color15:      #fff1e8
+
