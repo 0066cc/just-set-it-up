@@ -5,9 +5,10 @@ URxvt.cursorBlink: 0
 URxvt.cursorUnderline: 0
 URxvt.boldFont:
 !URxvt*font:          xft:dweep-8
-!URxvt*font:          xft:Perfect DOS VGA 437-9
-URxvt*font:          xft:Sinclair ZX Spectrum ES-8
+URxvt*font:          xft:Perfect DOS VGA 437-9
 !URxvt*font:          xft:TI-99/4A-12
+!URxvt*font:          xft:Sinclair ZX Spectrum ES-8
+!URxvt*font:          xft:JetBrain Mono-8
 
 Xft.dpi:                      108
 Xft.antialias:        		1
@@ -37,56 +38,39 @@ URxvt.Geometry: 120x96
 URxvt.tintColor: #6a6a6a
 URxvt.matcher.button: 		1
 
-#define base00 #101010
-#define base01 #252525
-#define base02 #464646
-#define base03 #525252
-#define base04 #ababab
-#define base05 #b9b9b9
-#define base06 #e3e3e3
-#define base07 #f7f7f7
-#define base08 #7c7c7c
-#define base09 #999999
-#define base0A #a0a0a0
-#define base0B #8e8e8e
-#define base0C #868686
-#define base0D #686868
-#define base0E #747474
-#define base0F #5e5e5e
 
-*.foreground:   base05
-#ifdef background_opacity
-*.background:   [background_opacity]base00
-#else
-*.background:   base00
-#endif
-*.cursorColor:  base05
+*.foreground:   #ffffff
+*.background:   #1e1e1e
+*.cursorColor:  #ffffff
 
-*.color0:       base00
-*.color1:       base08
-*.color2:       base0B
-*.color3:       base0A
-*.color4:       base0D
-*.color5:       base0E
-*.color6:       base0C
-*.color7:       base05
+! black
+*.color0:       #222222
+*.color8:       #333333
 
-*.color8:       base03
-*.color9:       base08
-*.color10:      base0B
-*.color11:      base0A
-*.color12:      base0D
-*.color13:      base0E
-*.color14:      base0C
-*.color15:      base07
+! red
+*.color1:       #ca4a4b
+*.color9:       #ca4a4b
 
-! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
-! ! use 'shell' template to set these if necessary
-*.color16:      base09
-*.color17:      base0F
-*.color18:      base01
-*.color19:      base02
-*.color20:      base04
-*.color21:      base06
+! green
+*.color2:       #aa2a2a
+*.color10:      #aa2a2a
 
+! yellow
+*.color3:       #830c0c
+*.color11:      #830c0c
 
+! blue
+*.color4:       #ca4a4b
+*.color12:      #ca4a4b
+
+! magenta
+*.color5:       #aa2a2a
+*.color13:      #aa2a2a
+
+! cyan
+*.color6:       #830c0c
+*.color14:      #830c0c
+
+! white
+*.color7:       #ffffff
+*.color15:      #ffffff
