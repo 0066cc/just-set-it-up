@@ -4,8 +4,8 @@ URxvt.saveLines:512
 URxvt.cursorBlink: 0
 URxvt.cursorUnderline: 0
 URxvt.boldFont:
-URxvt*font:          xft:dweep-8
-!URxvt*font:          xft:Perfect DOS VGA 437-9
+!URxvt*font:          xft:dweep-8
+URxvt*font:          xft:Perfect DOS VGA 437-9
 !URxvt*font:          xft:TI-99/4A-12
 !URxvt*font:          xft:Sinclair ZX Spectrum ES-6
 !URxvt*font:          xft:JetBrain Mono-8
@@ -44,8 +44,8 @@ URxvt.matcher.button: 1
 *.cursorColor:  #c7c7c7
 
 ! black
-*.color0:       #1d2c47
-*.color8:       #1d2c47
+*.color0:       #6a6a6a
+*.color8:       #6a6a6a
 
 ! red
 *.color1:       #d2275a
