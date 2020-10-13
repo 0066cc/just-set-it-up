@@ -36,33 +36,42 @@ URxvt*blurRadius:  0
 URxvt*depth:  0
 URxvt*inheritPixmap: true
 URxvt.transparent: true
-URxvt.shading: 170
+URxvt.shading: 20
 URxvt.Geometry: 120x96
 URxvt.matcher.button: 1
+*.foreground:   #e1bcc8
+*.background:   #161219
+*.cursorColor:  #c7c7c7
 
-*.foreground: #4D4D4C
-*.background: #E7E8EB
-!black
-*.color0: #EDEDED
-*.color8: #969694
+! black
+*.color0:       #1d2c47
+*.color8:       #1d2c47
+
 ! red
-*.color1: #D7005F
-*.color9: #D7005F
+*.color1:       #d2275a
+*.color9:       #ff2f6d
+
 ! green
-*.color2: #718C00
-*.color10: #718C00
-! yellow / orange
-*.color3: #D75F00
-*.color11: #D75F00
+*.color2:       #8752ba
+*.color10:      #b66efb
+
+! yellow
+*.color3:       #e15581
+*.color11:      #fb5f90
+
 ! blue
-*.color4: #4271AE
-*.color12: #4271AE
+*.color4:       #1e59aa
+*.color12:      #2c84fc
+
 ! magenta
-*.color5: #8959A8
-*.color13: #8959A8
+*.color5:       #8752ba
+*.color13:      #b56efa
+
 ! cyan
-*.color6: #3E999F
-*.color14: #3E999F
+*.color6:       #4b76b8
+*.color14:      #67a2fd
+
 ! white
-*.color7: #F5F5F5
-*.color15: #2D2D2C
+*.color7:       #e95986
+*.color15:      #fb89ad
+
