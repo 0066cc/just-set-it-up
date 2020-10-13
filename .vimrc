@@ -81,7 +81,7 @@ nmap <silent> gr <Plug>(coc-references)
     set scrolloff=12
     set encoding=utf-8
     set incsearch
-    set t_Co=256
+    set t_Co=16
     set showmode
     set showmatch
     set showcmd
@@ -241,6 +241,8 @@ nmap <silent> gr <Plug>(coc-references)
         let g:nofrils_heavylinenumbers=1
         hi CursorLine   cterm=underline ctermbg=black ctermfg=white guibg=darkred guifg=white
         hi Cursorcolumn cterm=underline ctermbg=black ctermfg=white guibg=darkred guifg=white
-            set cursorline
-            set cursorcolumn
+        set cursorline
+        set cursorcolumn
+
+        set runtimepath+=$HOME/.vim/bundle/wordCount.vim
 
