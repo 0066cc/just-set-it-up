@@ -1,15 +1,16 @@
 !~ URxvt Settings ~!
 URxvt.saveLines:512
 
-URxvt.cursorBlink: 0
+URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 0
 URxvt.boldFont:
 !URxvt*font:          xft:bitocra-8
-URxvt*font:          xft:dweep-8
 !URxvt*font:          xft:Perfect DOS VGA 437-9
 !URxvt*font:          xft:TI-99/4A-12
 !URxvt*font:          xft:Sinclair ZX Spectrum ES-6
 !URxvt*font:          xft:JetBrain Mono-8
+
+URxvt*font:          xft:cherry-8
 
 Xft.dpi:                      108
 Xft.antialias:        		1
@@ -19,10 +20,8 @@ Xft.hintstyle:                 full
 Xft.lcdfilter:                 full
 Xft.rgba:                       rgb
 
-!URxvt.lineSpace:                -1
-!URxvt.letterSpace:              -1
 URxvt.lineSpace:                0
-URxvt.letterSpace:             1
+URxvt.letterSpace:             0
 
 URxvt.skipScroll:               true
 URxvt.iso14755:                 false
@@ -35,8 +34,8 @@ URxvt.url-launcher:            google-chrome
 URxvt*fading:  0
 URxvt*blurRadius:  0
 URxvt*depth:  0
-URxvt*inheritPixmap: true
-URxvt.transparent: true
+URxvt*inheritPixmap: false
+URxvt.transparent: false
 URxvt.shading: 30
 URxvt.Geometry: 120x96
 URxvt.matcher.button: 1

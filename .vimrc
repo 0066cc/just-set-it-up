@@ -233,9 +233,9 @@ nmap <silent> gr <Plug>(coc-references)
         let g:gruvbox_contrast_light = 'soft'
 
         set background=dark
-        colorscheme nord
+        colorscheme gruvbox
 
-        let g:better_whitespace_enabled=0
+        let g:better_whitespace_enabled=1
         let g:strip_whitespace_on_save=1
         let g:strip_whitespace_confirm=0
         let g:nofrils_heavylinenumbers=1
