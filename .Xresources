@@ -5,12 +5,12 @@ URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 0
 URxvt.boldFont:
 !URxvt*font:          xft:bitocra-8
-!URxvt*font:          xft:Perfect DOS VGA 437-9
+URxvt*font:          xft:Perfect DOS VGA 437-7
 !URxvt*font:          xft:TI-99/4A-12
 !URxvt*font:          xft:Sinclair ZX Spectrum ES-6
 !URxvt*font:          xft:JetBrain Mono-8
 
-URxvt*font:          xft:cherry-8
+!URxvt*font:          xft:cherry-8
 
 Xft.dpi:                      108
 Xft.antialias:        		1
@@ -20,8 +20,8 @@ Xft.hintstyle:                 full
 Xft.lcdfilter:                 full
 Xft.rgba:                       rgb
 
-URxvt.lineSpace:                0
-URxvt.letterSpace:             0
+URxvt.lineSpace:                -1
+URxvt.letterSpace:             -1
 
 URxvt.skipScroll:               true
 URxvt.iso14755:                 false
@@ -34,59 +34,44 @@ URxvt.url-launcher:            google-chrome
 URxvt*fading:  0
 URxvt*blurRadius:  0
 URxvt*depth:  0
-URxvt*inheritPixmap: true
+URxvt*inheritPixmap: false
 URxvt.transparent: true
 URxvt.shading: 45
 URxvt.Geometry: 120x96
 URxvt.matcher.button: 1
-#define base00 #1d2021
-#define base01 #3c3836
-#define base02 #504945
-#define base03 #665c54
-#define base04 #bdae93
-#define base05 #d5c4a1
-#define base06 #ebdbb2
-#define base07 #fbf1c7
-#define base08 #fb4934
-#define base09 #fe8019
-#define base0A #fabd2f
-#define base0B #b8bb26
-#define base0C #8ec07c
-#define base0D #83a598
-#define base0E #d3869b
-#define base0F #d65d0e
+*.foreground:   #e1bcc8
+*.background:   #161219
+*.cursorColor:  #c7c7c7
 
-*.foreground:   base05
-#ifdef background_opacity
-*.background:   [background_opacity]base00
-#else
-*.background:   base00
-#endif
-*.cursorColor:  base05
+! black
+*.color0:       #1d2c47
+*.color8:       #1d2c47
 
-*.color0:       base00
-*.color1:       base08
-*.color2:       base0B
-*.color3:       base0A
-*.color4:       base0D
-*.color5:       base0E
-*.color6:       base0C
-*.color7:       base05
+! red
+*.color1:       #d2275a
+*.color9:       #ff2f6d
 
-*.color8:       base03
-*.color9:       base08
-*.color10:      base0B
-*.color11:      base0A
-*.color12:      base0D
-*.color13:      base0E
-*.color14:      base0C
-*.color15:      base07
+! green
+*.color2:       #8752ba
+*.color10:      #b66efb
 
-! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
-! use 'shell' template to set these if necessary
-*.color16:      base09
-*.color17:      base0F
-*.color18:      base01
-*.color19:      base02
-*.color20:      base04
-*.color21:      base06
+! yellow
+*.color3:       #e15581
+*.color11:      #fb5f90
+
+! blue
+*.color4:       #1e59aa
+*.color12:      #2c84fc
+
+! magenta
+*.color5:       #8752ba
+*.color13:      #b56efa
+
+! cyan
+*.color6:       #4b76b8
+*.color14:      #67a2fd
+
+! white
+*.color7:       #e95986
+*.color15:      #fb89ad
+
