@@ -12,7 +12,8 @@ URxvt.boldFont:
 
 
 !URxvt*font:          xft:cherry-8
-URxvt*font:          xft:bitbuntufull-8
+!URxvt*font:          xft:bitbuntufull-8
+URxvt*font:          xft:cherry-8
 
 Xft.dpi:                      108
 Xft.antialias:        		1

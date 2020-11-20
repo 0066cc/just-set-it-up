@@ -7,6 +7,7 @@ call vundle#begin()
     Plugin 'ycm-core/YouCompleteMe'
     Plugin 'nikolvs/vim-sunbather'
     Plugin 'NLKNguyen/papercolor-theme'
+    Plugin 'inside/vim-search-pulse'
     Plugin 'rakr/vim-one'
     Plugin 'ntpeters/vim-better-whitespace'
     Plugin 'kyoz/purify'
@@ -81,7 +82,7 @@ nmap <silent> gr <Plug>(coc-references)
     set scrolloff=12
     set encoding=utf-8
     set incsearch
-    set t_Co=16
+"set t_Co=16
     set showmode
     set showmatch
     set showcmd
@@ -229,7 +230,7 @@ nmap <silent> gr <Plug>(coc-references)
         hi Error ctermfg=Yellow guifg=Red
         let g:jsx_ext_required = 0 " Allow JSX in normal JS files
         let g:gruvbox_bold = 1
-        let g:gruvbox_contrast_dark = 'hard'
+        let g:gruvbox_contrast_dark = 'medium'
         let g:gruvbox_contrast_light = 'soft'
 
         set background=dark
@@ -242,4 +243,6 @@ nmap <silent> gr <Plug>(coc-references)
         "        hi CursorLine   cterm=underline ctermbg=black ctermfg=white guibg=darkred guifg=white
         "        hi Cursorcolumn cterm=underline ctermbg=black ctermfg=white guibg=darkred guifg=white
         set cursorline
+
+        let g:vim_search_pulse_mode = 'cursor_line'
 
