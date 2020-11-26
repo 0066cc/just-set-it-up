@@ -5,29 +5,16 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
     Plugin 'lervag/vimtex'
     Plugin 'ycm-core/YouCompleteMe'
-    Plugin 'nikolvs/vim-sunbather'
-    Plugin 'NLKNguyen/papercolor-theme'
     Plugin 'inside/vim-search-pulse'
-    Plugin 'rakr/vim-one'
-    Plugin 'ntpeters/vim-better-whitespace'
-    Plugin 'kyoz/purify'
-    Plugin 'arcticicestudio/nord-vim'
     Plugin 'morhetz/gruvbox'
     Plugin 'rhysd/vim-grammarous'
     Plugin 'robertmeta/nofrils'
     Plugin 'ap/vim-css-color'
-    Plugin 'cocopon/iceberg.vim'
     Plugin 'VundleVim/Vundle.vim'
-    Plugin 'pangloss/vim-javascript'    " JavaScript support
-    Plugin 'leafgarland/typescript-vim' " TypeScript syntax
-    Plugin 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
-    Plugin 'frazrepo/vim-rainbow'
     Plugin 'dense-analysis/ale'
     Plugin 'vim-airline/vim-airline-themes'
     Plugin 'vim-airline/vim-airline'
-    Plugin 'Raimondi/delimitMate'
     Plugin 'wakatime/vim-wakatime'
-    Plugin 'stefanhepp/pplatex'
     Plugin 'junegunn/goyo.vim'
     Plugin 'reroche/vim-markdown-preview'
     Plugin 'vimwiki/vimwiki'
@@ -235,7 +222,7 @@ nmap <silent> gr <Plug>(coc-references)
 
         set background=dark
         "colorscheme nofrils-sepia
-        colorscheme koehler
+        colorscheme gruvbox 
 
         let g:better_whitespace_enabled=1
         let g:strip_whitespace_on_save=1

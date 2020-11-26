@@ -39,56 +39,43 @@ URxvt*blurRadius:  0
 URxvt*depth:  0
 URxvt*inheritPixmap: false
 URxvt.transparent: true
-URxvt.shading: 25
+URxvt.shading: 35
 URxvt.Geometry: 120x96
 URxvt.matcher.button: 1
 
-#define base00 #101010
-#define base01 #252525
-#define base02 #464646
-#define base03 #525252
-#define base04 #ababab
-#define base05 #b9b9b9
-#define base06 #e3e3e3
-#define base07 #f7f7f7
-#define base08 #7c7c7c
-#define base09 #999999
-#define base0A #a0a0a0
-#define base0B #8e8e8e
-#define base0C #868686
-#define base0D #686868
-#define base0E #747474
-#define base0F #5e5e5e
+*.foreground:   #ffffff
+*.background:   #051519
+*.cursorColor:  #ffffff
 
-*.foreground:   base07
-#ifdef background_opacity
-*.background:   [background_opacity]base00
-#else
-*.background:   base00
-#endif
-*.cursorColor:  base07
+! black
+*.color0:       #3a3a3a
+*.color8:       #323b3e
 
-*.color0:       base00
-*.color1:       base08
-*.color2:       base0B
-*.color3:       base0A
-*.color4:       base0D
-*.color5:       base0E
-*.color6:       base0C
-*.color7:       base05
+! red
+*.color1:       #f8818e
+*.color9:       #fb3d66
 
-*.color8:       base03
-*.color9:       base08
-*.color10:      base0B
-*.color11:      base0A
-*.color12:      base0D
-*.color13:      base0E
-*.color14:      base0C
-*.color15:      base07
+! green
+*.color2:       #84969a
+*.color10:      #6a6a6a
 
-*.color16:      base09
-*.color17:      base0F
-*.color18:      base01
-*.color19:      base02
-*.color20:      base04
-*.color21:      base06
+! yellow
+*.color3:       #97a6aa
+*.color11:      #3e494c
+
+! blue
+*.color4:       #5e6f73
+*.color12:      #a2b0b3
+
+! magenta
+*.color5:       #677a7e
+*.color13:      #e0e5e6
+
+! cyan
+*.color6:       #7b8e93
+*.color14:      #556468
+
+! white
+*.color7:       #b3bec1
+*.color15:      #f7f8f8
+
