@@ -4,7 +4,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
     Plugin 'lervag/vimtex'
-    Plugin 'ycm-core/YouCompleteMe'
     Plugin 'inside/vim-search-pulse'
     Plugin 'morhetz/gruvbox'
     Plugin 'rhysd/vim-grammarous'
@@ -222,7 +221,8 @@ nmap <silent> gr <Plug>(coc-references)
 
         set background=dark
         "colorscheme nofrils-sepia
-        colorscheme gruvbox 
+        "colorscheme gruvbox 
+        colorscheme koehler 
 
         let g:better_whitespace_enabled=1
         let g:strip_whitespace_on_save=1
