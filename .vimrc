@@ -21,16 +21,16 @@ call vundle#begin()
     Plugin 'mzlogin/vim-markdown-toc'
     call vundle#end()            " required
 
-    nmap <leader>ac  <Plug>(coc-codeaction)
-    nmap <leader>qf  <Plug>(coc-fix-current)
-inoremap <silent><expr> <Tab> coc#refresh()
+    "nmap <leader>ac  <Plug>(coc-codeaction)
+    "nmap <leader>qf  <Plug>(coc-fix-current)
+"inoremap <silent><expr> <Tab> coc#refresh()
 
 
     " GoTo code navigation.
-    nmap <silent> gd <Plug>(coc-definition)
-    nmap <silent> gy <Plug>(coc-type-definition)
-    nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+"    nmap <silent> gd <Plug>(coc-definition)
+"    nmap <silent> gy <Plug>(coc-type-definition)
+"    nmap <silent> gi <Plug>(coc-implementation)
+"nmap <silent> gr <Plug>(coc-references)
 
     " Mappings
     map q <Nop>

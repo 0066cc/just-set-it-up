@@ -109,6 +109,7 @@ debian_chroot=$(cat /etc/debian_chroot)
     alias minecraft="/bin/minecraft-launcher/minecraft-launcher"
     alias android="bash /usr/bin/android-studio/bin/studio.sh"
     alias androiddev="bash /usr/bin/android-studio-dev/bin/studio.sh"
+    alias rss="newsboat"
     if [[ ! $TERM =~ screen ]]; then
     exec tmux
     fi
