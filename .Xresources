@@ -12,7 +12,7 @@ URxvt.cursorUnderline: 1
 !URxvt*font:          xft:cherry-8
 
 Xft.dpi:                      108
-Xft.antialias: 0
+Xft.antialias: 1
 Xft.autohint:                   1
 Xft.hinting:                    1
 Xft.hintstyle:                 full
