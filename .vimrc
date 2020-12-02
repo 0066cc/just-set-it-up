@@ -220,9 +220,7 @@ call vundle#begin()
         let g:gruvbox_contrast_light = 'soft'
 
         set background=dark
-        "colorscheme nofrils-sepia
-        "colorscheme gruvbox 
-        colorscheme koehler 
+        colorscheme peachpuff
 
         let g:better_whitespace_enabled=1
         let g:strip_whitespace_on_save=1
