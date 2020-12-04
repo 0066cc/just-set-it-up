@@ -38,7 +38,8 @@ URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 
 *.foreground:   #ffffff
-*.background:   #001a33
+!*.background:   #001a33
+*.background:   #1a1a1a
 *.cursorColor:  #ffffff
 
 ! black
