@@ -3,8 +3,8 @@ URxvt.saveLines:512
 
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
-!URxvt*font:        xft:JetBrains Mono-9
-!URxvt.boldfont:    xft:JetBrains Mono Medium-9
+URxvt*font:        xft:JetBrains Mono-9
+URxvt.boldfont:    xft:JetBrains Mono Medium-9
 !URxvt*font:          xft:cherry-8
 !URxvt*font:          xft:bitbuntufull-8
 !URxvt*font:          xft:cherry-8
@@ -39,7 +39,7 @@ URxvt.matcher.button: 1
 
 *.foreground:   #ffffff
 !*.background:   #001a33
-*.background:   #1a1a1a
+*.background:   #000000
 *.cursorColor:  #ffffff
 
 ! black
