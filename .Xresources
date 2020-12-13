@@ -3,8 +3,6 @@ URxvt.saveLines:512
 
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
-URxvt*font:        xft:JetBrains Mono-9
-URxvt.boldfont:    xft:JetBrains Mono Medium-9
 !URxvt*font:          xft:cherry-8
 !URxvt*font:          xft:bitbuntufull-8
 !URxvt*font:          xft:cherry-8
@@ -36,41 +34,3 @@ URxvt.transparent: true
 URxvt.shading: 35
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
-
-*.foreground:   #ffffff
-!*.background:   #001a33
-*.background:   #000000
-*.cursorColor:  #ffffff
-
-! black
-*.color0:       #004d99
-*.color8:       #004080
-
-! red
-*.color1:       #f8818e
-*.color9:       #fb3d66
-
-! green
-*.color2:       #99ccff
-*.color10:      #b3d9ff
-
-! yellow
-*.color3:       #0080ff
-*.color11:      #0073e6
-
-! blue
-*.color4:       #0033aa
-*.color12:      #0066cc
-
-! magenta
-*.color5:       #66b3ff
-*.color13:      #80bfff
-
-! cyan
-*.color6:       #99ccff
-*.color14:      #b3d9ff
-
-! white
-*.color7:       #cce6ff
-*.color15:      #e6f2ff
-
