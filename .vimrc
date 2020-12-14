@@ -59,7 +59,20 @@ set background=light
 colorscheme nofrils-acme
 let g:vim_search_pulse_mode = 'cursor_line'
 
-set hlsearch    " highlight all search results
-set ignorecase  " do case insensitive search 
-set incsearch   " show incremental search results as you type
-set number      " display line number
+syntax on
+set textwidth=72
+set tabstop=4
+set shiftwidth=0
+set expandtab
+set autoindent
+set number
+set hlsearch
+set incsearch
+set showcmd
+set hidden
+set ruler
+set autochdir
+set nojoinspaces
+set wildmenu
+set listchars=eol:$,tab:>-,nbsp:~,trail:~
+set guioptions=ic
