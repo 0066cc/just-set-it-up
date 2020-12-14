@@ -34,3 +34,40 @@ URxvt.transparent: true
 URxvt.shading: 35
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
+
+
+*.foreground:   #333333
+*.background: #ffffd7
+*.cursorColor:  #333333
+
+! black
+*.color0:       #222222
+*.color8:       #333333
+
+! red
+*.color1:       #FF4136
+*.color9:       #85144b
+
+! green
+*.color2:      #3D9970
+*.color10:       #2ECC40
+
+! yellow
+*.color3:       #FFDC00
+*.color11:      #FF851B
+
+! blue
+*.color4:      #7FDBFF
+*.color12:       #0074D9
+
+! magenta
+*.color5:       #B10DC9
+*.color13:      #F012BE
+
+! cyan
+*.color6:       #39CCCC
+*.color14:      #39CCCC
+
+! white
+*.color7:       #AAAAAA
+*.color15:      #DDDDDD
