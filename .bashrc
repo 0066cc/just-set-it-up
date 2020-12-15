@@ -110,6 +110,7 @@ alias android="bash /usr/bin/android-studio/bin/studio.sh"
 alias rss="newsboat"
 alias news="newsboat"
 alias jp="git add * ; git commit -m \"Update\" ; git push origin main"
+alias cronlog=" grep CRON /var/log/syslog"
 
 if [[ ! $TERM =~ screen ]]; then
     exec tmux
