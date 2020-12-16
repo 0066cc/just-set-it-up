@@ -56,7 +56,7 @@ let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 0
 
 set background=light
-colorscheme nofrils-acme
+colorscheme gruvbox
 let g:vim_search_pulse_mode = 'cursor_line'
 
 syntax on
@@ -76,3 +76,4 @@ set nojoinspaces
 set wildmenu
 set listchars=eol:$,tab:>-,nbsp:~,trail:~
 set guioptions=ic
+set background=dark
