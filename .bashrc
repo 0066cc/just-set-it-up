@@ -111,6 +111,7 @@ alias rss="newsboat"
 alias news="newsboat"
 alias jp="git add * ; git commit -m \"Update\" ; git push origin main"
 alias cronlog=" grep CRON /var/log/syslog"
+alias sleepdrive="udisksctl power-off -b /dev/sdb"
 
 if [[ ! $TERM =~ screen ]]; then
     exec tmux
