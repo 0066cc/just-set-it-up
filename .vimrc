@@ -8,6 +8,7 @@ Plugin 'inside/vim-search-pulse'
 Plugin 'morhetz/gruvbox'
 Plugin 'robertmeta/nofrils'
 Plugin 'ap/vim-css-color'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-airline/vim-airline'
@@ -77,3 +78,23 @@ set wildmenu
 set listchars=eol:$,tab:>-,nbsp:~,trail:~
 set guioptions=ic
 set background=dark
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+set sidescroll=8
+set ruler
+set cc=80
+
+autocmd FileType c setlocal noet ts=8 sw=8 tw=80
+autocmd FileType h setlocal noet ts=8 sw=8 tw=80
+autocmd FileType cpp setlocal noet ts=8 sw=8 tw=80
+autocmd FileType s setlocal noet ts=8 sw=8
+autocmd FileType sh setlocal noet ts=4 sw=4
+autocmd BufRead,BufNewFile *.js setlocal et ts=2 sw=2
+autocmd FileType html setlocal et ts=2 sw=2
+autocmd FileType ruby setlocal et ts=2 sw=2
+autocmd FileType markdown setlocal tw=80 et ts=2 sw=2
+autocmd FileType text setlocal tw=80
+autocmd FileType typescript setlocal et ts=2 sw=2
+autocmd FileType python setlocal et ts=4 sw=4
+autocmd FileType tex hi Error ctermbg=NONE
