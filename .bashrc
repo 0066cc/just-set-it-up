@@ -126,4 +126,3 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export JAVA_HOME=/bin/android-studio/jre
 export REACT_EDITOR=vim
-complete -C /usr/local/bin/bitcomplete bit

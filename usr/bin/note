@@ -1,0 +1,25 @@
+#!/bin/bash
+create_note () {
+	if [ ! -f $note_path ]; then
+		mkdir -p ~/Documents/git/Life/wiki/Personal/Journal/
+		echo -e "  \n- - - - - - - - -  \n### $timeDay:  \n- - - - - - - - -  \n" >> $note_path
+		touch $note_path
+		printf "Created new note: $note_path\n"
+	fi
+}
+
+open_note () {
+	timeDayGREP=$(date "+%Y-%m-%d %A")
+	if ! grep --quiet -i "$timeDayGREP" $note_path; then
+		echo -e "  \n- - - - - - - - -  \n### $timeDay:  \n- - - - - - - - -  \n" >> $note_path
+	fi
+	printf "  \n$hourDay: " >> $note_path
+	vim "+normal G$" +startinsert! $note_path
+}
+
+dateDay=`date` 
+timeDay=`date +'%Y-%m-%d %A'`
+hourDay=`date +'%I:%M %p'`
+note_path=~/Documents/git/Life/wiki/Personal/Journal/Journal.md
+
+open_note
