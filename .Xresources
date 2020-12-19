@@ -3,14 +3,11 @@ URxvt.saveLines:512
 
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
-!URxvt*font:          xft:cherry-8
-!URxvt*font:          xft:bitbuntufull-8
-!URxvt*font:          xft:cherry-8
 
 Xft.dpi:                      108
-Xft.antialias: 1
+Xft.antialias:                  1
 Xft.autohint:                   1
-Xft.bold:                   0
+Xft.bold:                       0
 Xft.hinting:                    1
 Xft.hintstyle:                 full
 Xft.lcdfilter:                 full
@@ -24,7 +21,7 @@ URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
 URxvt.scrollBar:                false
 URxvt.loginShell:               true
-URxvt.internalBorder:	25
+URxvt.internalBorder:	        25
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:            google-chrome
 URxvt*fading:  0
@@ -35,42 +32,6 @@ URxvt.transparent: true
 URxvt.shading: 35
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
-
-!*.foreground:   #333333
-!*.background: #ffffd7
-!*.cursorColor:  #333333
-
-! black
-!*.color0:       #222222
-!*.color8:       #333333
-
-! red
-!*.color1:       #FF4136
-!*.color9:       #85144b
-
-! green
-!*.color2:      #3D9970
-!*.color10:       #2ECC40
-
-! yellow
-!*.color3:       #FFDC00
-!*.color11:      #FF851B
-
-! blue
-!*.color4:      #7FDBFF
-!*.color12:       #0074D9
-
-! magenta
-!*.color5:       #B10DC9
-!*.color13:      #F012BE
-
-! cyan
-!*.color6:       #39CCCC
-!*.color14:      #39CCCC
-
-! white
-!*.color7:       #AAAAAA
-!*.color15:      #DDDDDD
 
 #define base00 #1d2021
 #define base01 #3c3836
@@ -115,8 +76,6 @@ URxvt.matcher.button: 1
 *.color14:      base0C
 *.color15:      base07
 
-! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
-! use 'shell' template to set these if necessary
 *.color16:      base09
 *.color17:      base0F
 *.color18:      base01
