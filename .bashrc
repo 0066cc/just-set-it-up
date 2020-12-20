@@ -130,3 +130,4 @@ export REACT_EDITOR=vim
 export WINE=/usr/bin/wine
 export WINETRICKS=/usr/bin/winetricks
 export STEAM_DIR=$HOME/.steam/steam/
+export WINEPREFIX=$HOME/.newprefix
