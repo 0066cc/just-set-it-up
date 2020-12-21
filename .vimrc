@@ -72,7 +72,7 @@ let g:vim_search_pulse_mode = 'cursor_line'
 
 " Vim
 syntax on
-colorscheme gruvbox
+colorscheme default
 hi CursorLine cterm=underline ctermfg=white
 set textwidth=72
 set tabstop=4
