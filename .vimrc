@@ -55,12 +55,13 @@ let g:vimwiki_list = [{'path': '~/Documents/git/Life/wiki/', 'auto_tags':1, 'syn
 let g:vimwiki_hl_headers = 1
 set cursorline
 set cursorcolumn
+set t_Co=8
 
 " Airline
-let g:airline_theme='hybrid'
+let g:airline_theme='deus'
 let g:airline_powerline_fonts = 0
 let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 0
+let g:hybrid_reduced_contrast = 1
 
 " CTRL+P
 let g:ctrlp_map = '<c-p>'
@@ -74,7 +75,7 @@ let g:vim_search_pulse_mode = 'cursor_line'
 syntax on
 colorscheme default
 hi CursorLine cterm=underline ctermfg=white
-set textwidth=72
+"set textwidth=72
 set tabstop=4
 set shiftwidth=0
 set expandtab
