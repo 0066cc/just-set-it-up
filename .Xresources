@@ -1,5 +1,7 @@
 !~ URxvt Settings ~!
 URxvt.saveLines:512
+URxvt*font:          xft:JetBrains Mono-9
+URxvt.boldfont:          xft:JetBrains Mono Medium-9
 
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
@@ -7,7 +9,7 @@ URxvt.cursorUnderline: 1
 Xft.dpi:                      108
 Xft.antialias:                  1
 Xft.autohint:                   1
-Xft.bold:                       0
+Xft.bold:                       1
 Xft.hinting:                    1
 Xft.hintstyle:                 full
 Xft.lcdfilter:                 full
@@ -21,15 +23,15 @@ URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
 URxvt.scrollBar:                false
 URxvt.loginShell:               true
-URxvt.internalBorder:	        25
+URxvt.internalBorder:	        45
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:            google-chrome
 URxvt*fading:  0
 URxvt*blurRadius:  0
 URxvt*depth:  0
-URxvt*inheritPixmap: true
-URxvt.transparent: true
-URxvt.shading: 35
+URxvt*inheritPixmap: false
+URxvt.transparent: false
+URxvt.shading: 40
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 

@@ -75,6 +75,7 @@ let g:vim_search_pulse_mode = 'cursor_line'
 syntax on
 colorscheme default
 hi CursorLine cterm=underline ctermfg=white
+hi ColorColumn cterm=underline ctermfg=white
 "set textwidth=72
 set tabstop=4
 set shiftwidth=0

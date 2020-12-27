@@ -32,7 +32,7 @@ fi
 if [ -n "$SSH_CONNECTION" ]; then
     export PS1="\[$(tput setaf 5)\]┌─╼ \[$(tput setaf 7)\][\w]\n\[$(tput setaf 5)\]\$(if [[ \$? == 0 ]]; then echo \"\[$(tput setaf 5)\]└────╼ \[$(tput setaf 5)\][ssh]\"; else echo \"\[$(tput setaf 1)\]└╼ \[$(tput setaf 5)\][ssh]\"; fi) \[$(tput setaf 7)\]"
 else
-    export PS1="\[$(tput setaf 5)\]┌─< \[$(tput setaf 2)[$(tput setaf 3)\D{%T}$(tput setaf 2)]$(tput setaf 7)\]$(tput setaf 2)[$(tput setaf 7)\w$(tput setaf 2)]$(tput setaf 2)\n\[$(tput setaf 5)\]\$(if [[ \$? == 0 ]]; then echo \"\[$(tput setaf 5)\]└────>\"; else echo \"\[$(tput setaf 5)\]└╼\"; fi) \[$(tput setaf 7)\]"
+    export PS1="\[$(tput setaf 3)\]┌─< \[$(tput setaf 2)[$(tput setaf 3)\D{%T}$(tput setaf 2)]$(tput setaf 7)\]$(tput setaf 2)[$(tput setaf 7)\w$(tput setaf 2)]$(tput setaf 2)\n\[$(tput setaf 3)\]\$(if [[ \$? == 0 ]]; then echo \"\[$(tput setaf 3)\]└────>\"; else echo \"\[$(tput setaf 3)\]└╼\"; fi) \[$(tput setaf 7)\]"
 fi
 
 unset color_prompt force_color_prompt
