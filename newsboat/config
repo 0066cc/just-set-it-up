@@ -73,6 +73,6 @@ html-renderer "w3m -dump -T text/HTML -cols 80 -o auto_image=TRUE -num -no-mouse
 highlight article "^(Feed|Title|Author|Link|Date):.*" color0 default blink
 
 reset-unread-on-update "https://lobste.rs/rss, https://habr.com/en/rss/best/daily/, https://hnrss.org/frontpage, https://lemmy.ml/feeds/front/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTUxOTIsImlzcyI6ImxlbW15Lm1sIn0.XzJJEl5mSp8d1u7cMu4UFKGo_SJrhrTwkI4aLypWbCc.xml?sort=Active"
-show-read-feeds no
+show-read-feeds yes
 save-path "~/Documents/Saved_Articles/"
 
