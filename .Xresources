@@ -1,7 +1,10 @@
 !~ URxvt Settings ~!
 URxvt.saveLines:512
-URxvt*font:          xft:JetBrains Mono-9
-URxvt.boldfont:          xft:JetBrains Mono Medium-9
+!URxvt*font:         xft:JetBrains Mono-9
+!URxvt.boldfont:     xft:JetBrains Mono Medium-9
+
+URxvt*font:         xft:SF Mono:style=SemiBold:size=8
+URxvt.boldfont:     xft:SF Mono:style=Bold:size=8
 
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
