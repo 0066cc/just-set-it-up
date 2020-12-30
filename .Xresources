@@ -38,83 +38,45 @@ URxvt.shading: 40
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 
-#define base00 #1d2021
-#define base01 #3c3836
-#define base02 #504945
-#define base03 #665c54
-#define base04 #bdae93
-#define base05 #d5c4a1
-#define base06 #ebdbb2
-#define base07 #fbf1c7
-#define base08 #fb4934
-#define base09 #fe8019
-#define base0A #fabd2f
-#define base0B #b8bb26
-#define base0C #8ec07c
-#define base0D #83a598
-#define base0E #d3869b
-#define base0F #d65d0e
+! Special
+*background:    #1e2832
+*foreground:    #caf0ec
+*.cursorColor:  #FFFFFF
 
-*.foreground:   base05
-#ifdef background_opacity
-*.background:   [background_opacity]base00
-#else
-*.background:   base00
-#endif
-*.cursorColor:  base05
+! Black
+*color0: #353e47
+*color8: #59626b
 
-*.color0:       base00
-*.color1:       base08
-*.color2:       base0B
-*.color3:       base0A
-*.color4:       base0D
-*.color5:       base0E
-*.color6:       base0C
-*.color7:       base05
+! Red
+*color1: #675665
+*color9: #927a90
 
-*.color8:       base03
-*.color9:       base08
-*.color10:      base0B
-*.color11:      base0A
-*.color12:      base0D
-*.color13:      base0E
-*.color14:      base0C
-*.color15:      base07
+! Green
+*color2: #3a6469
+*color10: #5a9295
 
-*.color16:      base09
-*.color17:      base0F
-*.color18:      base01
-*.color19:      base02
-*.color20:      base04
-*.color21:      base06
+! Yellow
+*color3: #a5b0aa
+*color11: #e1f0e4
 
-URxvt.color24:  #076678
-URxvt.color66:  #427b58
-URxvt.color88:  #9d0006
-URxvt.color96:  #8f3f71
-URxvt.color100: #79740e
-URxvt.color108: #8ec07c
-URxvt.color109: #83a598
-URxvt.color130: #af3a03
-URxvt.color136: #b57614
-URxvt.color142: #b8bb26
-URxvt.color167: #fb4934
-URxvt.color175: #d3869b
-URxvt.color208: #fe8019
-URxvt.color214: #fabd2f
-URxvt.color223: #ebdbb2
-URxvt.color228: #f2e5bc
-URxvt.color229: #fbf1c7
-URxvt.color230: #f9f5d7
-URxvt.color234: #1d2021
-URxvt.color235: #282828
-URxvt.color236: #32302f
-URxvt.color237: #3c3836
-URxvt.color239: #504945
-URxvt.color241: #665c54
-URxvt.color243: #7c6f64
-URxvt.color244: #928374
-URxvt.color245: #928374
-URxvt.color246: #a89984
-URxvt.color248: #bdae93
-URxvt.color250: #d5c4a1
+! Blue
+*color4: #515e71
+*color12: #6e7f99
+
+! Magenta
+*color5:  #636d73
+*color13: #81779d
+
+! Cyan
+*color6: #2b908c
+*color14: #3bc7bc
+
+! White
+*color7:  #bdb8c1
+*color15: #ebcbde
+
+! Rofi
+rofi.color-normal: argb:00000000, #515e71, argb:00000000, #1e2832,#2b908c
+rofi.color-urgent: argb:00000000, #00ff00, argb:00000000, #110000,#fae1ee
+rofi.color-active: argb:00000000, #0000ff, argb:00000000, #000011,#caf0ec
+rofi.color-window: argb:ff1e2832, #515e71, #3bc7bc
