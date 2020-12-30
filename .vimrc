@@ -76,7 +76,7 @@ let g:gruvbox_contrast_dark='hard'
 
 " Vim
 syntax on
-colorscheme gruvbox
+colorscheme default
 hi CursorLine cterm=underline ctermfg=white
 hi ColorColumn cterm=underline ctermfg=white
 "set textwidth=72

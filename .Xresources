@@ -38,45 +38,40 @@ URxvt.shading: 40
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 
-! Special
-*background:    #1e2832
-*foreground:    #caf0ec
-*.cursorColor:  #FFFFFF
+#define nord0 #232f3b
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
 
-! Black
-*color0: #353e47
-*color8: #59626b
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord6
 
-! Red
-*color1: #675665
-*color9: #927a90
-
-! Green
-*color2: #3a6469
-*color10: #5a9295
-
-! Yellow
-*color3: #a5b0aa
-*color11: #e1f0e4
-
-! Blue
-*color4: #515e71
-*color12: #6e7f99
-
-! Magenta
-*color5:  #636d73
-*color13: #81779d
-
-! Cyan
-*color6: #2b908c
-*color14: #3bc7bc
-
-! White
-*color7:  #bdb8c1
-*color15: #ebcbde
-
-! Rofi
-rofi.color-normal: argb:00000000, #515e71, argb:00000000, #1e2832,#2b908c
-rofi.color-urgent: argb:00000000, #00ff00, argb:00000000, #110000,#fae1ee
-rofi.color-active: argb:00000000, #0000ff, argb:00000000, #000011,#caf0ec
-rofi.color-window: argb:ff1e2832, #515e71, #3bc7bc
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
