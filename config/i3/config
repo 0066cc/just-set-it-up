@@ -1,7 +1,17 @@
 exec xinput set-prop 9 292 1
 exec xinput set-prop 9 293 1
+font pango:SF Mono SemiBold 8
 set $mod Mod4
-font pango:JetBrains Mono 6
+set $ws1 1
+set $ws2 2 
+set $ws3 3 
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9
+
 floating_modifier $mod
 bindsym $mod+Return exec rxvt
 bindsym $mod+Shift+q kill
@@ -115,51 +125,58 @@ bindsym $mod+r mode "resize"
 
         bindsym ctrl+$mod+l exec --no-startup-id sleep 1 && xset dpms force suspend
 
-        client.focused          #000000 #3a3a3a #FFFFFF #727272   #000000
-        client.focused_inactive #000000 #0059b3 #FFFFFF #484E50   #000000
-        client.unfocused        #000000 #3a3a3a #FFFFFF #292D2E   #000000	
-        client.urgent           #000000 #900000 #FFFFFF #900000   #000000
-        client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #000000
-
-
-        hide_edge_borders smart_no_gaps
-        client.background       #34465d
 
         exec start-pulseaudio-x11
 
-        bar {
-        font pango:JetBrains Mono 9
-        status_command i3blocks 
-        status_command i3blocks 
-        colors {
-            separator #dddddd
-                statusline #ffffff
-                background #1a1a1a
-                focused_workspace #ffffff #000000 #ffffff
-                inactive_workspace #aaaaaa #000000 #aaaaaa
-                active_workspace #000000 #afafaf #000000
-                urgent_workspace #d33682 #d33682 #fdf6e3
-        }
-        position top 
-        }
+        bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
+        bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
+        bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+        bindsym $mod+Ctrl+Right resize shrink width 1 px or 1 ppt
+        bindsym $mod+Ctrl+Up resize grow height 1 px or 1 ppt
+        bindsym $mod+Ctrl+Down resize shrink height 1 px or 1 ppt
+        bindsym $mod+Ctrl+Left resize grow width 1 px or 1 ppt
 
-bindsym $mod+Ctrl+Right resize shrink width 1 px or 1 ppt
-bindsym $mod+Ctrl+Up resize grow height 1 px or 1 ppt
-bindsym $mod+Ctrl+Down resize shrink height 1 px or 1 ppt
-bindsym $mod+Ctrl+Left resize grow width 1 px or 1 ppt
-
-exec xinput set-prop 9 292 1
-exec xinput set-prop 10 292 1
-exec --no-startup-id unclutter -idle 1
-exec --no-startup-id redshift -l 55.9:-3.1 -b 0.8:1
+        exec xinput set-prop 9 292 1
+        exec xinput set-prop 10 292 1
+        exec --no-startup-id unclutter -idle 1
+        exec --no-startup-id redshift -l 55.9:-3.1 -b 0.8:1
 exec --no-startup-id feh --randomize --bg-fill ~/Pictures/Wallpaper/
 
 default_orientation horizontal 
 workspace_layout tabbed
 focus_follows_mouse yes
-gaps outer 5 
-gaps inner 5 
+#gaps outer 5
+#gaps inner 5
+smart_gaps on
+#end of bar section
+
+client.focused            #232323 #232f3b #d0f3eb #4F4F4F #212a33
+client.focused_inactive   #1A1A1A #232f3b #536d73 #121212 #212a33
+client.unfocused          #030706 #232f3b #636d73 #4F4F4F #212a33
+client.urgent             #1A1A1A #232f3b #a5a5a5 #1A1A1A #212a33
+client.background         #1b2026
+
+bar {
+    status_command i3status
+        position                    top
+        height                      25
+        font pango:SF Mono SemiBold 9
+        separator_symbol            "::"
+        mode hide
+        hidden_state hide
+        modifier Mod1
+
+        colors {
+            background #232f3b
+                statusline #d0f3eb
+                separator  #232323
+                focused_workspace   #31302d #31302d #fff2ce
+                inactive_workspace  #364635f #64635f #28220B
+                urgent_workspace    #2e394a #2e394a #e7dfd9
+        }
+}
+
+bindsym $mod+p exec --no-startup-id urxvt -e newsboat
+bindsym $mod+o exec --no-startup-id pcmanfm-qt
+bindsym $mod+g exec --no-startup-id google-chrome
