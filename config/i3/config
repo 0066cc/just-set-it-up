@@ -3,7 +3,7 @@ exec xinput set-prop 9 293 1
 font pango:SF Mono SemiBold 8
 set $mod Mod4
 set $ws1 1
-set $ws2 2 
+set $ws2 2
 set $ws3 3 
 set $ws4 4
 set $ws5 5
@@ -165,7 +165,7 @@ bar {
         separator_symbol            "::"
         mode hide
         hidden_state hide
-        modifier Mod1
+        modifier Mod4
 
         colors {
             background #232f3b
