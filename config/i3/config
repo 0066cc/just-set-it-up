@@ -146,10 +146,9 @@ exec --no-startup-id feh --randomize --bg-fill ~/Pictures/Wallpaper/
 default_orientation horizontal 
 workspace_layout tabbed
 focus_follows_mouse yes
-#gaps outer 5
-#gaps inner 5
-smart_gaps on
-#end of bar section
+gaps outer 10
+gaps inner 5
+#smart_gaps on
 
 client.focused            #232323 #232f3b #d0f3eb #4F4F4F #212a33
 client.focused_inactive   #1A1A1A #232f3b #536d73 #121212 #212a33
