@@ -55,7 +55,7 @@ let g:vimwiki_list = [{'path': '~/Documents/git/Life/wiki/', 'auto_tags':1, 'syn
 let g:vimwiki_hl_headers = 1
 set cursorline
 set cursorcolumn
-set t_Co=256
+set t_Co=4
 
 " Airline
 let g:airline_theme='deus'
@@ -76,7 +76,7 @@ let g:gruvbox_contrast_dark='hard'
 
 " Vim
 syntax on
-colorscheme default
+colorscheme  default
 hi CursorLine cterm=underline ctermfg=white
 hi ColorColumn cterm=underline ctermfg=white
 "set textwidth=72

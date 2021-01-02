@@ -34,34 +34,34 @@ URxvt*blurRadius:  0
 URxvt*depth:  0
 URxvt*inheritPixmap: true
 URxvt.transparent: true
-URxvt.shading: 75
+URxvt.shading: 190
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 
-#define base00 #000000
-#define base01 #242422
-#define base02 #484844
-#define base03 #6c6c66
-#define base04 #918f88
-#define base05 #b5b3aa
-#define base06 #d9d7cc
-#define base07 #fdfbee
-#define base08 #ff6c60
-#define base09 #e9c062
-#define base0A #ffffb6
-#define base0B #a8ff60
-#define base0C #c6c5fe
-#define base0D #96cbfe
-#define base0E #ff73fd
-#define base0F #b18a3d
+#define base00 #f7f7f7
+#define base01 #e3e3e3
+#define base02 #b9b9b9
+#define base03 #ababab
+#define base04 #525252
+#define base05 #464646
+#define base06 #252525
+#define base07 #101010
+#define base08 #7c7c7c
+#define base09 #999999
+#define base0A #a0a0a0
+#define base0B #8e8e8e
+#define base0C #868686
+#define base0D #686868
+#define base0E #747474
+#define base0F #5e5e5e
 
-*.foreground:   base05
+*.foreground:   base07
 #ifdef background_opacity
-*.background:   [background_opacity]base00
+*.background:   [background_opacity]base01
 #else
-*.background:   base00
+*.background:   base01
 #endif
-*.cursorColor:  base05
+*.cursorColor:  base07
 
 *.color0:       base00
 *.color1:       base08
