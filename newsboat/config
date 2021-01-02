@@ -42,28 +42,28 @@ bind-key k up
 bind-key l open
 bind-key h quit
 bind-key i mark-feed-read
+# 
+highlight feedlist "^ *[0-9]+ *N " white black
+highlight articlelist "^ *[0-9]+ *N " white black
  
-highlight feedlist "^ *[0-9]+ *N " color15 color0
-highlight articlelist "^ *[0-9]+ *N " color15 color0
- 
-highlight article "^(Feed|Title|Author|Link|Date|Linux):.*" color75 default
+highlight article "^(Feed|Title|Author|Link|Date|Linux):.*" default default
 highlight article "^Podcast Download URL:.*" color71 default
-highlight article "^Links:" white color0 underline
-highlight article "\\[[0-9][0-9]*\\]" color72 default bold
-highlight article "\\[image [0-9][0-9]*\\]" color72 default bold
-highlight article "\\[embedded flash: [0-9][0-9]*\\]" color72 default bold
-highlight article ":.*\\(link\\)$" color74 default
-highlight article ":.*\\(image\\)$" color74 default
-highlight article ":.*\\(embedded flash\\)$" color74 default
+highlight article "^Links:" white black underline
+highlight article "\\[[0-9][0-9]*\\]" white default bold
+highlight article "\\[image [0-9][0-9]*\\]" white default bold
+highlight article "\\[embedded flash: [0-9][0-9]*\\]" white default bold
+highlight article ":.*\\(link\\)$" white default
+highlight article ":.*\\(image\\)$" white default
+highlight article ":.*\\(embedded flash\\)$" white default
  
-color listnormal color244 color234
-color listnormal_unread yellow black 
-color listfocus   color15 color0 blink
+color listnormal white black 
+color listnormal_unread white black 
+color listfocus   black white blink
 color info  red default bold
 color listfocus_unread black white bold
-color info color38 color235
-color background color244 color234
-color article color15 color234 
+color info black white
+color background black white 
+color article black white
 
 articlelist-format "%4i %f %D | %a: %t - %L"
 feedlist-format "%-65t %?d?- %-65d&? %u "
