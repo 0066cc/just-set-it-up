@@ -38,39 +38,27 @@ URxvt.shading: 190
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 
-*.foreground:   #ffffff
-*.background:   #262934
-*.cursorColor:  #ffffff
+*background: #1D2426
+*foreground: #8FA388
 
-! black
-*.color0:       #000000
-*.color8:       #555753
+!*foreground: #AB9C71
 
-! red
-*.color1:       #fb4343
-*.color9:       #fc7979
+*cursorColor: #FFFFFF
 
-! green
-*.color2:       #4e9a06
-*.color10:      #8fe811
-
-! yellow
-*.color3:       #c4a000
-*.color11:      #fce94f
-
-! blue
-*.color4:       #afd2ff
-*.color12:      #7baee3
-
-! magenta
-*.color5:       #85678f
-*.color13:      #ec76ff
-
-! cyan
-*.color6:       #08c5c7
-*.color14:      #74eeee
-
-! white
-*.color7:       #d3d7cf
-*.color15:      #eeeeec
+*color0:  #39474A
+*color1:  #986345
+*color2:  #788249
+*color3:  #9B6A46
+*color4:  #3E5951
+*color5:  #B9924A
+*color6:  #5d796a
+*color7:  #977D5E
+*color8:  #4C5F63
+*color9:  #B07350
+*color10: #869151
+*color11: #AF6B42
+*color12: #567A6E
+*color13: #D69D55
+*color14: #668574
+*color15: #AB9C71
 
