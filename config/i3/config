@@ -146,11 +146,11 @@ exec --no-startup-id feh --randomize --bg-fill ~/Pictures/Wallpaper/
 default_orientation horizontal 
 workspace_layout tabbed
 focus_follows_mouse yes
-#gaps outer 10
-#gaps inner 5
+gaps outer 35
+gaps inner 10
 #smart_gaps on
 
-client.focused            #fff #fff #2a2a2a #fff #fff
+client.focused            #7a7a7a #fff #2a2a2a #fff #fff
 client.focused_inactive   #fff #fff #7a7a7a #fff #fff
 client.unfocused          #fff #fff #6a6a6a #fff #fff
 client.urgent             #fff #fff #ff0000 #fff #fff
@@ -170,9 +170,9 @@ bar {
             background #fff
                 statusline #2a2a2a
                 separator  #9a9a9a
-                focused_workspace   #fff #fff #3a3a3a
-                inactive_workspace  #364635f #64635f #28220B
-                urgent_workspace    #2e394a #2e394a #e7dfd9
+                focused_workspace   #fff #fff #1a1a1a
+                inactive_workspace  #fff #fff #6a6a6a
+                urgent_workspace    #fff #fff #ff0000
         }
 }
 
