@@ -150,10 +150,10 @@ focus_follows_mouse yes
 #gaps inner 5
 #smart_gaps on
 
-client.focused            #232323 #232f3b #d0f3eb #4F4F4F #212a33
-client.focused_inactive   #1A1A1A #232f3b #536d73 #121212 #212a33
-client.unfocused          #030706 #232f3b #636d73 #4F4F4F #212a33
-client.urgent             #1A1A1A #232f3b #a5a5a5 #1A1A1A #212a33
+client.focused            #fff #fff #2a2a2a #fff #fff
+client.focused_inactive   #fff #fff #7a7a7a #fff #fff
+client.unfocused          #fff #fff #6a6a6a #fff #fff
+client.urgent             #fff #fff #ff0000 #fff #fff
 client.background         #1b2026
 
 bar {
@@ -161,16 +161,16 @@ bar {
         position                    top
         height                      25
         font pango:SF Mono SemiBold 9
-        separator_symbol            "::"
+        separator_symbol            " | "
         mode dock
         hidden_state hide
         modifier Mod4
 
         colors {
-            background #232f3b
-                statusline #d0f3eb
-                separator  #232323
-                focused_workspace   #31302d #31302d #fff2ce
+            background #fff
+                statusline #2a2a2a
+                separator  #9a9a9a
+                focused_workspace   #fff #fff #3a3a3a
                 inactive_workspace  #364635f #64635f #28220B
                 urgent_workspace    #2e394a #2e394a #e7dfd9
         }
