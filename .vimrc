@@ -7,6 +7,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " Vim Plugins
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'plan9-for-vimspace/acme-colors'
 Plugin 'lervag/vimtex'
 Plugin 'inside/vim-search-pulse'
 Plugin 'vim-airline/vim-airline'
@@ -53,7 +54,7 @@ let g:markdown_fold_style = 'syntax'
 let g:vmt_auto_update_on_save = 1
 let g:vimwiki_list = [{'path': '~/Documents/git/Life/wiki/', 'auto_tags':1, 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_hl_headers = 1
-set cursorline
+"set cursorline
 "set cursorcolumn
 set t_Co=256
 
@@ -78,8 +79,6 @@ let g:gruvbox_contrast_dark='hard'
 syntax on
 colorscheme  default
 hi CursorLine cterm=underline ctermfg=white
-hi ColorColumn cterm=underline ctermfg=white
-"set textwidth=72
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -89,26 +88,12 @@ set hlsearch
 set incsearch
 set showcmd
 set hidden
-set ruler
 set autochdir
 set nojoinspaces
 set wildmenu
 set background=dark
 set sidescroll=8
-set ruler
-set cc=80
 
 " File Formatting
-autocmd FileType c setlocal noet ts=8 sw=8 tw=80
-autocmd FileType h setlocal noet ts=8 sw=8 tw=80
-autocmd FileType cpp setlocal noet ts=8 sw=8 tw=80
-autocmd FileType s setlocal noet ts=8 sw=8
-autocmd FileType sh setlocal noet ts=4 sw=4 tw=120
-autocmd BufRead,BufNewFile *.js setlocal et ts=2 sw=2
-autocmd FileType html setlocal et ts=2 sw=2
 autocmd FileType ruby setlocal et ts=2 sw=2
-autocmd FileType markdown setlocal tw=80 et ts=2 sw=2
-autocmd FileType text setlocal tw=80
-autocmd FileType typescript setlocal et ts=2 sw=2
-autocmd FileType python setlocal et ts=4 sw=4
 autocmd FileType tex hi Error ctermbg=NONE
