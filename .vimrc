@@ -59,7 +59,7 @@ let g:vimwiki_hl_headers = 1
 set t_Co=256
 
 " Airline
-let g:airline_theme='deus'
+let g:airline_theme='monochrome'
 let g:airline_powerline_fonts = 0
 let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1
@@ -76,8 +76,8 @@ let g:gruvbox_termcolors=16
 let g:gruvbox_contrast_dark='hard'
 
 " Vim
-syntax on
-colorscheme  default
+syntax off
+colorscheme  acme
 hi CursorLine cterm=underline ctermfg=white
 set tabstop=4
 set shiftwidth=0
@@ -91,7 +91,7 @@ set hidden
 set autochdir
 set nojoinspaces
 set wildmenu
-set background=dark
+set background=light
 set sidescroll=8
 
 " File Formatting
