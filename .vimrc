@@ -54,8 +54,8 @@ let g:vmt_auto_update_on_save = 1
 let g:vimwiki_list = [{'path': '~/Documents/git/Life/wiki/', 'auto_tags':1, 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_hl_headers = 1
 set cursorline
-set cursorcolumn
-set t_Co=4
+"set cursorcolumn
+set t_Co=256
 
 " Airline
 let g:airline_theme='deus'
