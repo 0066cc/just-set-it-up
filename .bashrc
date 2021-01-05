@@ -104,7 +104,7 @@ alias yt='youtube-dl --extract-audio -R "infinite" -c --console-title --no-call-
 alias ytd=' youtube-dl -R "infinite" -c --console-title --no-call-home --embed-thumbnail'
 alias m='make'
 alias sleepy='sudo systemctl suspend'
-alias nw='feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/'
+alias nw='feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/mac'
 alias minecraft="/bin/minecraft-launcher/minecraft-launcher"
 alias dwarf="bash /usr/bin/df_linux/df"
 alias android="bash /usr/bin/android-studio/bin/studio.sh"
@@ -113,6 +113,7 @@ alias news="newsboat"
 alias jp="git add * ; git commit -m \"Update\" ; git push origin main"
 alias cronlog=" grep CRON /var/log/syslog"
 alias sleepdrive="udisksctl power-off -b /dev/sdb"
+alias displays="xrandr --output VGA-1 --primary --mode 1920x1080 --pos 1175x420 --rotate normal --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate right --output DP-2 --off --output HDMI-2 --off"
 alias n="nnn"
 alias syncit="rsync -avh --delete-after"
 
