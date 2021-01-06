@@ -29,9 +29,7 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-#export PS1="[\033[m]$(tput setaf 2)[$(tput setaf 7)\w$(tput setaf 2)]$(tput setaf 2) > $(tput setaf 7)[\033[m]"
-#export PS1="$(tput setaf 2)> $(tput setaf 7)"
-export PS1="\[\033]0;\u@\h (\w)\a\]┌─[\[\033[1;36m\]\u@\h\[\033[0m\]][\[\033[1;35m\]\w\[\033[0m\]]\[\033[0m\]\n│ [\[\033[1;33m\]\t   \d\[\033[0m\]]\n└─>\[\033[m\] "
+export PS1="\[\033]0;[\[\033[1;35m\][\w\[\033[0m\]]\[\033[0m\] >\[\033[m\] "
 
 unset color_prompt force_color_prompt
 
