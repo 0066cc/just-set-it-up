@@ -29,7 +29,7 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-export PS1="\[\033]0;[\[\033[1;35m\][\w\[\033[0m\]]\[\033[0m\] >\[\033[m\] "
+export PS1="\[\033]0;[\033[1;35m\]\w\[\033[0m\]\[\033[0m\] > \[\033[m\] "
 
 unset color_prompt force_color_prompt
 
