@@ -29,11 +29,7 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-if [ -n "$SSH_CONNECTION" ]; then
-    export PS1="\[$(tput setaf 5)\]┌─╼ \[$(tput setaf 7)\][\w]\n\[$(tput setaf 5)\]\$(if [[ \$? == 0 ]]; then echo \"\[$(tput setaf 5)\]└────╼ \[$(tput setaf 5)\][ssh]\"; else echo \"\[$(tput setaf 1)\]└╼ \[$(tput setaf 5)\][ssh]\"; fi) \[$(tput setaf 7)\]"
-else
-    export PS1="\[$(tput setaf 2)[$(tput setaf 3)\D{%H:%M}$(tput setaf 2)]$(tput setaf 7)\]$(tput setaf 2)[$(tput setaf 7)\w$(tput setaf 2)]$(tput setaf 2)$ $(tput setaf 7)"
-fi
+export PS1="\[$(tput setaf 2)[$(tput setaf 3)\D{%H:%M}$(tput setaf 2)]$(tput setaf 7)\]$(tput setaf 2)[$(tput setaf 7)\w$(tput setaf 2)]$(tput setaf 2)> $(tput setaf 7)"
 
 unset color_prompt force_color_prompt
 
