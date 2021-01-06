@@ -151,7 +151,7 @@ workspace_layout tabbed
 focus_follows_mouse yes
 gaps outer 10
 gaps inner 10
-#smart_gaps on
+smart_gaps on
 
 client.focused            #7a7a7a #fff #000000 #fff #fff
 client.focused_inactive   #7a7a7a #fff #7a7a7a #fff #fff
