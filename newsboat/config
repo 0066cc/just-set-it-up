@@ -1,11 +1,10 @@
 # general settings
 auto-reload yes
-max-items 14
+max-items 16
 reload-time 120
 reload-threads 4
 download-retries 4
 download-timeout 10
-
 text-width 80
 confirm-exit        no
 notify-program      "tmux display"
@@ -17,7 +16,7 @@ notify-xterm no
 always-display-description true 
 
 mark-as-read-on-hover no
-keep-articles-days 3
+keep-articles-days 7
 article-sort-order author-desc
 
 # externel browser
@@ -42,28 +41,28 @@ bind-key k up
 bind-key l open
 bind-key h quit
 bind-key i mark-feed-read
-# 
-#highlight feedlist "^ *[0-9]+ *N " white black
-#highlight articlelist "^ *[0-9]+ *N " white black
-# 
-#highlight article "^(Feed|Title|Author|Link|Date|Linux):.*" default default
-#highlight article "^Podcast Download URL:.*" color71 default
-#highlight article "^Links:" white black underline
-#highlight article "\\[[0-9][0-9]*\\]" white default bold
-#highlight article "\\[image [0-9][0-9]*\\]" white default bold
-#highlight article "\\[embedded flash: [0-9][0-9]*\\]" white default bold
-#highlight article ":.*\\(link\\)$" white default
-#highlight article ":.*\\(image\\)$" white default
-#highlight article ":.*\\(embedded flash\\)$" white default
-# 
-#color listnormal white black 
-#color listnormal_unread white black 
-#color listfocus   black white blink
-#color info  red default bold
-#color listfocus_unread black white bold
-#color info black white
-#color background black white 
-#color article black white
+ 
+highlight feedlist "^ *[0-9]+ *N " white black
+highlight articlelist "^ *[0-9]+ *N " white black
+ 
+highlight article "^(Feed|Title|Author|Link|Date|Linux):.*" default default
+highlight article "^Podcast Download URL:.*" color71 default
+highlight article "^Links:" white black underline
+highlight article "\\[[0-9][0-9]*\\]" white default bold
+highlight article "\\[image [0-9][0-9]*\\]" white default bold
+highlight article "\\[embedded flash: [0-9][0-9]*\\]" white default bold
+highlight article ":.*\\(link\\)$" white default
+highlight article ":.*\\(image\\)$" white default
+highlight article ":.*\\(embedded flash\\)$" white default
+ 
+color listnormal blue black 
+color listnormal_unread black white blink
+color listfocus   black white bold
+color info  red default bold
+color listfocus_unread white black blink
+color info black white
+color background black white 
+color article black white
 
 articlelist-format "%4i %f %D | %a: %t - %L"
 feedlist-format "%-65t %?d?- %-65d&? %u "
@@ -73,6 +72,6 @@ html-renderer "w3m -dump -T text/HTML -cols 80 -o auto_image=TRUE -num -no-mouse
 highlight article "^(Feed|Title|Author|Link|Date):.*" color0 default blink
 
 reset-unread-on-update "https://lobste.rs/rss, https://habr.com/en/rss/best/daily/, https://hnrss.org/frontpage, https://lemmy.ml/feeds/front/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTUxOTIsImlzcyI6ImxlbW15Lm1sIn0.XzJJEl5mSp8d1u7cMu4UFKGo_SJrhrTwkI4aLypWbCc.xml?sort=Active"
-show-read-feeds no
+show-read-feeds yes
 save-path "~/Documents/Saved_Articles/"
 

@@ -29,7 +29,8 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-export PS1="\[$(tput setaf 2)[$(tput setaf 3)\D{%H:%M}$(tput setaf 2)]$(tput setaf 7)\]$(tput setaf 2)[$(tput setaf 7)\w$(tput setaf 2)]$(tput setaf 2)> $(tput setaf 7)"
+#export PS1="$(tput setaf 2)[$(tput setaf 7)\w$(tput setaf 2)]$(tput setaf 2)> $(tput setaf 7)"
+export PS1="$(tput setaf 2)> $(tput setaf 7)"
 
 unset color_prompt force_color_prompt
 
