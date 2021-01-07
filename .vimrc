@@ -96,4 +96,5 @@ set wildmenu
 set background=dark
 set sidescroll=8
 set foldmethod=syntax
+autocmd BufNewFile,BufRead *.tex   set syntax=tex
 
