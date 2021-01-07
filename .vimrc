@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'plan9-for-vimspace/acme-colors'
 Plugin 'nikolvs/vim-sunbather'
+Plugin 'rhysd/vim-grammarous'
 Plugin 'zekzekus/menguless'
 Plugin 'lervag/vimtex'
 Plugin 'inside/vim-search-pulse'
