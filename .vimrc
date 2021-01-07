@@ -8,6 +8,8 @@ call vundle#begin()
 " Vim Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'plan9-for-vimspace/acme-colors'
+Plugin 'nikolvs/vim-sunbather'
+Plugin 'zekzekus/menguless'
 Plugin 'lervag/vimtex'
 Plugin 'inside/vim-search-pulse'
 Plugin 'vim-airline/vim-airline'
@@ -56,10 +58,10 @@ let g:vimwiki_list = [{'path': '~/Documents/git/Life/wiki/', 'auto_tags':1, 'syn
 let g:vimwiki_hl_headers = 1
 set cursorline
 "set cursorcolumn
-set t_Co=16
+set t_Co=256
 
 " Airline
-let g:airline_theme='monochrome'
+let g:airline_theme='hybrid'
 let g:airline_powerline_fonts = 0
 let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1
@@ -76,9 +78,9 @@ let g:gruvbox_termcolors=16
 let g:gruvbox_contrast_dark='hard'
 
 " Vim
-syntax off
-colorscheme default
-hi CursorLine cterm=underline ctermfg=white
+syntax on
+colorscheme plain-cterm
+hi CursorLine cterm=underline ctermfg=blue
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -91,9 +93,7 @@ set hidden
 set autochdir
 set nojoinspaces
 set wildmenu
-set background=light
+set background=dark
 set sidescroll=8
+set foldmethod=syntax
 
-" File Formatting
-autocmd FileType ruby setlocal et ts=2 sw=2
-autocmd FileType tex hi Error ctermbg=NONE
