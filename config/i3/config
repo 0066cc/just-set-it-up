@@ -151,7 +151,7 @@ workspace_layout tabbed
 focus_follows_mouse yes
 gaps outer 10
 gaps inner 10
-smart_gaps on
+#smart_gaps no
 
 client.focused            #7a7a7a #fff #000000 #fff #fff
 client.focused_inactive   #7a7a7a #fff #7a7a7a #fff #fff
@@ -182,5 +182,5 @@ bar {
 bindsym $mod+p exec --no-startup-id urxvt -e newsboat
 bindsym $mod+o exec --no-startup-id pcmanfm-qt
 bindsym $mod+g exec --no-startup-id google-chrome
-bindsym $mod+n exec --no-startup-id DISPLAY=:0  feh --randomize --recursive --bg-fill ~/Pictures/Wallpaper/
+bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-scale --no-xinerama ~/Pictures/Wallpaper/mac/
 
