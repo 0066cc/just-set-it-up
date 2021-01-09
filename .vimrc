@@ -69,7 +69,7 @@ let g:gruvbox_contrast_dark='hard'
 
 " Vim
 syntax on
-colorscheme nofrils-acme
+colorscheme koehler
 hi CursorLine cterm=underline ctermfg=blue
 set tabstop=4
 set shiftwidth=0
