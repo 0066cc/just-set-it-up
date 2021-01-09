@@ -121,7 +121,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
-        for_window [class=".*"] border pixel 0
+        for_window [class=".*"] border pixel 1
         for_window [class=".*"] title_format " %title"
 
 
