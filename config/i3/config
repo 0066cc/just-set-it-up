@@ -150,7 +150,7 @@ bindsym $mod+r mode "resize"
 default_orientation horizontal 
 workspace_layout tabbed
 focus_follows_mouse yes
-gaps outer 10
+gaps outer 25
 gaps inner 10
 #smart_gaps no
 
