@@ -96,4 +96,3 @@ set cursorline
 set t_Co=256
 set encoding=utf-8
 autocmd BufNewFile,BufRead *.tex   set syntax=tex
-
