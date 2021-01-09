@@ -69,7 +69,7 @@ let g:gruvbox_contrast_dark='hard'
 
 " Vim
 syntax on
-colorscheme ron
+colorscheme nofrils-acme
 hi CursorLine cterm=underline ctermfg=blue
 set tabstop=4
 set shiftwidth=0
@@ -93,6 +93,6 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 set scrolloff=12
 set cursorline
-set t_Co=256
+set t_Co=32
 set encoding=utf-8
 autocmd BufNewFile,BufRead *.tex   set syntax=tex
