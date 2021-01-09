@@ -7,22 +7,20 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " Vim Plugins
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'plan9-for-vimspace/acme-colors'
-Plugin 'nikolvs/vim-sunbather'
 Plugin 'rhysd/vim-grammarous'
-Plugin 'zekzekus/menguless'
+Plugin 'tpope/vim-endwise'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-fugitive' 
 Plugin 'lervag/vimtex'
 Plugin 'inside/vim-search-pulse'
-Plugin 'vim-airline/vim-airline'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'ap/vim-css-color'
 " Themes
 Plugin 'morhetz/gruvbox'
-Plugin 'andreypopp/vim-colors-plain'
 Plugin 'robertmeta/nofrils'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'mzlogin/vim-markdown-toc'
+Plugin 'vim-airline/vim-airline'
+Plugin 'plan9-for-vimspace/acme-colors'
 call vundle#end()
 
 " Mappings
@@ -41,14 +39,12 @@ let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 let g:tex_conceal='abdmg'
-hi MatchParen ctermbg=5
-inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
-set scrolloff=12
-set encoding=utf-8
-set wildmenu
-
+    " Shortcuts
+    "leader+ll - start compiling
+    "leader+lv - open pdf
+    "leader+lk - stop compiling
+    "leader+le - view errors
+    "leader+lc - clean files
 " Wiki
 let g:vimwiki_use_mouse = 1
 let g:vimwiki_folding = 'syntax'
@@ -57,20 +53,12 @@ let g:markdown_fold_style = 'syntax'
 let g:vmt_auto_update_on_save = 1
 let g:vimwiki_list = [{'path': '~/Documents/git/Life/wiki/', 'auto_tags':1, 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_hl_headers = 1
-set cursorline
-"set cursorcolumn
-set t_Co=256
 
 " Airline
-let g:airline_theme='hybrid'
+let g:airline_theme='deus'
 let g:airline_powerline_fonts = 0
-let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1
-
-" CTRL+P
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:hybrid_custom_term_colors = 1 
+let g:hybrid_reduced_contrast = 0
 
 " Misc
 let g:vim_search_pulse_mode = 'cursor_line'
@@ -80,7 +68,7 @@ let g:gruvbox_contrast_dark='hard'
 
 " Vim
 syntax on
-colorscheme plain-cterm
+colorscheme ron
 hi CursorLine cterm=underline ctermfg=blue
 set tabstop=4
 set shiftwidth=0
@@ -97,5 +85,14 @@ set wildmenu
 set background=dark
 set sidescroll=8
 set foldmethod=syntax
+set ignorecase
+hi MatchParen ctermbg=5
+inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+set scrolloff=12
+set cursorline
+set t_Co=256
+set encoding=utf-8
 autocmd BufNewFile,BufRead *.tex   set syntax=tex
 
