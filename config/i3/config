@@ -150,7 +150,7 @@ bindsym $mod+r mode "resize"
 default_orientation horizontal 
 workspace_layout tabbed
 focus_follows_mouse yes
-gaps outer 25
+gaps outer 15
 gaps inner 10
 #smart_gaps no
 
@@ -183,5 +183,5 @@ bar {
 bindsym $mod+p exec --no-startup-id urxvt -e newsboat
 bindsym $mod+o exec --no-startup-id pcmanfm-qt
 bindsym $mod+g exec --no-startup-id google-chrome
-bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-scale --no-xinerama ~/Pictures/Wallpaper/mac/
+bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-scale --no-xinerama ~/Pictures/Wallpaper/
 
