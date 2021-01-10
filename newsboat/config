@@ -55,14 +55,14 @@ highlight article ":.*\\(link\\)$" white default
 highlight article ":.*\\(image\\)$" white default
 highlight article ":.*\\(embedded flash\\)$" white default
  
-color listnormal white black 
-color listnormal_unread black white blink
-color listfocus   black white bold
+color listnormal black white 
+color listnormal_unread blue yellow bold
+color listfocus   white black bold
 color info  red default bold
-color listfocus_unread white black blink
+color listfocus_unread yellow blue blink
 color info black white
-color background black white 
-color article black white
+color background white black 
+color article white black
 
 articlelist-format "%4i %f %D | %a: %t - %L"
 feedlist-format "%-65t %?d?- %-65d&? %u "
