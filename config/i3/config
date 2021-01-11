@@ -145,7 +145,7 @@ exec --no-startup-id unclutter -idle 1
 #exec --no-startup-id compton
 exec --no-startup-id redshift -l 55.9:-3.1 -b 0.5:1
 exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-scale --no-xinerama ~/Pictures/Wallpaper/
-exec --no-startup-id xrandr --output VGA-1 --primary --mode 1920x1080 --pos 1280x0 --rotate normal --output DP-1 --off --output HDMI-1 --mode 1280x1024 --pos 0x0 --rotate normal --output DP-2 --off --output HDMI-2 --off
+exec --no-startup-id xrandr --output VGA-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off --output HDMI-1 --mode 1920x1080i --pos 0x90 --rotate normal --output DP-2 --off --output HDMI-2 --off
 
 default_orientation horizontal 
 workspace_layout tabbed
@@ -183,5 +183,5 @@ bar {
 bindsym $mod+p exec --no-startup-id urxvt -e newsboat
 bindsym $mod+o exec --no-startup-id pcmanfm-qt
 bindsym $mod+g exec --no-startup-id google-chrome
-bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-scale --no-xinerama ~/Pictures/Wallpaper/
+bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill --no-xinerama ~/Pictures/Wallpaper/
 
