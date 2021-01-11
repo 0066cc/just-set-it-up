@@ -121,7 +121,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
-        for_window [class=".*"] border pixel 1
+        for_window [class=".*"] border pixel 0
         for_window [class=".*"] title_format " %title"
 
 
@@ -144,8 +144,9 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id unclutter -idle 1
 #exec --no-startup-id compton
 exec --no-startup-id redshift -l 55.9:-3.1 -b 0.5:1
-exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-scale --no-xinerama ~/Pictures/Wallpaper/
-exec --no-startup-id xrandr --output VGA-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off --output HDMI-1 --mode 1920x1080i --pos 0x90 --rotate normal --output DP-2 --off --output HDMI-2 --off
+#exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-scale --no-xinerama ~/Pictures/Wallpaper/
+exec --no-startup-id bash ~/.screenlayout/layout.sh
+exec --no-startup-id xsetroot -solid "#ababab"
 
 default_orientation horizontal 
 workspace_layout tabbed
@@ -171,7 +172,7 @@ bar {
         modifier Mod4
 
         colors {
-            background #fff
+            background #ababab
                 statusline #2a2a2a
                 separator  #9a9a9a
                 focused_workspace   #fff #fff #1a1a1a
