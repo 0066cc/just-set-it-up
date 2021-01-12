@@ -64,13 +64,12 @@ let g:hybrid_reduced_contrast = 0
 " Misc
 let g:vim_search_pulse_mode = 'cursor_line'
 let g:gruvbox_italic=1
-let g:gruvbox_termcolors=16
+let g:gruvbox_termcolors=256
 let g:gruvbox_contrast_dark='hard'
 
 " Vim
 syntax on
-colorscheme koehler
-hi CursorLine cterm=underline ctermfg=blue
+colorscheme gruvbox
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -93,6 +92,6 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 set scrolloff=12
 set cursorline
-set t_Co=32
 set encoding=utf-8
 autocmd BufNewFile,BufRead *.tex   set syntax=tex
+set t_Co=256
