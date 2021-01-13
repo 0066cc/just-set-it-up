@@ -69,7 +69,7 @@ let g:gruvbox_contrast_dark='hard'
 
 " Vim
 syntax on
-colorscheme gruvbox
+colorscheme nofrils-acme
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -94,4 +94,4 @@ set scrolloff=12
 set cursorline
 set encoding=utf-8
 autocmd BufNewFile,BufRead *.tex   set syntax=tex
-set t_Co=256
+set t_Co=8
