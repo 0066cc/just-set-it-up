@@ -17,7 +17,7 @@ always-display-description true
 
 mark-as-read-on-hover no
 keep-articles-days 7
-article-sort-order author-desc
+article-sort-order date-asc
 
 # externel browser
 browser "/bin/w3m -cols 80 -t 4 %u"
@@ -56,10 +56,10 @@ highlight article ":.*\\(image\\)$" white default
 highlight article ":.*\\(embedded flash\\)$" white default
  
 color listnormal black white 
-color listnormal_unread blue yellow bold
+color listnormal_unread black yellow bold
 color listfocus   white black bold
 color info  red default bold
-color listfocus_unread yellow blue blink
+color listfocus_unread black green blink
 color info black white
 color background white black 
 color article white black
