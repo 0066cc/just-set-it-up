@@ -70,5 +70,5 @@ feedlist-title-format "%N %V %> %u feeds with new articles"
 articlelist-title-format "%T"
 html-renderer "w3m -dump -T text/HTML -cols 80 -o auto_image=TRUE -num -no-mouse"
 highlight article "^(Feed|Title|Author|Link|Date):.*" color0 default blink
-show-read-feeds yes
+show-read-feeds no
 save-path "~/Documents/Saved_Articles/"
