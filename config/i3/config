@@ -157,8 +157,8 @@ exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures
 default_orientation horizontal 
 workspace_layout tabbed
 focus_follows_mouse yes
-gaps outer 15
-gaps inner 10
+#gaps outer 15
+#gaps inner 10
 #smart_gaps no
 
 client.focused            #7a7a7a #fff #000000 #fff #fff
