@@ -11,7 +11,7 @@ URxvt.cursorUnderline: 1
 Xft.dpi:                      108
 Xft.antialias:                  1
 Xft.autohint:                   1
-Xft.bold:                       1
+Xft.bold:                       0
 Xft.hinting:                    1
 Xft.hintstyle:                 full
 Xft.lcdfilter:                 full
@@ -25,7 +25,7 @@ URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
 URxvt.scrollBar:                false
 URxvt.loginShell:               true
-URxvt.internalBorder:	        45
+URxvt.internalBorder:	        15
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:            google-chrome
 URxvt*fading:  0

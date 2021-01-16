@@ -63,7 +63,7 @@ let g:hybrid_reduced_contrast = 0
 
 " Misc
 let g:vim_search_pulse_mode = 'cursor_line'
-let g:gruvbox_italic=1
+let g:gruvbox_italic=0
 let g:gruvbox_termcolors=256
 let g:gruvbox_contrast_dark='hard'
 
@@ -94,4 +94,4 @@ set scrolloff=12
 set cursorline
 set encoding=utf-8
 autocmd BufNewFile,BufRead *.tex   set syntax=tex
-set t_Co=8
+set t_Co=256
