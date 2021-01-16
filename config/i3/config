@@ -17,6 +17,7 @@ bindsym $mod+Return exec --no-startup-id rxvt -name term
 assign [class="rxvt"] 2
 for_window [instance="term"] fullscreen enable
 assign [class="URxvt"] 2
+assign [class="google-chrome"] 1
 
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show drun
