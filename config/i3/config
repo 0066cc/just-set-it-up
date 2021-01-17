@@ -152,6 +152,8 @@ exec --no-startup-id redshift -l 55.9:-3.1 -b 0.5:1
 exec --no-startup-id bash ~/.screenlayout/layout.sh
 #exec --no-startup-id xsetroot -solid "#ababab"
 exec --no-startup-id xset s off
+exec --no-startup-id rxvt
+exec --no-startup-id google-chrome
 exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/
 
 default_orientation horizontal 
