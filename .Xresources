@@ -31,13 +31,13 @@ URxvt.url-launcher:            google-chrome
 URxvt*fading:  0
 URxvt*blurRadius:  0
 URxvt*depth:  0
-URxvt*inheritPixmap: true
-URxvt.transparent: true
+URxvt*inheritPixmap: false
+URxvt.transparent: false
 URxvt.shading: 25
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 
-#define base00 #1d2021
+#define base00 #000000
 #define base01 #3c3836
 #define base02 #504945
 #define base03 #665c54
