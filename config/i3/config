@@ -193,4 +193,3 @@ bindsym $mod+p exec --no-startup-id urxvt -e newsboat
 bindsym $mod+o exec --no-startup-id pcmanfm-qt
 bindsym $mod+g exec --no-startup-id google-chrome
 bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/
-
