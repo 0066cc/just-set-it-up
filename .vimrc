@@ -11,7 +11,9 @@ Plugin 'rhysd/vim-grammarous'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-fugitive' 
+Plugin 'mhinz/vim-signify', { 'branch': 'legacy' }
 Plugin 'lervag/vimtex'
+Plugin 'junegunn/goyo.vim'
 Plugin 'inside/vim-search-pulse'
 Plugin 'vimwiki/vimwiki'
 Plugin 'ap/vim-css-color'
@@ -41,12 +43,12 @@ let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 let g:vimtex_fold_enabled = 1
 let g:tex_conceal='abdmg'
-    " Shortcuts
-    "leader+ll - start compiling
-    "leader+lv - open pdf
-    "leader+lk - stop compiling
-    "leader+le - view errors
-    "leader+lc - clean files
+" Shortcuts
+"leader+ll - start compiling
+"leader+lv - open pdf
+"leader+lk - stop compiling
+"leader+le - view errors
+"leader+lc - clean files
 " Wiki
 let g:vimwiki_use_mouse = 1
 let g:vimwiki_folding = 'syntax'
@@ -61,6 +63,18 @@ let g:airline_theme='deus'
 let g:airline_powerline_fonts = 0
 let g:hybrid_custom_term_colors = 1 
 let g:hybrid_reduced_contrast = 0
+
+" Goyo
+function! ProseMode()
+    call goyo#execute(0, [])
+    set spell noci nosi noai nolist noshowmode noshowcmd
+syntax off
+    set complete+=s
+endfunction
+
+command! ProseMode call ProseMode()
+nmap \p :ProseMode<CR>
+
 
 " Misc
 let g:vim_search_pulse_mode = 'cursor_line'
@@ -95,4 +109,4 @@ set cursorline
 set cursorcolumn
 set scrolloff=12
 set encoding=utf-8
-set t_Co=256
+set t_Co=16
