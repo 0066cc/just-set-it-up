@@ -90,8 +90,9 @@ hi MatchParen ctermbg=5
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
-set scrolloff=12
 set cursorline
+set cursorcolumn
+set scrolloff=12
 set encoding=utf-8
 autocmd BufNewFile,BufRead *.tex   set syntax=tex
 set t_Co=256
