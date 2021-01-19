@@ -15,6 +15,7 @@ Plugin 'lervag/vimtex'
 Plugin 'inside/vim-search-pulse'
 Plugin 'vimwiki/vimwiki'
 Plugin 'ap/vim-css-color'
+Plugin 'vim-voom/VOoM'
 " Themes
 Plugin 'morhetz/gruvbox'
 Plugin 'robertmeta/nofrils'
