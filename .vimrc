@@ -11,7 +11,6 @@ Plugin 'rhysd/vim-grammarous'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-fugitive' 
-Plugin 'mhinz/vim-signify', { 'branch': 'legacy' }
 Plugin 'lervag/vimtex'
 Plugin 'junegunn/goyo.vim'
 Plugin 'inside/vim-search-pulse'
@@ -59,7 +58,7 @@ let g:vimwiki_list = [{'path': '~/Documents/git/Life/wiki/', 'auto_tags':1, 'syn
 let g:vimwiki_hl_headers = 1
 
 " Airline
-let g:airline_theme='deus'
+let g:airline_theme='angr'
 let g:airline_powerline_fonts = 0
 let g:hybrid_custom_term_colors = 1 
 let g:hybrid_reduced_contrast = 0
@@ -68,13 +67,12 @@ let g:hybrid_reduced_contrast = 0
 function! ProseMode()
     call goyo#execute(0, [])
     set spell noci nosi noai nolist noshowmode noshowcmd
-syntax off
+    syntax off
     set complete+=s
 endfunction
 
 command! ProseMode call ProseMode()
 nmap \p :ProseMode<CR>
-
 
 " Misc
 let g:vim_search_pulse_mode = 'cursor_line'
@@ -109,4 +107,4 @@ set cursorline
 set cursorcolumn
 set scrolloff=12
 set encoding=utf-8
-set t_Co=16
+set t_Co=256
