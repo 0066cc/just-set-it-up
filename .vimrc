@@ -8,6 +8,7 @@ call vundle#begin()
 " Vim Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rhysd/vim-grammarous'
+Plugin 'mzlogin/vim-markdown-toc'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-fugitive' 
