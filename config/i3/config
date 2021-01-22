@@ -154,13 +154,14 @@ exec --no-startup-id bash ~/.screenlayout/layout.sh
 exec --no-startup-id xset s off
 exec --no-startup-id rxvt
 exec --no-startup-id google-chrome
-exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/
+exec --no-startup-id nitrogen --restore
+#exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/
 
 default_orientation horizontal 
 workspace_layout tabbed
 focus_follows_mouse yes
-#gaps outer 15
-#gaps inner 10
+gaps outer 15
+gaps inner 10
 #smart_gaps no
 
 client.focused            #7a7a7a #fff #000000 #fff #fff
@@ -192,4 +193,4 @@ bar {
 bindsym $mod+p exec --no-startup-id urxvt -e newsboat
 bindsym $mod+o exec --no-startup-id pcmanfm-qt
 bindsym $mod+g exec --no-startup-id google-chrome
-bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/
+#bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/
