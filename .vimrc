@@ -83,7 +83,7 @@ let g:gruvbox_contrast_dark='soft'
 
 " Vim
 syntax on
-colorscheme default
+colorscheme koehler
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -105,7 +105,7 @@ inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 set scrolloff=12
 set encoding=utf-8
 set t_Co=256
