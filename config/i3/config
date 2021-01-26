@@ -148,16 +148,14 @@ bindsym $mod+r mode "resize"
         exec xinput set-prop 9 292 1
         exec xinput set-prop 10 292 1
 exec --no-startup-id unclutter -idle 1
-#exec --no-startup-id compton
 exec --no-startup-id redshift -l 55.9:-3.1 -b 0.5:1
 exec --no-startup-id bash ~/.screenlayout/layout.sh
 exec --no-startup-id xsetroot -solid "#1a1a1a"
 exec --no-startup-id xset s off
 exec --no-startup-id rxvt
-exec --no-startup-id compton
+#exec --no-startup-id compton
 exec --no-startup-id google-chrome
-exec --no-startup-id microsoft teams - preview
-#exec --no-startup-id nitrogen --restore
+exec --no-startup-id nitrogen --restore
 #exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/
 
 default_orientation horizontal 
