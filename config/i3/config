@@ -16,7 +16,7 @@ floating_modifier $mod
 bindsym $mod+Return exec --no-startup-id rxvt -name term
 assign [class="rxvt"] 2
 assign [class="jetbrains-studio"] 3
-#for_window [instance="term"] fullscreen enable
+for_window [instance="term"] fullscreen enable
 assign [class="URxvt"] 2
 assign [class="google-chrome"] 1
 
@@ -161,37 +161,37 @@ exec --no-startup-id nitrogen --restore
 default_orientation horizontal 
 workspace_layout tabbed
 focus_follows_mouse yes
-#gaps outer 15
-#gaps inner 10
+gaps outer 15
+gaps inner 10
 #smart_gaps no
 
-client.focused            #7a7a7a #fff #000000 #fff #fff
-client.focused_inactive   #7a7a7a #fff #7a7a7a #fff #fff
-client.unfocused          #7a7a7a #fff #6a6a6a #fff #fff
-client.urgent             #7a7a7a #fff #ff0000 #fff #fff
+client.focused          #000000 #fff #6a6a6a #fff #fff
+client.focused_inactive   #000000 #2a2a2a #4a4a4a  #fff #fff
+client.unfocused            #000000 #1a1a1a #efefef #fff #fff
+client.urgent             #000000 #fff #ff0000 #fff #fff
 client.background         #1b2026
 
 bar {
     status_command i3status
         position                    top
         height                      25
-        font pango:SF Pro Text Regular 9
+        font pango:SF Mono Bold 8
         separator_symbol            " | "
         mode dock
         hidden_state hide
         modifier Mod4
 
         colors {
-            background #ababab
-                statusline #2a2a2a
+            background #000000
+                statusline #efefef
                 separator  #9a9a9a
-                focused_workspace   #fff #fff #1a1a1a
-                inactive_workspace  #fff #fff #6a6a6a
-                urgent_workspace    #fff #fff #ff0000
+                focused_workspace   #1a1a1a #ffffff #ffffff
+                inactive_workspace  #ffffff #ffffff #1a1a1a
+                urgent_workspace    #ffffff #ffffff #ff0000
         }
 }
 
 bindsym $mod+p exec --no-startup-id urxvt -e newsboat
 bindsym $mod+o exec --no-startup-id pcmanfm-qt
 bindsym $mod+g exec --no-startup-id google-chrome
-bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/mac/
+bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/
