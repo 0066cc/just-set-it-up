@@ -16,7 +16,7 @@ floating_modifier $mod
 bindsym $mod+Return exec --no-startup-id rxvt -name term
 assign [class="rxvt"] 2
 assign [class="jetbrains-studio"] 3
-for_window [instance="term"] fullscreen enable
+#for_window [instance="term"] fullscreen enable
 assign [class="URxvt"] 2
 assign [class="google-chrome"] 1
 
