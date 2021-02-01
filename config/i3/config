@@ -185,8 +185,8 @@ bar {
             background #000000
                 statusline #efefef
                 separator  #9a9a9a
-                focused_workspace   #1a1a1a #ffffff #ffffff
-                inactive_workspace  #ffffff #ffffff #1a1a1a
+                focused_workspace   #1a1a1a #ffffff #000000
+                inactive_workspace  #ffffff #ffffff #6a6a6a
                 urgent_workspace    #ffffff #ffffff #ff0000
         }
 }
