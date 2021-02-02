@@ -161,8 +161,8 @@ exec --no-startup-id nitrogen --restore
 default_orientation horizontal 
 workspace_layout tabbed
 focus_follows_mouse yes
-gaps outer 15
-gaps inner 10
+#gaps outer 15
+#gaps inner 10
 #smart_gaps no
 
 client.focused          #000000 #fff #6a6a6a #fff #fff
