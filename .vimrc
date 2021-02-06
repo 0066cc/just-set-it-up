@@ -86,7 +86,7 @@ let g:gruvbox_contrast_dark='hard'
 
 " Vim
 syntax on
-colorscheme PaperColor
+colorscheme gruvbox
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -99,7 +99,7 @@ set hidden
 set autochdir
 set nojoinspaces
 set wildmenu
-set background=light
+set background=dark
 set sidescroll=8
 "set foldmethod=syntax
 set ignorecase
@@ -107,8 +107,8 @@ hi MatchParen ctermbg=5
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
-"set cursorline
-set nocursorcolumn
+set cursorline
+"set nocursorcolumn
 set scrolloff=12
 set encoding=utf-8
 set t_Co=256
