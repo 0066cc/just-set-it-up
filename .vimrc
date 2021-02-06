@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rhysd/vim-grammarous'
 Plugin 'mzlogin/vim-markdown-toc'
+Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'junegunn/limelight.vim'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
@@ -60,7 +61,7 @@ let g:vimwiki_list = [{'path': '~/Documents/git/Life/wiki/', 'auto_tags':1, 'syn
 let g:vimwiki_hl_headers = 1
 
 " Airline
-let g:airline_theme='angr'
+let g:airline_theme='papercolor'
 let g:airline_powerline_fonts = 0
 let g:hybrid_custom_term_colors = 1 
 let g:hybrid_reduced_contrast = 0
@@ -85,7 +86,7 @@ let g:gruvbox_contrast_dark='hard'
 
 " Vim
 syntax on
-colorscheme gruvbox
+colorscheme PaperColor
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -98,7 +99,7 @@ set hidden
 set autochdir
 set nojoinspaces
 set wildmenu
-set background=dark
+set background=light
 set sidescroll=8
 "set foldmethod=syntax
 set ignorecase
