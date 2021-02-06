@@ -81,11 +81,11 @@ nmap \k :Limelight!<CR>
 let g:vim_search_pulse_mode = 'cursor_line'
 let g:gruvbox_italic=1
 let g:gruvbox_termcolors=256
-let g:gruvbox_contrast_dark='soft'
+let g:gruvbox_contrast_dark='hard'
 
 " Vim
 syntax on
-colorscheme koehler
+colorscheme gruvbox
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -111,7 +111,7 @@ set nocursorcolumn
 set scrolloff=12
 set encoding=utf-8
 set t_Co=256
-set columns=80
+"set columns=80
 set wrap
 set linebreak
 
