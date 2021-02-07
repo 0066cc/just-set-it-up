@@ -15,8 +15,6 @@ set $ws9 9
 floating_modifier $mod
 bindsym $mod+Return exec --no-startup-id rxvt -name term
 assign [class="rxvt"] 1
-#assign [class="jetbrains-studio"] 3
-#for_window [instance="term"] fullscreen enable
 assign [class="URxvt"] 1
 assign [class="google-chrome"] 2
 
@@ -147,9 +145,9 @@ bindsym $mod+r mode "resize"
 
         exec xinput set-prop 9 292 1
         exec xinput set-prop 10 292 1
+exec --no-startup-id bash ~/.screenlayout/layout.sh
 exec --no-startup-id unclutter -idle 1
 exec --no-startup-id redshift -l 55.9:-3.1 -b 0.5:1
-exec --no-startup-id bash ~/.screenlayout/layout.sh
 exec --no-startup-id xsetroot -solid "#1a1a1a"
 exec --no-startup-id setxkbmap -layout us
 exec --no-startup-id xset s off
