@@ -1,7 +1,7 @@
 !~ URxvt Settings ~!
 URxvt.saveLines:512
-!URxvt*font:         xft:SF Mono:style=SemiBold:size=8
-!URxvt.boldfont:     xft:SF Mono:style=Bold:size=8
+!URxvt*font:         xft:SF Mono:style:SemiBold:size:8
+!URxvt.boldfont:     xft:SF Mono:style:Bold:size:8
 URxvt*font:        xft:JetBrains Mono-9
 URxvt.boldfont:    xft:JetBrains Mono Medium-9
 
@@ -37,52 +37,35 @@ URxvt.shading: 55
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 
-#define base00 #000000
-#define base01 #3c3836
-#define base02 #504945
-#define base03 #665c54
-#define base04 #bdae93
-#define base05 #d5c4a1
-#define base06 #ebdbb2
-#define base07 #fbf1c7
-#define base08 #fb4934
-#define base09 #fe8019
-#define base0A #fabd2f
-#define base0B #b8bb26
-#define base0C #8ec07c
-#define base0D #83a598
-#define base0E #d3869b
-#define base0F #d65d0e
+*cursor:#C2FFA0
+*mouse_background:#1A3020
+*mouse_foreground:#C2FFA0
+*highlight:#1F3B27
+*border:#1A3020
+*background:#1A3020
+*foreground:#C2FFA0
 
-*.foreground:   base05
-#ifdef background_opacity
-*.background:   [background_opacity]base00
-#else
-*.background:   base00
-#endif
-*.cursorColor:  base05
-
-*.color0:       base00
-*.color1:       base08
-*.color2:       base0B
-*.color3:       base0A
-*.color4:       base0D
-*.color5:       base0E
-*.color6:       base0C
-*.color7:       base05
-
-*.color8:       base03
-*.color9:       base08
-*.color10:      base0B
-*.color11:      base0A
-*.color12:      base0D
-*.color13:      base0E
-*.color14:      base0C
-*.color15:      base07
-
-*.color16:      base09
-*.color17:      base0F
-*.color18:      base01
-*.color19:      base02
-*.color20:      base04
-*.color21:      base06
+!BLACK
+*color0:#1D3624
+*color8:#1F3B27
+!RED
+*color1:#9BCC80
+*color9:#9CCE81
+!GREEN
+*color2:#BAFF94
+*color10:#BBFF95
+!YELLOW
+*color3:#C2FFAF
+*color11:#C3FFAF
+!BLUE
+*color4:#5F7D4E
+*color12:#607D4F
+!MAGENTA
+*color5:#C2FFA0
+*color13:#C3FFA1
+!CYAN
+*color6:#C2FFA0
+*color14:#C3FFA1
+!WHITE
+*color7:#DBFFC7
+*color15:#DCFFC8
