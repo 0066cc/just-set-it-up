@@ -1,6 +1,6 @@
 # general settings
 auto-reload yes
-max-items 16
+max-items 32
 reload-time 120
 reload-threads 4
 download-retries 4
