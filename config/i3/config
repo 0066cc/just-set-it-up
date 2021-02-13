@@ -148,14 +148,11 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id bash ~/.screenlayout/layout.sh
 exec --no-startup-id unclutter -idle 1
 exec --no-startup-id redshift -l 55.9:-3.1 -b 0.5:1
-exec --no-startup-id xsetroot -solid "#1a1a1a"
+exec --no-startup-id xsetroot -solid "#55acee"
 exec --no-startup-id setxkbmap -layout us
 exec --no-startup-id xset s off
 exec --no-startup-id rxvt
-#exec --no-startup-id compton
 exec --no-startup-id google-chrome
-exec --no-startup-id nitrogen --restore
-#exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/mac/
 
 default_orientation horizontal 
 workspace_layout tabbed
@@ -164,27 +161,27 @@ gaps outer 15
 gaps inner 15
 #smart_gaps no
 
-client.focused          #000000 #fff #6a6a6a #fff #fff
-client.focused_inactive   #000000 #2a2a2a #4a4a4a  #fff #fff
-client.unfocused            #000000 #1a1a1a #efefef #fff #fff
-client.urgent             #000000 #fff #ff0000 #fff #fff
-client.background         #1b2026
+client.unfocused          #292f33 #f5f8fa #6a6a6a #f5f8fa #f5f8fa 
+client.focused_inactive   #292f33 #2a2a2a #4a4a4a  #f5f8fa #f5f8fa 
+client.focused            #292f33 #8899a6 #292f33 #f5f8fa #f5f8fa 
+client.urgent             #292f33 #f5f8fa #ff0000 #f5f8fa #f5f8fa 
+client.background         #ffffff
 
 bar {
     status_command i3status
         position                    top
-        height                      25
-        font pango:SF Mono Bold 8
+        height                      20
+        font pango:SF Pro Text Medium 9
         separator_symbol            " | "
-        mode dock
+        mode hide
         hidden_state hide
         modifier Mod4
 
         colors {
-            background #000000
-                statusline #efefef
-                separator  #9a9a9a
-                focused_workspace   #1a1a1a #ffffff #000000
+            background #f5f8fa
+                statusline #292f33
+                separator  #292f33
+                focused_workspace   #8899a6 #ffffff #292f33
                 inactive_workspace  #ffffff #ffffff #6a6a6a
                 urgent_workspace    #ffffff #ffffff #ff0000
         }
