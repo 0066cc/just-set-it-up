@@ -173,7 +173,7 @@ bar {
         height                      20
         font pango:SF Pro Text Medium 9
         separator_symbol            " | "
-        mode hide
+        mode dock
         hidden_state hide
         modifier Mod4
 
