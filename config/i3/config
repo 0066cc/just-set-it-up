@@ -158,8 +158,8 @@ exec --no-startup-id google-chrome
 default_orientation horizontal 
 workspace_layout tabbed
 focus_follows_mouse yes
-gaps outer 35
-gaps inner 20
+#gaps outer 35
+#gaps inner 20
 #smart_gaps no
 
 client.unfocused          #292f33 #f5f8fa #6a6a6a #f5f8fa #f5f8fa 
