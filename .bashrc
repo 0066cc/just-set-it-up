@@ -90,6 +90,7 @@ alias gc='gcc -pedantic-errors -Wall -Werror -Wuninitialized  -Wno-unused-result
 alias g+='g++ -pedantic-errors -Wall -Werror -Wuninitialized  -Wno-unused-result '
 alias weather='curl wttr.in/'
 alias mpv='mpv --no-video '
+alias mpvv='mpv --config=no --quiet --vo=tct --lavfi-complex="[aid1]asplit[ao][a1];[a1]showwaves=mode=cline:colors=white:rate=12[vo]"'
 alias m='make'
 alias v='vim'
 alias c='clear'
