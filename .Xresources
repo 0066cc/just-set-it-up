@@ -1,9 +1,9 @@
 !~ URxvt Settings ~!
 URxvt.saveLines:512
-URxvt*font:         xft:SF Mono:style=SemiBold:size=8
-URxvt.boldfont:     xft:SF Mono:style=Bold:size=8
-!URxvt*font:        xft:JetBrains Mono-9
-!URxvt.boldfont:    xft:JetBrains Mono Medium-9
+!URxvt*font:         xft:SF Mono:style=SemiBold:size=8
+!URxvt.boldfont:     xft:SF Mono:style=Bold:size=8
+URxvt*font:        xft:JetBrains Mono-9
+URxvt.boldfont:    xft:JetBrains Mono Medium-9
 
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
@@ -31,8 +31,8 @@ URxvt.url-launcher:            google-chrome
 URxvt*fading:  0
 URxvt*blurRadius:  0
 URxvt*depth:  0
-URxvt*inheritPixmap: false
-URxvt.transparent: false
+URxvt*inheritPixmap: true
+URxvt.transparent: true
 URxvt.shading: 35
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
