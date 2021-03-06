@@ -11,8 +11,8 @@ notify-program      "tmux display"
 notify-always yes
 notify-beep yes
 notify-format  "%I %d %n %f new articles (%n unread articles, %f unread feeds)"
-notify-screen no
-notify-xterm no
+notify-screen yes
+notify-xterm yes
 always-display-description true 
 
 mark-as-read-on-hover no
