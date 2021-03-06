@@ -1,6 +1,7 @@
 exec xinput set-prop 9 292 1
 exec xinput set-prop 9 293 1
-font pango:SF Pro Text Medium 9
+#font pango:SF Pro Text Medium 9
+font pango:SF Pro Text Thin 9
 set $mod Mod4
 set $ws1 1
 set $ws2 2
@@ -158,34 +159,34 @@ exec --no-startup-id google-chrome
 default_orientation horizontal 
 workspace_layout tabbed
 focus_follows_mouse yes
-#gaps outer 40
-#gaps inner 10
+gaps outer 25
+gaps inner 10
 #smart_gaps yes
 
-client.unfocused          #292f33 #f5f8fa #6a6a6a #f5f8fa #f5f8fa 
-client.focused_inactive   #292f33 #2a2a2a #4a4a4a  #f5f8fa #f5f8fa 
-client.focused            #292f33 #8899a6 #292f33 #f5f8fa #f5f8fa 
-client.urgent             #292f33 #f5f8fa #ff0000 #f5f8fa #f5f8fa 
-client.background         #ffffff
+#client.unfocused          #292f33 #f5f8fa #6a6a6a #f5f8fa #f5f8fa 
+#client.focused_inactive   #292f33 #2a2a2a #4a4a4a  #f5f8fa #f5f8fa 
+#client.focused            #292f33 #8899a6 #292f33 #f5f8fa #f5f8fa 
+#client.urgent             #292f33 #f5f8fa #ff0000 #f5f8fa #f5f8fa 
+#client.background         #ffffff
 
 bar {
     status_command i3status
         position                    top
         height                      20
-        font pango:SF Pro Text Medium 9
+        font pango:SF Pro Text Thin 9
         separator_symbol            " | "
-        mode dock
+        mode hide
         hidden_state hide
         modifier Mod4
 
-        colors {
-            background #f5f8fa
-                statusline #292f33
-                separator  #292f33
-                focused_workspace   #8899a6 #ffffff #292f33
-                inactive_workspace  #ffffff #ffffff #6a6a6a
-                urgent_workspace    #ffffff #ffffff #ff0000
-        }
+#        colors {
+#            background #f5f8fa
+#                statusline #292f33
+#                separator  #292f33
+#                focused_workspace   #8899a6 #ffffff #292f33
+#                inactive_workspace  #ffffff #ffffff #6a6a6a
+#                urgent_workspace    #ffffff #ffffff #ff0000
+#        }
 }
 
 bindsym $mod+p exec --no-startup-id urxvt -e newsboat
