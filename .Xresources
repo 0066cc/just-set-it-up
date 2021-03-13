@@ -31,8 +31,8 @@ URxvt.url-launcher:            google-chrome
 URxvt*fading:  0
 URxvt*blurRadius:  0
 URxvt*depth:  0
-URxvt*inheritPixmap: false
-URxvt.transparent: false
+URxvt*inheritPixmap: true
+URxvt.transparent: true
 URxvt.shading: 35
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
