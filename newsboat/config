@@ -21,7 +21,7 @@ article-sort-order date-asc
 
 # externel browser
 #browser "/bin/w3m -cols 80 -t 4 %u"
-browser "/bin/surf -g %u -b"
+browser "/bin/qutebrowser %u"
 macro y set browser "/bin/mpv --ytdl-format=18 %u"; open-in-browser ; set browser "/bin/w3m %u"
 macro m set browser "/bin/mpv --no-video %u"; open-in-browser ; set browser "/bin/w3m %u"
 macro u set browser "sudo mplayer -vo fbdev2 $(youtube-dl -g %u)"; open-in-browser ; set browser "/bin/w3m %u"
