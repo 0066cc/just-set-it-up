@@ -20,11 +20,12 @@ keep-articles-days 7
 article-sort-order date-asc
 
 # externel browser
-browser "/bin/w3m -cols 80 -t 4 %u"
+#browser "/bin/w3m -cols 80 -t 4 %u"
+browser "/bin/surf -g %u -b"
 macro y set browser "/bin/mpv --ytdl-format=18 %u"; open-in-browser ; set browser "/bin/w3m %u"
 macro m set browser "/bin/mpv --no-video %u"; open-in-browser ; set browser "/bin/w3m %u"
 macro u set browser "sudo mplayer -vo fbdev2 $(youtube-dl -g %u)"; open-in-browser ; set browser "/bin/w3m %u"
-macro g set browser "/bin/google-chrome %u"; open-in-browser ; set browser "/bin/w3m %u"
+macro g set browser "/bin/surf %u"; open-in-browser ; set browser "/bin/w3m %u"
 macro l set browser "/bin/links2 -g %u"; open-in-browser ; set browser "/bin/w3m %u"
 macro o open-in-browser 
 
