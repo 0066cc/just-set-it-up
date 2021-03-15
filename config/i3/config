@@ -155,6 +155,8 @@ exec --no-startup-id xset s off
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id rxvt
 exec --no-startup-id google-chrome
+exec --no-startup-id qutebrowser
+exec --no-startup-id syncthing
 
 default_orientation horizontal 
 workspace_layout tabbed
