@@ -8,6 +8,7 @@ call vundle#begin()
 " Vim Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rhysd/vim-grammarous'
+Plugin 'ActivityWatch/aw-watcher-vim'
 Plugin 'mzlogin/vim-markdown-toc'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'junegunn/limelight.vim'
