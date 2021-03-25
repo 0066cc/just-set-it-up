@@ -23,6 +23,7 @@ article-sort-order date-asc
 #browser "/bin/w3m -cols 80 -t 4 %u"
 browser "/bin/qutebrowser %u"
 macro y set browser "/bin/mpv --ytdl-format=18 %u"; open-in-browser ; set browser "/bin/qutebrowser %u"
+macro t set browser "/bin/mpv --ytdl-format=best %u"; open-in-browser ; set browser "/bin/qutebrowser %u"
 macro m set browser "/bin/mpv --no-video %u"; open-in-browser ; set browser "/bin/qutebrowser %u"
 macro u set browser "sudo mplayer -vo fbdev2 $(youtube-dl -g %u)"; open-in-browser ; set browser "/bin/qutebrowser %u"
 macro l set browser "/bin/links2 -g %u"; open-in-browser ; set browser "/bin/qutebrowser %u"
@@ -34,6 +35,7 @@ unbind-key j
 unbind-key k
 unbind-key J
 unbind-key K
+unbind-key ^B
 unbind-key A
 
 # bind keys - vim style
@@ -42,6 +44,7 @@ bind-key k up
 bind-key l open
 bind-key h quit
 bind-key i mark-feed-read
+bind-key b bookmark
  
 highlight feedlist "^ *[0-9]+ *N " white black
 highlight articlelist "^ *[0-9]+ *N " white black
@@ -56,14 +59,14 @@ highlight article ":.*\\(link\\)$" white default
 highlight article ":.*\\(image\\)$" white default
 highlight article ":.*\\(embedded flash\\)$" white default
  
-#color listnormal blue black
-#color listnormal_unread yellow black 
-#color listfocus   green black
-#color info  red default 
-#color listfocus_unread black green blink
-#color info black white
-#color background white black
-#color article white black
+color listnormal blue black
+color listnormal_unread yellow black 
+color listfocus   green black
+color info  red default 
+color listfocus_unread black green blink
+color info black white
+color background white black
+color article white black
 
 articlelist-format "%4i %f %D | %a: %t - %L"
 feedlist-format "%-65t %?d?- %-65d&? %u "
@@ -73,5 +76,10 @@ html-renderer "w3m -dump -T text/HTML -cols 80 -o auto_image=TRUE -num -no-mouse
 highlight article "^(Feed|Title|Author|Link|Date):.*" color0 default blink
 show-read-feeds no
 save-path "~/Documents/Saved_Articles/"
-download-path "~/Music/Podcasts/%h/%n"
-player "mpv"
+player "mpv --no-video --speed=1.71"
+podlist-format "%4i - [%-5p %%] %-12S %F"
+download-path "~/Podcasts/%h/%n"
+
+bookmark-cmd "~/.newsboat/bookmark.sh"
+bookmark-interactive yes
+bookmark-autopilot no

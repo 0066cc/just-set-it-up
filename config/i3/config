@@ -153,10 +153,12 @@ exec --no-startup-id redshift -l 55.9:-3.1 -b 1:0.5
 exec --no-startup-id setxkbmap -layout gb
 exec --no-startup-id xset s off
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id rxvt
+exec --no-startup-id rxvt #-e bash ~/Documents/scripts/news.sh
 exec --no-startup-id google-chrome
 exec --no-startup-id qutebrowser
 exec --no-startup-id syncthing
+exec --no-startup-id xautolock -time 10 -locker slock
+#exec --no-startup-id goldencheetah
 
 default_orientation horizontal 
 workspace_layout tabbed
