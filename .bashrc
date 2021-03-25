@@ -102,7 +102,7 @@ alias yt='youtube-dl --extract-audio -R "infinite" -c --console-title --no-call-
 alias ytd=' youtube-dl -R "infinite" -c --console-title --no-call-home --embed-thumbnail'
 alias m='make'
 alias sleepy='sudo systemctl suspend'
-alias nw='feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/'
+alias nw='feh --recursive --randomize --bg-fill ~/Pictures/Photos/Wallpaper/'
 alias dwarf="bash /usr/bin/df_linux/df"
 alias android="bash /usr/bin/android-studio/bin/studio.sh"
 alias webstorm="bash /usr/bin/WebStorm-203.6682.155/bin/webstorm.sh"
@@ -119,7 +119,9 @@ alias tet="mpv https://www.youtube.com/watch?v=Ty6m-tL5iQY"
 alias vapor="mpv https://www.youtube.com/watch?v=IwJXJ5mhIfM"
 alias ambient="mpv https://www.youtube.com/watch?v=UKAmObDUCYA"
 alias 90sweb="sudo wondershaper wlx502b73cbad37 56 56"
+#alias 9base="export PATH=~/Downloads/9base/"
 alias speakit="espeak -m -v en-us -g 0 -p 60 -s 195 -l 4 -f"
+alias todo="cat ~/Documents/git/Life/wiki/Personal/Notes/todo.txt"
 alias 90sclear="sudo wondershaper clear wlx502b73cbad37"
 alias news="newsboat"
 alias jp="git add * ; git commit -m \"Update\" ; git push origin main"

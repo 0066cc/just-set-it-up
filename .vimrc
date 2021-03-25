@@ -8,7 +8,6 @@ call vundle#begin()
 " Vim Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rhysd/vim-grammarous'
-Plugin 'ActivityWatch/aw-watcher-vim'
 Plugin 'mzlogin/vim-markdown-toc'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'junegunn/limelight.vim'
@@ -87,7 +86,7 @@ let g:gruvbox_contrast_dark='hard'
 
 " Vim
 syntax on
-colorscheme default
+colorscheme gruvbox
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -119,4 +118,7 @@ set linebreak
 
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
-autocmd VimEnter * AWStart
+set textwidth=0
+set wrapmargin=0
+set formatoptions-=t
+let g:netrw_browsex_viewer='qutebrowser'
