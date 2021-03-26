@@ -149,7 +149,7 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id bash ~/.screenlayout/layout.sh
 exec --no-startup-id unclutter -idle 1
 exec --no-startup-id redshift -l 55.9:-3.1 -b 1:0.5
-exec --no-startup-id xsetroot -solid "#3a3a3a"
+exec --no-startup-id xsetroot -solid "#0066cc"
 exec --no-startup-id setxkbmap -layout gb
 exec --no-startup-id xset s off
 #exec --no-startup-id nitrogen --restore
