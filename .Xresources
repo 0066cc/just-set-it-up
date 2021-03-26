@@ -1,7 +1,7 @@
 !~ URxvt Settings ~!
 URxvt.saveLines:512
-URxvt*font:         xft:SF Mono:style=SemiBold:size=8
-URxvt.boldfont:     xft:SF Mono:style=Bold:size=8
+!URxvt*font:         xft:SF Mono:style=SemiBold:size=8
+!URxvt.boldfont:     xft:SF Mono:style=Bold:size=8
 !URxvt*font:        xft:JetBrains Mono-9
 !URxvt.boldfont:    xft:JetBrains Mono Medium-9
 
@@ -18,7 +18,7 @@ Xft.lcdfilter:                 full
 Xft.rgba:                       rgb
 
 URxvt.lineSpace:                0
-URxvt.letterSpace:              -1
+URxvt.letterSpace:              0 
 
 URxvt.skipScroll:               true
 URxvt.iso14755:                 false
@@ -27,7 +27,7 @@ URxvt.scrollBar:                false
 URxvt.loginShell:               true
 URxvt.internalBorder:	        15
 URxvt.perl-ext:	 		default,matcher
-URxvt.url-launcher:            google-chrome
+URxvt.url-launcher:            qutebrowser
 URxvt*fading:  0
 URxvt*blurRadius:  0
 URxvt*depth:  0
