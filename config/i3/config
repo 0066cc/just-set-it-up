@@ -149,10 +149,10 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id bash ~/.screenlayout/layout.sh
 exec --no-startup-id unclutter -idle 1
 exec --no-startup-id redshift -l 55.9:-3.1 -b 1:0.5
-#exec --no-startup-id xsetroot -solid "#000000"
+exec --no-startup-id xsetroot -solid "#3a3a3a"
 exec --no-startup-id setxkbmap -layout gb
 exec --no-startup-id xset s off
-exec --no-startup-id nitrogen --restore
+#exec --no-startup-id nitrogen --restore
 exec --no-startup-id rxvt #-e bash ~/Documents/scripts/news.sh
 exec --no-startup-id google-chrome
 exec --no-startup-id qutebrowser
@@ -165,13 +165,13 @@ workspace_layout tabbed
 focus_follows_mouse yes
 gaps outer 25
 gaps inner 10
-#smart_gaps yes
+smart_gaps yes
 
-#client.unfocused          #292f33 #f5f8fa #6a6a6a #f5f8fa #f5f8fa 
-#client.focused_inactive   #292f33 #2a2a2a #4a4a4a  #f5f8fa #f5f8fa 
-#client.focused            #292f33 #8899a6 #292f33 #f5f8fa #f5f8fa 
-#client.urgent             #292f33 #f5f8fa #ff0000 #f5f8fa #f5f8fa 
-#client.background         #ffffff
+client.unfocused          #292f33 #f5f8fa #6a6a6a #f5f8fa #f5f8fa 
+client.focused_inactive   #292f33 #2a2a2a #4a4a4a  #f5f8fa #f5f8fa 
+client.focused            #292f33 #8899a6 #292f33 #f5f8fa #f5f8fa 
+client.urgent             #292f33 #f5f8fa #ff0000 #f5f8fa #f5f8fa 
+client.background         #ffffff
 
 bar {
     status_command i3status
@@ -179,18 +179,18 @@ bar {
         height                      20
         font pango:SF Pro Text Thin 9
         separator_symbol            " | "
-        mode hide
+        mode dock 
         hidden_state hide
         modifier Mod4
 
-#        colors {
-#            background #f5f8fa
-#                statusline #292f33
-#                separator  #292f33
-#                focused_workspace   #8899a6 #ffffff #292f33
-#                inactive_workspace  #ffffff #ffffff #6a6a6a
-#                urgent_workspace    #ffffff #ffffff #ff0000
-#        }
+        colors {
+            background #f5f8fa
+                statusline #292f33
+                separator  #292f33
+                focused_workspace   #8899a6 #ffffff #292f33
+                inactive_workspace  #ffffff #ffffff #6a6a6a
+                urgent_workspace    #ffffff #ffffff #ff0000
+        }
 }
 
 bindsym $mod+p exec --no-startup-id urxvt -e newsboat
