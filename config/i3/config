@@ -169,33 +169,44 @@ gaps outer 25
 gaps inner 10
 #smart_gaps yes
 
-client.unfocused          #292f33 #f5f8fa #6a6a6a #f5f8fa #f5f8fa 
-client.focused_inactive   #292f33 #2a2a2a #4a4a4a  #f5f8fa #f5f8fa 
-client.focused            #292f33 #8899a6 #292f33 #f5f8fa #f5f8fa 
-client.urgent             #292f33 #f5f8fa #ff0000 #f5f8fa #f5f8fa 
-client.background         #ffffff
-
-bar {
-    status_command i3status
-        position                    top
-        height                      20
-        #font pango:SF Pro Text Thin 9
-        separator_symbol            " | "
-        mode dock 
-        hidden_state hide
-        modifier Mod4
-
-        colors {
-            background #f5f8fa
-                statusline #292f33
-                separator  #292f33
-                focused_workspace   #8899a6 #ffffff #292f33
-                inactive_workspace  #ffffff #ffffff #6a6a6a
-                urgent_workspace    #ffffff #ffffff #ff0000
-        }
-}
-
 bindsym $mod+p exec --no-startup-id urxvt -e newsboat
 bindsym $mod+o exec --no-startup-id pcmanfm-qt
-bindsym $mod+g exec --no-startup-id google-chrome
+bindsym $mod+g exec --no-startup-id qutebrowser
 bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/
+
+# set primary gruvbox colorscheme colors
+set $bg #282828
+set $red #cc241d
+set $green #98971a
+set $yellow #d79921
+set $blue #458588
+set $purple #b16286
+set $aqua #689d68
+set $gray #a89984
+set $darkgray #1d2021
+
+# font used by i3 for titles and bars
+font pango:Hack 8
+
+#start of bar section
+bar {
+    position top
+        status_command i3blocks 
+        colors {
+# bar background color
+            background $bg
+# text color used for blocks that do not have a color specified.
+                statusline $yellow
+# workspaces section            
+#                    border  backgr. text
+                focused_workspace    $aqua $aqua $darkgray
+                inactive_workspace   $darkgray $darkgray $yellow
+                active_workspace     $darkgray $darkgray $yellow
+                urgent_workspace     $red $red $bg
+        }
+}
+# class                 border|backgr|text|indicator|child_border
+client.focused          $blue $blue $darkgray $purple $darkgray
+client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
+client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
+client.urgent           $red $red $white $red $red
