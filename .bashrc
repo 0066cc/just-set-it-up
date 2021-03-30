@@ -153,6 +153,7 @@ alias sleepdrive="udisksctl power-off -b /dev/sdb"
 alias resetscreens="bash ~/.screenlayout/reset.sh ; bash ~/.screenlayout/layout.sh"
 alias displays="xrandr --output VGA-1 --primary --mode 1920x1080 --pos 1175x420 --rotate normal --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate right --output DP-2 --off --output HDMI-2 --off"
 alias n="nnn"
+alias tweet="twtxt tweet "
 alias syncit="rsync -avh --delete-after"
 
 if [[ ! $TERM =~ screen ]]; then
