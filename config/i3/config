@@ -18,6 +18,7 @@ bindsym $mod+Return exec --no-startup-id rxvt -name term
 assign [class="rxvt"] 1
 assign [class="URxvt"] 1
 assign [class="google-chrome"] 2
+assign [class="qutebrowser"] 2
 
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show drun
@@ -154,7 +155,8 @@ exec --no-startup-id redshift -l 55.9:-3.1 -b 1:0.45
 exec --no-startup-id setxkbmap -layout gb
 exec --no-startup-id xset s off
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id rxvt #-e bash ~/Documents/scripts/news.sh
+exec --no-startup-id urxvt 
+#-e bash ~/Documents/scripts/news.sh
 exec --no-startup-id google-chrome
 exec --no-startup-id qutebrowser
 exec --no-startup-id syncthing
