@@ -122,3 +122,4 @@ set textwidth=0
 set wrapmargin=0
 set formatoptions-=t
 let g:netrw_browsex_viewer='qutebrowser'
+set nobackup
