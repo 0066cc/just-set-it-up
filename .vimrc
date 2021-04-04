@@ -86,7 +86,7 @@ let g:gruvbox_contrast_dark='hard'
 
 " Vim
 syntax on
-colorscheme gruvbox
+colorscheme default
 set tabstop=4
 set shiftwidth=0
 set expandtab

@@ -28,6 +28,7 @@ macro m set browser "/bin/mpv --no-video %u"; open-in-browser ; set browser "sur
 macro u set browser "sudo mplayer -vo fbdev2 $(youtube-dl -g %u)"; open-in-browser ; set browser "surf %u"
 macro l set browser "/bin/links2 -g %u"; open-in-browser ; set browser "surf %u"
 macro q set browser "/bin/qutebrowser %u"; open-in-browser ; set browser "surf %u"
+macro w set browser "w3m -T text/HTML -cols 80 -o auto_image=TRUE -num -no-mouse %u"; open-in-browser ; set browser "surf %u"
 macro o open-in-browser 
 
 # unbind keys
