@@ -64,7 +64,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -173,6 +173,7 @@ gaps inner 10
 
 bindsym $mod+p exec --no-startup-id urxvt -e newsboat
 bindsym $mod+o exec --no-startup-id pcmanfm-qt
+bindsym $mod+a exec --no-startup-id audacity
 bindsym $mod+g exec --no-startup-id qutebrowser
 bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/
 
