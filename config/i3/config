@@ -1,7 +1,6 @@
 exec xinput set-prop 9 292 1
 exec xinput set-prop 9 293 1
-#font pango:SF Pro Text Medium 9
-#font pango:SF Pro Text Thin 9
+font pango:SF Pro Display Regular 9
 set $mod Mod4
 set $ws1 1
 set $ws2 2
@@ -189,7 +188,7 @@ set $gray #a89984
 set $darkgray #1d2021
 
 # font used by i3 for titles and bars
-font pango:Hack 8
+#font pango:Hack 8
 
 #start of bar section
 bar {
