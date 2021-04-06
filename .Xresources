@@ -2,8 +2,10 @@
 URxvt.saveLines:512
 !URxvt*font:         xft:SF Mono:style=SemiBold:size=8
 !URxvt.boldfont:     xft:SF Mono:style=Bold:size=8
-URxvt*font:        xft:JetBrains Mono-9
-URxvt.boldfont:    xft:JetBrains Mono Medium-9
+!URxvt*font:        xft:JetBrains Mono-9
+!URxvt.boldfont:    xft:JetBrains Mono Medium-9
+URxvt*font:        xft:cherry:size=9
+URxvt.boldfont:    xft:cherry:size=9
 
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
@@ -18,7 +20,7 @@ Xft.lcdfilter:                 full
 Xft.rgba:                       rgb
 
 URxvt.lineSpace:                0
-URxvt.letterSpace:              -1
+URxvt.letterSpace:              0
 
 URxvt.skipScroll:               true
 URxvt.iso14755:                 false
@@ -27,7 +29,7 @@ URxvt.scrollBar:                false
 URxvt.loginShell:               true
 URxvt.internalBorder:	        15
 URxvt.perl-ext:	 		default,matcher
-URxvt.url-launcher:            qutebrowser
+URxvt.url-launcher:            surf
 URxvt*fading:  0
 URxvt*blurRadius:  0
 URxvt*depth:  0
@@ -70,7 +72,6 @@ URxvt.matcher.button: 1
 *color5:       base0E
 *color6:       base0C
 *color7:       base05
-
 *color8:       base03
 *color9:       base08
 *color10:      base0B
@@ -79,9 +80,6 @@ URxvt.matcher.button: 1
 *color13:      base0E
 *color14:      base0C
 *color15:      base07
-
-! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
-! use 'shell' template to set these if necessary
 *color16:      base09
 *color17:      base0F
 *color18:      base01
