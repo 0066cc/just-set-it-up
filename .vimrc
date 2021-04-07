@@ -61,10 +61,10 @@ let g:vimwiki_list = [{'path': '~/Documents/git/Life/wiki/', 'auto_tags':1, 'syn
 let g:vimwiki_hl_headers = 1
 
 " Airline
-let g:airline_theme='papercolor'
+let g:airline_theme='minimalist'
 let g:airline_powerline_fonts = 0
-let g:hybrid_custom_term_colors = 1 
-let g:hybrid_reduced_contrast = 0
+let g:hybrid_custom_term_colors = 1
+let g:hybrid_reduced_contrast = 1
 
 " Goyo
 function! ProseMode()
@@ -115,7 +115,6 @@ set t_Co=256
 "set columns=80
 set wrap
 set linebreak
-
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
 set textwidth=0
@@ -123,3 +122,4 @@ set wrapmargin=0
 set formatoptions-=t
 let g:netrw_browsex_viewer='qutebrowser'
 set nobackup
+au FileType markdown setlocal tw=79 spell colorcolumn=81
