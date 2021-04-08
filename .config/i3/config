@@ -20,7 +20,7 @@ assign [class="google-chrome"] 2
 assign [class="qutebrowser"] 2
 
 bindsym $mod+Shift+q kill
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+d exec "dmenu_run -nf '#d79921' -nb '#282828' -sb '#0066CC' -sf '#EEEEEE' -fn 'monospace-10'"
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
