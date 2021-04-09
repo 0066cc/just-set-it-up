@@ -213,3 +213,5 @@ client.focused          $blue $blue $darkgray $purple $darkgray
 client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
 client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
 client.urgent           $red $red $white $red $red
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'Brightness up'"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'Brightness down'"
