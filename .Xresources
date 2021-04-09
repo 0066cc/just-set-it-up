@@ -4,8 +4,12 @@ URxvt.saveLines:512
 !URxvt.boldfont:     xft:SF Mono:style=Bold:size=8
 !URxvt*font:        xft:JetBrains Mono-9
 !URxvt.boldfont:    xft:JetBrains Mono Medium-9
-URxvt*font:        xft:cherry:size=9
-URxvt.boldfont:    xft:cherry:size=9
+!URxvt*font:        xft:cherry:size=9
+!URxvt.boldfont:    xft:cherry:size=9
+
+URxvt*font:        xft:unscii-medium:size=9
+URxvt.boldfont:    xft:unscii-medium:size=9
+
 
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
