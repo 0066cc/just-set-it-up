@@ -7,8 +7,8 @@ URxvt.saveLines:512
 !URxvt*font:        xft:cherry:size=9
 !URxvt.boldfont:    xft:cherry:size=9
 
-URxvt*font:        xft:unscii-medium:size=9
-URxvt.boldfont:    xft:unscii-medium:size=9
+URxvt*font:        xft:AcPlus IBM VGA 8x14:style=Regula:size=12
+URxvt.boldfont:    xft:AcPlus IBM VGA 8x14:style=Regula:size=12
 
 
 URxvt.cursorBlink: 1
