@@ -13,6 +13,7 @@ cp ~/.inputrc .
 cp ~/.config/i3/config .config/i3/config 
 cp ~/.config/zathura/zathurarc .config/zathura/zathurarc
 cp ~/.config/qutebrowser/config.py .config/qutebrowser/config.py 
+cp ~/.config/mpv/scripts/youtube-quality.lua .config/mpv/scripts/youtube-quality.lua
 cp ~/.newsboat/config .newsboat/config 
 
 cp ~/Documents/scripts/chime.sh scripts/chime.sh
