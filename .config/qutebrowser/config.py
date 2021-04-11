@@ -1,5 +1,6 @@
 import subprocess
-config.bind('<Ctrl-Shift-y>','hint links spawn --detach mpv  --force-window yes {hint-url}')
+config.bind(',y', 'hint links spawn mpv {hint-url}')
+config.bind(',Y', 'spawn mpv {url}')
 c.tabs.position = "top"
 c.statusbar.position = "top"
 c.completion.shrink = True
