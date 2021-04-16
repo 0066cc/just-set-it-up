@@ -8,15 +8,11 @@ call vundle#begin()
 " Vim Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rhysd/vim-grammarous'
-Plugin 'mzlogin/vim-markdown-toc'
-Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'junegunn/limelight.vim'
 Plugin 'tpope/vim-endwise'
-Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-fugitive' 
 Plugin 'lervag/vimtex'
 Plugin 'junegunn/goyo.vim'
-Plugin 'inside/vim-search-pulse'
 Plugin 'vimwiki/vimwiki'
 Plugin 'ap/vim-css-color'
 Plugin 'vim-voom/VOoM'
@@ -85,8 +81,8 @@ let g:gruvbox_termcolors=256
 let g:gruvbox_contrast_dark='hard'
 
 " Vim
-syntax on
-colorscheme default
+syntax off
+colorscheme nofrils-acme
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -108,7 +104,7 @@ inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 set cursorline
-"set nocursorcolumn
+set nocursorcolumn
 set scrolloff=12
 set encoding=utf-8
 set t_Co=256
