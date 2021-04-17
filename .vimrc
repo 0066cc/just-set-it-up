@@ -82,7 +82,7 @@ let g:gruvbox_contrast_dark='hard'
 
 " Vim
 syntax off
-colorscheme nofrils-acme
+colorscheme default
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -107,7 +107,7 @@ set cursorline
 set nocursorcolumn
 set scrolloff=12
 set encoding=utf-8
-set t_Co=256
+set t_Co=0
 "set columns=80
 set wrap
 set linebreak
