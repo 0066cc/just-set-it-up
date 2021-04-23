@@ -62,11 +62,11 @@ highlight article ":.*\\(link\\)$" white default
 highlight article ":.*\\(image\\)$" white default
 highlight article ":.*\\(embedded flash\\)$" white default
  
-color listnormal blue black
-color listnormal_unread yellow black 
-color listfocus   green black
+color listnormal white black dim
+color listnormal_unread black white underline
+color listfocus   white black reverse
 color info  red default 
-color listfocus_unread black green blink
+color listfocus_unread white black reverse
 color info black white
 color background white black
 color article white black
@@ -76,7 +76,7 @@ feedlist-format "%-65t %?d?- %-65d&? %u "
 feedlist-title-format "%N %V %> %u feeds with new articles"
 articlelist-title-format "%T"
 html-renderer "w3m -dump -T text/HTML -cols 80 -o auto_image=TRUE -num -no-mouse"
-highlight article "^(Feed|Title|Author|Link|Date):.*" color0 default blink
+highlight article "^(Feed|Title|Author|Link|Date):.*" color0 default 
 show-read-feeds no
 save-path "~/Documents/Saved_Articles/"
 player "mpv --no-video --speed=1.71"

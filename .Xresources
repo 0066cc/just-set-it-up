@@ -1,18 +1,3 @@
-!~ URxvt Settings ~!
-URxvt.saveLines:512
-!URxvt*font:         xft:SF Mono:style=SemiBold:size=8
-!URxvt.boldfont:     xft:SF Mono:style=Bold:size=8
-!URxvt*font:        xft:JetBrains Mono-9
-!URxvt.boldfont:    xft:JetBrains Mono Medium-9
-URxvt*font:        xft:cherry:size=9
-URxvt.boldfont:    xft:cherry:size=9
-!URxvt*font:        xft:AcPlus IBM VGA 8x14:style=Regula:size=12
-!URxvt.boldfont:    xft:AcPlus IBM VGA 8x14:style=Regula:size=12
-
-
-URxvt.cursorBlink: 1
-URxvt.cursorUnderline: 1
-
 Xft.dpi:                      108
 Xft.antialias:                  1
 Xft.autohint:                   1
@@ -22,9 +7,14 @@ Xft.hintstyle:                 full
 Xft.lcdfilter:                 full
 Xft.rgba:                       rgb
 
+!~ URxvt Settings ~!
+URxvt.saveLines:512
+!URxvt*font:        xft:JetBrains Mono-9
+!URxvt.boldfont:    xft:JetBrains Mono Medium-9
 URxvt.lineSpace:                0
 URxvt.letterSpace:              0
-
+URxvt.cursorBlink: 1
+URxvt.cursorUnderline: 1
 URxvt.skipScroll:               true
 URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
@@ -42,59 +32,15 @@ URxvt.shading: 35
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 
-#define S_base03        #002b36
-#define S_base02        #073642
-#define S_base01        #586e75
-#define S_base00        #000000
-#define S_base0         #839496
-#define S_base1         #93a1a1
-#define S_base2         #3a3a3a
-#define S_base3         #fdf6e3
-
-*background:            S_base3
-*foreground:            S_base00
-*fadeColor:             S_base3
-*cursorColor:           S_base01
-*pointerColorBackground:S_base1
-*pointerColorForeground:S_base01
-
-#define S_yellow        #b58900
-#define S_orange        #cb4b16
-#define S_red           #dc322f
-#define S_magenta       #d33682
-#define S_violet        #6c71c4
-#define S_blue          #268bd2
-#define S_cyan          #2aa198
-#define S_green         #859900
-
-! black dark/light
-*color0:                S_base02
-*color8:                S_base03
-
-!! red dark/light
-*color1:                S_red
-*color9:                S_orange
-
-!! green dark/light
-*color2:                S_green
-*color10:               S_base01
-
-!! yellow dark/light
-*color3:                S_yellow
-*color11:               S_base00
-
-!! blue dark/light
-*color4:                S_blue
-*color12:               S_base0
-
-!! magenta dark/light
-*color5:                S_magenta
-*color13:               S_violet
-
-!! cyan dark/light
-*color6:                S_cyan
-*color14:               S_base1
-
-!! white dark/light
-*color7:                S_base2
-*color15:               S_base3
+!~ Xterm Settings ~!
+XTerm*faceName: xft:JetBrains Mono-9
+XTerm*faceSize: 9
+XTerm*rightScrollBar: false
+XTerm*ScrollBar: true
+XTerm*metaSendsEscape: true
+XTerm*VT100.Translations: #override \
+              Shift Ctrl<Key>V: insert-selection(CLIPBOARD)\n\ 
+                    Shift Ctrl<Key>V: insert-selection(PRIMARY)\n\ 
+                          Shift<Btn1Down>: select-start()\n\ 
+                                Shift<Btn1Motion>: select-extend()\n\
+                                      Shift<Btn1Up>: select-end(CLIPBOARD) 
