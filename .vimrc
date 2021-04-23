@@ -7,21 +7,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " Vim Plugins
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'rhysd/vim-grammarous'
-Plugin 'junegunn/limelight.vim'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-fugitive' 
 Plugin 'lervag/vimtex'
 Plugin 'junegunn/goyo.vim'
 Plugin 'vimwiki/vimwiki'
-Plugin 'ap/vim-css-color'
-Plugin 'vim-voom/VOoM'
-" Themes
-Plugin 'morhetz/gruvbox'
-Plugin 'robertmeta/nofrils'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'vim-airline/vim-airline'
-Plugin 'plan9-for-vimspace/acme-colors'
 call vundle#end()
 
 " Mappings
@@ -41,15 +29,8 @@ let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 let g:vimtex_fold_enabled = 0
 let g:tex_conceal='abdmg'
-" Shortcuts
-"leader+ll - start compiling
-"leader+lv - open pdf
-"leader+lk - stop compiling
-"leader+le - view errors
-"leader+lc - clean files
 " Wiki
 let g:vimwiki_use_mouse = 1
-"let g:vimwiki_folding = 'syntax'
 let g:vimwiki_auto_chdir = 1
 "let g:markdown_fold_style = 'syntax'
 let g:vmt_auto_update_on_save = 1
@@ -71,14 +52,11 @@ endfunction
 
 command! ProseMode call ProseMode()
 nmap \p :ProseMode<CR>
-nmap \h :Limelight<CR>
-nmap \k :Limelight!<CR>
 
-" Misc
-let g:vim_search_pulse_mode = 'cursor_line'
-let g:gruvbox_italic=1
-let g:gruvbox_termcolors=256
-let g:gruvbox_contrast_dark='hard'
+augroup vimrc_autocmds
+  autocmd BufEnter * highlight OverLength cterm=reverse
+    autocmd BufEnter * match OverLength /\%79v.*/
+augroup END
 
 " Vim
 syntax off
@@ -95,9 +73,8 @@ set hidden
 set autochdir
 set nojoinspaces
 set wildmenu
-set background=dark
+set background=light
 set sidescroll=8
-"set foldmethod=syntax
 set ignorecase
 hi MatchParen ctermbg=5
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
@@ -105,10 +82,11 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 set cursorline
 set nocursorcolumn
-set scrolloff=12
+set scrolloff=8
 set encoding=utf-8
-set t_Co=256
+set t_Co=16
 "set columns=80
+set tw=80
 set wrap
 set linebreak
 let g:limelight_conceal_ctermfg = 'gray'
@@ -118,4 +96,6 @@ set wrapmargin=0
 set formatoptions-=t
 let g:netrw_browsex_viewer='qutebrowser'
 set nobackup
-au FileType markdown setlocal tw=79 spell colorcolumn=81
+au BufRead,BufNewFile *.md set filetype=vimwiki
+au FileType markdown setlocal tw=79 colorcolumn=81 
+au FileType vimwiki setlocal tw=79 colorcolumn=81
