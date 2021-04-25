@@ -13,10 +13,10 @@ set $ws8 8
 set $ws9 9
 
 floating_modifier $mod
-bindsym $mod+Return exec --no-startup-id xterm -cm -name term
+bindsym $mod+Return exec --no-startup-id xterm -rv -cm -name term
 assign [class="rxvt"] 1
 assign [class="URxvt"] 1
-assign [class="xterm"] 1
+assign [class="xterm -rv"] 1
 assign [class="google-chrome"] 2
 assign [class="qutebrowser"] 2
 
@@ -154,7 +154,7 @@ exec --no-startup-id redshift -l 55.9:-3.1 -b 1:0.45
 exec --no-startup-id setxkbmap -layout gb
 exec --no-startup-id xset s off
 exec --no-startup-id xsetroot -gray
-exec --no-startup-id xterm -cm
+exec --no-startup-id xterm -rv -cm
 exec --no-startup-id qutebrowser
 exec --no-startup-id syncthing
 exec --no-startup-id dunst
@@ -164,7 +164,7 @@ default_orientation horizontal
 workspace_layout tabbed
 focus_follows_mouse yes
 
-bindsym $mod+p exec --no-startup-id xterm -cm -e newsboat
+bindsym $mod+p exec --no-startup-id xterm -rv -cm -e newsboat
 bindsym $mod+o exec --no-startup-id pcmanfm-qt
 bindsym $mod+a exec --no-startup-id audacity
 bindsym $mod+g exec --no-startup-id qutebrowser
