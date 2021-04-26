@@ -54,8 +54,8 @@ command! ProseMode call ProseMode()
 nmap \p :ProseMode<CR>
 
 augroup vimrc_autocmds
-  autocmd BufEnter * highlight OverLength cterm=reverse
-    autocmd BufEnter * match OverLength /\%79v.*/
+  autocmd BufEnter *.md highlight OverLength cterm=reverse
+    autocmd BufEnter *.md match OverLength /\%79v.*/
 augroup END
 
 " Vim
