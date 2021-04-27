@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'lervag/vimtex'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vimwiki/vimwiki'
+Plugin 'junegunn/goyo.vim'
 call vundle#end()
 
 " Mappings
