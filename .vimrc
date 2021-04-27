@@ -8,7 +8,7 @@ call vundle#begin()
 " Vim Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'lervag/vimtex'
-Plugin 'junegunn/goyo.vim'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vimwiki/vimwiki'
 call vundle#end()
 
@@ -38,7 +38,7 @@ let g:vimwiki_list = [{'path': '~/Documents/git/Life/wiki/', 'auto_tags':1, 'syn
 let g:vimwiki_hl_headers = 1
 
 " Airline
-let g:airline_theme='minimalist'
+"let g:airline_theme='minimalist'
 let g:airline_powerline_fonts = 0
 let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1
