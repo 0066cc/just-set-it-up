@@ -1,7 +1,13 @@
-exec xinput set-prop 9 292 1
-exec xinput set-prop 9 293 1
-#font pango:SF Pro Display Regular 9
+# Set mod key
 set $mod Mod4
+floating_modifier $mod
+
+# misc config
+default_orientation horizontal 
+workspace_layout tabbed
+focus_follows_mouse yes
+
+# Setup workspaces
 set $ws1 1
 set $ws2 2
 set $ws3 3
@@ -12,18 +18,57 @@ set $ws7 7
 set $ws8 8
 set $ws9 9
 
-floating_modifier $mod
-bindsym $mod+Return exec --no-startup-id xterm -rv -cm -name term
-assign [class="rxvt"] 1
-assign [class="URxvt"] 1
-assign [class="xterm -rv"] 1
-assign [class="google-chrome"] 2
-assign [class="qutebrowser"] 2
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
 
-bindsym $mod+Shift+q kill
-#bindsym $mod+d exec "dmenu_run -nf '#d79921' -nb '#282828' -sb '#0066CC' -sf '#EEEEEE' -fn 'monospace-10'"
-bindsym $mod+d exec rofi -show drun
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
 
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+# These bindings trigger as soon as you enter the resize mode
+
+# Pressing left will shrink the window’s width.
+# Pressing right will grow the window’s width.
+# Pressing up will shrink the window’s height.
+# Pressing down will grow the window’s height.
+    bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+# same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+# back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+# Various i3 bindings
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
@@ -67,145 +112,80 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 #bindsym $mod+a focus parent
 
-# focus the child container
-#bindsym $mod+d focus child
-
-# switch to workspace
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace $ws5
-bindsym $mod+6 workspace $ws6
-bindsym $mod+7 workspace $ws7
-bindsym $mod+8 workspace $ws8
-bindsym $mod+9 workspace $ws9
-bindsym $mod+0 workspace $ws10
-
-# move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $ws1
-bindsym $mod+Shift+2 move container to workspace $ws2
-bindsym $mod+Shift+3 move container to workspace $ws3
-bindsym $mod+Shift+4 move container to workspace $ws4
-bindsym $mod+Shift+5 move container to workspace $ws5
-bindsym $mod+Shift+6 move container to workspace $ws6
-bindsym $mod+Shift+7 move container to workspace $ws7
-bindsym $mod+Shift+8 move container to workspace $ws8
-bindsym $mod+Shift+9 move container to workspace $ws9
-bindsym $mod+Shift+0 move container to workspace $ws10
-
 # reload the configuration file
 bindsym $mod+Shift+c reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
-# resize window (you can also use the mouse for that)
-mode "resize" {
-# These bindings trigger as soon as you enter the resize mode
-
-# Pressing left will shrink the window’s width.
-# Pressing right will grow the window’s width.
-# Pressing up will shrink the window’s height.
-# Pressing down will grow the window’s height.
-    bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
-
-# same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
-# back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
-}
-
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3?' -B 'Exit' 'i3-msg exit'"
 bindsym $mod+r mode "resize"
-# Start i3bar to display a workspace bar (plus the system information i3status
-        for_window [class=".*"] border pixel 0
-        for_window [class=".*"] title_format " %title"
 
+# Display title bar on windows
+for_window [class=".*"] border pixel 0
+for_window [class=".*"] title_format " %title"
 
-        bindsym ctrl+$mod+l exec --no-startup-id sleep 1 && xset dpms force suspend
+# Resizing
+bindsym $mod+Ctrl+Right resize shrink width 1 px or 1 ppt
+bindsym $mod+Ctrl+Up resize grow height 1 px or 1 ppt
+bindsym $mod+Ctrl+Down resize shrink height 1 px or 1 ppt
+bindsym $mod+Ctrl+Left resize grow width 1 px or 1 ppt
 
+# Enable trackpad and misc features.
+exec xinput set-prop 9 292 1
+exec xinput set-prop 9 293 1
+exec xinput set-prop 9 292 1
+exec xinput set-prop 10 292 1
 
-        exec start-pulseaudio-x11
+# Assign various programs to specific workspaces
+assign [class="rxvt"] 1
+assign [class="URxvt"] 1
+assign [class="xterm"] 1
+assign [class="google-chrome"] 2
+assign [class="qutebrowser"] 2
 
-        bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
-        bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
-        bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+# Program launcher
+#bindsym $mod+d exec rofi -show drun
+bindsym $mod+d exec "dmenu_run -nf '#d79921' -nb '#282828' -sb '#0066CC' -sf '#EEEEEE' -fn 'monospace-10'"
 
-        bindsym $mod+Ctrl+Right resize shrink width 1 px or 1 ppt
-        bindsym $mod+Ctrl+Up resize grow height 1 px or 1 ppt
-        bindsym $mod+Ctrl+Down resize shrink height 1 px or 1 ppt
-        bindsym $mod+Ctrl+Left resize grow width 1 px or 1 ppt
-
-        exec xinput set-prop 9 292 1
-        exec xinput set-prop 10 292 1
+# Run on startup
 exec --no-startup-id bash ~/.screenlayout/layout.sh
 exec --no-startup-id unclutter -idle 1
 exec --no-startup-id redshift -l 55.9:-3.1 -b 1:0.45
 exec --no-startup-id setxkbmap -layout gb
 exec --no-startup-id xset s off
-exec --no-startup-id xsetroot -gray
 exec --no-startup-id xterm -rv -cm
-exec --no-startup-id qutebrowser
 exec --no-startup-id syncthing
 exec --no-startup-id setxkbmap -option caps:escape
 exec --no-startup-id dunst
 exec --no-startup-id xautolock -time 10 -locker slock
+exec start-pulseaudio-x11
 
-default_orientation horizontal 
-workspace_layout tabbed
-focus_follows_mouse yes
 
+# Function key bindings
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'Brightness up'"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'Brightness down'"
+
+# Wallaper
+# exec --no-startup-id xsetroot -gray
+exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Photos/Wallpaper/mac/mac.jpg
+
+# Key bindings
+bindsym $mod+Return exec --no-startup-id xterm -rv -cm -name term
 bindsym $mod+p exec --no-startup-id xterm -rv -cm -e newsboat
 bindsym $mod+o exec --no-startup-id pcmanfm-qt
-bindsym $mod+a exec --no-startup-id audacity
 bindsym $mod+g exec --no-startup-id qutebrowser
 bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/
-
-# set primary gruvbox colorscheme colors
-set $bg #282828
-set $red #cc241d
-set $green #98971a
-set $yellow #d79921
-set $blue #458588
-set $purple #b16286
-set $aqua #689d68
-set $gray #a89984
-set $darkgray #1d2021
-
-# font used by i3 for titles and bars
-#font pango:Hack 8
+bindsym ctrl+$mod+l exec --no-startup-id sleep 1 && xset dpms force suspend
+bindsym $mod+Shift+q kill
 
 #start of bar section
 bar {
     position top
-        status_command i3status
-        colors {
-# bar background color
-            background $bg
-# text color used for blocks that do not have a color specified.
-                statusline $yellow
-# workspaces section            
-#                    border  backgr. text
-                focused_workspace    $aqua $aqua $darkgray
-                inactive_workspace   $darkgray $darkgray $yellow
-                active_workspace     $darkgray $darkgray $yellow
-                urgent_workspace     $red $red $bg
-        }
+    status_command i3status
+    mode hide
 }
-# class                 border|backgr|text|indicator|child_border
-client.focused          $blue $blue $darkgray $purple $darkgray
-client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
-client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
-client.urgent           $red $red $white $red $red
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'Brightness up'"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'Brightness down'"
