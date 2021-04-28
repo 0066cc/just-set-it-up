@@ -2,7 +2,7 @@ import subprocess
 config.bind(',y', 'hint links spawn mpv {hint-url}')
 config.bind(',Y', 'spawn mpv {url}')
 c.tabs.position = "top"
-c.statusbar.position = "top"
+c.statusbar.position = "bottom"
 c.completion.shrink = True
 c.tabs.width = 24
 c.colors.webpage.bg = "#eee"
