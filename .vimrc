@@ -8,7 +8,7 @@ call vundle#begin()
 " Vim Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'lervag/vimtex'
-Plugin 'vim-airline/vim-airline'
+Plugin 'lgalke/vim-ernest'
 Plugin 'vimwiki/vimwiki'
 Plugin 'junegunn/goyo.vim'
 call vundle#end()
@@ -37,12 +37,6 @@ let g:vimwiki_auto_chdir = 1
 let g:vmt_auto_update_on_save = 1
 let g:vimwiki_list = [{'path': '~/Documents/git/Life/wiki/', 'auto_tags':1, 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_hl_headers = 1
-
-" Airline
-"let g:airline_theme='minimalist'
-let g:airline_powerline_fonts = 0
-let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1
 
 " Goyo
 function! ProseMode()
@@ -100,3 +94,15 @@ set nobackup
 au BufRead,BufNewFile *.md set filetype=vimwiki
 au FileType markdown setlocal tw=79 wrap colorcolumn=80 
 au FileType vimwiki setlocal tw=79 wrap colorcolumn=80
+set statusline+=%{wordcount().words}\ words
+set laststatus=2    " enables the statusline.
+
+" Ernest
+function! ErnestMode()
+    Ernest
+endfunction
+
+command! ErnestMode call ErnestMode()
+nmap \e :ErnestMode<CR>
+
+
