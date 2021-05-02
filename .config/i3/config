@@ -172,7 +172,7 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'Brightness 
 
 # Wallaper
 # exec --no-startup-id xsetroot -gray
-exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Photos/Wallpaper/mac/mac.jpg
+exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Photos/Wallpaper/unsplash/night.jpg
 
 # Key bindings
 bindsym $mod+Return exec --no-startup-id xterm -rv -cm -name term
@@ -189,3 +189,7 @@ bar {
     status_command i3status
     mode hide
 }
+
+# i3 gaps settings
+gaps inner 20
+gaps outer 5

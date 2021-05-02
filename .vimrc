@@ -54,10 +54,10 @@ endfunction
 command! ProseMode call ProseMode()
 nmap \p :ProseMode<CR>
 
-augroup vimrc_autocmds
-  autocmd BufEnter *.md highlight OverLength cterm=reverse
-    autocmd BufEnter *.md match OverLength /\%79v.*/
-augroup END
+"augroup vimrc_autocmds
+" autocmd BufEnter *.md highlight OverLength cterm=reverse
+"   autocmd BufEnter *.md match OverLength /\%79v.*/
+"augroup END
 
 " Vim
 syntax off
@@ -98,5 +98,5 @@ set formatoptions-=t
 let g:netrw_browsex_viewer='qutebrowser'
 set nobackup
 au BufRead,BufNewFile *.md set filetype=vimwiki
-au FileType markdown setlocal tw=79 colorcolumn=81 
-au FileType vimwiki setlocal tw=79 colorcolumn=81
+au FileType markdown setlocal tw=79 wrap colorcolumn=80 
+au FileType vimwiki setlocal tw=79 wrap colorcolumn=80

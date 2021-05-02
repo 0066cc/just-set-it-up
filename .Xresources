@@ -41,7 +41,7 @@ Xterm*cursorColor:              black
 Xterm*pointerShape:             arrow
 Xterm*pointerColor:             black
 XTerm*rightScrollBar: false
-XTerm*ScrollBar: true
+XTerm*ScrollBar: false
 XTerm*metaSendsEscape: true
 XTerm*VT100.Translations: #override \
               Shift Ctrl<Key>V: insert-selection(CLIPBOARD)\n\ 
