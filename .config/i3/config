@@ -191,5 +191,5 @@ bar {
 }
 
 # i3 gaps settings
-gaps inner 20
-gaps outer 5
+#gaps inner 20
+#gaps outer 5
