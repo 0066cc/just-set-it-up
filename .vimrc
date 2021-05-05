@@ -7,6 +7,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " Vim Plugins
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-ruby/vim-ruby'
 Plugin 'lervag/vimtex'
 Plugin 'lgalke/vim-ernest'
 Plugin 'vimwiki/vimwiki'
