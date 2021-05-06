@@ -97,6 +97,7 @@ au FileType markdown setlocal tw=79 wrap colorcolumn=80
 au FileType vimwiki setlocal tw=79 wrap colorcolumn=80
 set statusline+=%{wordcount().words}\ words
 set laststatus=2    " enables the statusline.
+set autoread
 
 " Ernest
 function! ErnestMode()
