@@ -9,8 +9,8 @@ Xft.rgba:                       rgb
 
 !~ URxvt Settings ~!
 URxvt.saveLines:512
-!URxvt*font:        xft:JetBrains Mono-9
-!URxvt.boldfont:    xft:JetBrains Mono Medium-9
+URxvt*font:        xft:JetBrains Mono-9
+URxvt.boldfont:    xft:JetBrains Mono Medium-9
 URxvt.lineSpace:                0
 URxvt.letterSpace:              0
 URxvt.cursorBlink: 1
@@ -32,6 +32,43 @@ URxvt.shading: 35
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 
+! special
+*.foreground:   #c2c2b0
+*.background:   #202020
+*.cursorColor:  #c2c2b0
+
+! black
+*.color0:       #151515
+*.color8:       #3f3639
+
+! red
+*.color1:       #b44242
+*.color9:       #dc7671
+
+! green
+*.color2:       #95a328
+*.color10:      #e8e85a
+
+! yellow
+*.color3:       #e1c135
+*.color11:      #9e9052
+
+! blue
+*.color4:       #60928f
+*.color12:      #76c39b
+
+! magenta
+*.color5:       #7c435a
+*.color13:      #86596c
+
+! cyan
+*.color6:       #a48b4a
+*.color14:      #ceb34f
+
+! white
+*.color7:       #c2c2b0
+*.color15:      #b0afa8
+
 !~ Xterm Settings ~!
 XTerm*faceName: xft:JetBrains Mono-9
 XTerm*faceSize: 9
@@ -44,8 +81,8 @@ XTerm*rightScrollBar: false
 XTerm*ScrollBar: false
 XTerm*metaSendsEscape: true
 XTerm*VT100.Translations: #override \
-              Shift Ctrl<Key>V: insert-selection(CLIPBOARD)\n\ 
-                    Shift Ctrl<Key>V: insert-selection(PRIMARY)\n\ 
-                          Shift<Btn1Down>: select-start()\n\ 
-                                Shift<Btn1Motion>: select-extend()\n\
-                                      Shift<Btn1Up>: select-end(CLIPBOARD) 
+Shift Ctrl<Key>V: insert-selection(CLIPBOARD)\n\ 
+Shift Ctrl<Key>V: insert-selection(PRIMARY)\n\ 
+Shift<Btn1Down>: select-start()\n\ 
+Shift<Btn1Motion>: select-extend()\n\
+Shift<Btn1Up>: select-end(CLIPBOARD) 
