@@ -4,7 +4,7 @@ floating_modifier $mod
 
 # misc config
 default_orientation horizontal 
-workspace_layout tabbed
+#workspace_layout tabbed
 focus_follows_mouse yes
 
 # Setup workspaces
