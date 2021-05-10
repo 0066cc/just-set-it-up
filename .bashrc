@@ -17,9 +17,9 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-case "$TERM" in
-    xterm-color|*-256color) color_prompt=yes;;
-esac
+#case "$TERM" in
+#   xterm-color|*-256color) color_prompt=yes;;
+#esac
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -44,17 +44,17 @@ esac
 
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias dir='dir --color=auto'
-    alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+#    alias ls='ls --color=auto'
+#    alias dir='dir --color=auto'
+#    alias vdir='vdir --color=auto'
+#
+#    alias grep='grep --color=auto'
+#    alias fgrep='fgrep --color=auto'
+#    alias egrep='egrep --color=auto'
 fi
 
 # colored GCC warnings and errors
-export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
 alias la='ls -A'
@@ -104,7 +104,6 @@ if [ "$TERM" = "linux" ]; then
     clear #for background artifacting
 fi
 
-alias ls='ls --color=auto'
 alias ll='ls -l'
 alias gc='gcc -pedantic-errors -Wall -Werror -Wuninitialized  -Wno-unused-result -std=c17'
 alias g+='g++ -pedantic-errors -Wall -Werror -Wuninitialized  -Wno-unused-result '

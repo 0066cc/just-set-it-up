@@ -72,11 +72,11 @@ URxvt.matcher.button: 1
 !~ Xterm Settings ~!
 XTerm*faceName: xft:JetBrains Mono-9
 XTerm*faceSize: 9
-Xterm*Background:               white
-Xterm*Foreground:               black 
-Xterm*cursorColor:              black 
+Xterm*Background:               black
+Xterm*Foreground:               yellow
+Xterm*cursorColor:              white
 Xterm*pointerShape:             arrow
-Xterm*pointerColor:             black
+Xterm*pointerColor:             white
 XTerm*rightScrollBar: false
 XTerm*ScrollBar: false
 XTerm*metaSendsEscape: true

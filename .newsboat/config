@@ -20,16 +20,16 @@ keep-articles-days 7
 article-sort-order date-asc
 
 # externel browser
-browser "dillo %u"
-#browser "/bin/qutebrowser %u"
-macro y set browser "/bin/mpv --ytdl-format=18 %u"; open-in-browser ; set browser "dillo %u"
-macro t set browser "/bin/mpv --ytdl-format=best %u"; open-in-browser ; set browser "dillo %u"
-macro m set browser "/bin/mpv --no-video %u"; open-in-browser ; set browser "dillo %u"
-macro u set browser "sudo mplayer -vo fbdev2 $(youtube-dl -g %u)"; open-in-browser ; set browser "dillo %u"
-macro l set browser "/bin/links2 -g %u"; open-in-browser ; set browser "dillo %u"
-macro q set browser "/bin/qutebrowser %u"; open-in-browser ; set browser "dillo %u"
-macro w set browser "w3m -T text/HTML -cols 80 -o auto_image=TRUE -num -no-mouse %u"; open-in-browser ; set browser "dillo %u"
-macro p set browser "/bin/mpv %u"; open-in-browser ; set browser "dillo %u"
+#browser "qutebrowser %u"
+browser "qutebrowser %u"
+macro y set browser "mpv --ytdl-format=18 %u"; open-in-browser ; set browser "qutebrowser %u"
+macro t set browser "mpv --ytdl-format=best %u"; open-in-browser ; set browser "qutebrowser %u"
+macro m set browser "mpv --no-video %u"; open-in-browser ; set browser "qutebrowser %u"
+macro u set browser "sudo mplayer -vo fbdev2 $(youtube-dl -g %u)"; open-in-browser ; set browser "qutebrowser %u"
+macro l set browser "links2 -g %u"; open-in-browser ; set browser "qutebrowser %u"
+macro q set browser "qutebrowser %u"; open-in-browser ; set browser "qutebrowser %u"
+macro w set browser "w3m -T text/HTML -cols 80 -o auto_image=TRUE -num -no-mouse %u"; open-in-browser ; set browser "qutebrowser %u"
+macro p set browser "mpv %u"; open-in-browser ; set browser "qutebrowser %u"
 macro o open-in-browser 
 
 # unbind keys
@@ -80,7 +80,7 @@ highlight article "^(Feed|Title|Author|Link|Date):.*" color0 default
 show-read-feeds no
 save-path "~/Documents/Saved_Articles/"
 player "mpv --no-video --speed=1.71"
-podlist-format "%4i - [%-5p %%] %-12S %F"
+#podlist-format "%4i - [%-5p %%] %-12S %F"
 download-path "~/Podcasts/%h/%n"
 
 bookmark-cmd "~/.newsboat/bookmark.sh"
