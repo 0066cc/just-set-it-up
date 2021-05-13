@@ -160,7 +160,6 @@ exec --no-startup-id syncthing
 exec --no-startup-id setxkbmap -option caps:escape
 exec --no-startup-id dunst
 exec --no-startup-id xautolock -time 10 -locker slock
-exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Photos/Wallpaper/
 exec start-pulseaudio-x11
 
 
@@ -173,7 +172,7 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'Brightness 
 
 # Wallaper
 # exec --no-startup-id xsetroot -gray
-exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Photos/Wallpaper/unsplash/night.jpg
+exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Photos/Wallpaper/
 
 # Key bindings
 bindsym $mod+Return exec --no-startup-id xterm -cm -name term
