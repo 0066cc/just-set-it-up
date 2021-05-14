@@ -106,5 +106,3 @@ endfunction
 
 command! ErnestMode call ErnestMode()
 nmap \e :ErnestMode<CR>
-
-
