@@ -155,7 +155,8 @@ exec --no-startup-id unclutter -idle 1
 exec --no-startup-id redshift -l 55.9:-3.1 -b 1:0.45
 exec --no-startup-id setxkbmap -layout gb
 exec --no-startup-id xset s off
-exec --no-startup-id xterm -cm
+#exec --no-startup-id xterm -cm
+exec --no-startup-id rxvt
 exec --no-startup-id syncthing
 exec --no-startup-id setxkbmap -option caps:escape
 exec --no-startup-id dunst
@@ -175,8 +176,8 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'Brightness 
 exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Photos/Wallpaper/
 
 # Key bindings
-bindsym $mod+Return exec --no-startup-id xterm -cm -name term
-#bindsym $mod+Return exec --no-startup-id rxvt
+#bindsym $mod+Return exec --no-startup-id xterm -cm -name term
+bindsym $mod+Return exec --no-startup-id rxvt
 bindsym $mod+o exec --no-startup-id pcmanfm-qt
 bindsym $mod+g exec --no-startup-id qutebrowser
 bindsym $mod+n exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Photos/Wallpaper/

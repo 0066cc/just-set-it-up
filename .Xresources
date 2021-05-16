@@ -26,48 +26,63 @@ URxvt.url-launcher:            qutebrowser
 URxvt*fading:  0
 URxvt*blurRadius:  0
 URxvt*depth:  0
-URxvt*inheritPixmap: false
-URxvt.transparent: false
+URxvt*inheritPixmap: true
+URxvt.transparent: true
 URxvt.shading: 35
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 
-! special
-*.foreground:   #c2c2b0
-*.background:   #202020
-*.cursorColor:  #c2c2b0
 
-! black
-*.color0:       #151515
-*.color8:       #3f3639
+#define base00 #000000
 
-! red
-*.color1:       #b44242
-*.color9:       #dc7671
+#define base01 #FF4800
 
-! green
-*.color2:       #95a328
-*.color10:      #e8e85a
+#define base02 #FF5400
 
-! yellow
-*.color3:       #e1c135
-*.color11:      #9e9052
+#define base03 #FF6000
 
-! blue
-*.color4:       #60928f
-*.color12:      #76c39b
+#define base04 #FF7000
 
-! magenta
-*.color5:       #7c435a
-*.color13:      #86596c
+#define base05 #FFB600
 
-! cyan
-*.color6:       #a48b4a
-*.color14:      #ceb34f
+#define base06 #FF7900
+#define base07 #FF8500
+#define base08 #FF9100
 
-! white
-*.color7:       #c2c2b0
-*.color15:      #b0afa8
+#define base09 #FF9E00
+
+#define base0A #FFAA00
+#define base0B #FFAA00
+#define base0C #FFAA00
+#define base0D #FFAA00
+#define base0E #FFAA00
+#define base0F #FFAA00
+
+*.foreground:   base05
+#ifdef background_opacity
+*.background:   [background_opacity]base00
+#else
+*.background:   base00
+#endif
+*.cursorColor:  base05
+
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
+
+*.color8:       base03
+*.color9:       base09
+*.color10:      base01
+*.color11:      base02
+*.color12:      base04
+*.color13:      base06
+*.color14:      base0F
+*.color15:      base07
 
 !~ Xterm Settings ~!
 XTerm*faceName: xft:JetBrains Mono-9
