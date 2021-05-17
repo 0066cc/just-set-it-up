@@ -62,11 +62,11 @@ highlight article ":.*\\(link\\)$" white default
 highlight article ":.*\\(image\\)$" white default
 highlight article ":.*\\(embedded flash\\)$" white default
  
-color listnormal black white  dim
-color listnormal_unread black white 
-color listfocus   white black 
+color listnormal white  black dim
+color listnormal_unread white black 
+color listfocus   black white  
 color info  red default 
-color listfocus_unread white black 
+color listfocus_unread black white  
 color info black white
 color background white black
 color article white black
