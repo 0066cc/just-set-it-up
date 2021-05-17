@@ -51,12 +51,12 @@ URxvt.matcher.button: 1
 
 #define base09 #FF9E00
 
-#define base0A #FFAA00
-#define base0B #FFAA00
-#define base0C #FFAA00
-#define base0D #FFAA00
-#define base0E #FFAA00
-#define base0F #FFAA00
+#define base0A #FF9900
+#define base0B #EE8800
+#define base0C #DD7700
+#define base0D #CC6600
+#define base0E #BB5500
+#define base0F #AA4400
 
 *.foreground:   base05
 #ifdef background_opacity
