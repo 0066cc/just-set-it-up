@@ -32,31 +32,22 @@ URxvt.shading: 35
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 
-
-#define base00 #000000
-
-#define base01 #FF4800
-
-#define base02 #FF5400
-
-#define base03 #FF6000
-
-#define base04 #FF7000
-
-#define base05 #FFB600
-
-#define base06 #FF7900
-#define base07 #FF8500
-#define base08 #FF9100
-
-#define base09 #FF9E00
-
-#define base0A #FF9900
-#define base0B #EE8800
-#define base0C #DD7700
-#define base0D #CC6600
-#define base0E #BB5500
-#define base0F #AA4400
+#define base00 #101010
+#define base01 #252525
+#define base02 #464646
+#define base03 #525252
+#define base04 #ababab
+#define base05 #FFFFFF
+#define base06 #e3e3e3
+#define base07 #f7f7f7
+#define base08 #7c7c7c
+#define base09 #999999
+#define base0A #a0a0a0
+#define base0B #8e8e8e
+#define base0C #868686
+#define base0D #686868
+#define base0E #747474
+#define base0F #5e5e5e
 
 *.foreground:   base05
 #ifdef background_opacity
@@ -76,12 +67,12 @@ URxvt.matcher.button: 1
 *.color7:       base05
 
 *.color8:       base03
-*.color9:       base09
-*.color10:      base01
-*.color11:      base02
-*.color12:      base04
-*.color13:      base06
-*.color14:      base0F
+*.color9:       base08
+*.color10:      base0B
+*.color11:      base0A
+*.color12:      base0D
+*.color13:      base0E
+*.color14:      base0C
 *.color15:      base07
 
 !~ Xterm Settings ~!
