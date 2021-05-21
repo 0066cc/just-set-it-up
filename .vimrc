@@ -42,8 +42,8 @@ let g:vimwiki_hl_headers = 1
 " Goyo
 function! ProseMode()
     call goyo#execute(0, [])
-    set nospell noci nosi noai nolist noshowmode 
-    set complete+=s
+"    set nospell noci nosi noai nolist noshowmode 
+"    set complete+=s
 endfunction
 
 command! ProseMode call ProseMode()
