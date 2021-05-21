@@ -42,21 +42,16 @@ let g:vimwiki_hl_headers = 1
 " Goyo
 function! ProseMode()
     call goyo#execute(0, [])
-    set nospell noci nosi noai nolist noshowmode noshowcmd
+    set nospell noci nosi noai nolist noshowmode 
     set complete+=s
 endfunction
 
 command! ProseMode call ProseMode()
 nmap \p :ProseMode<CR>
 
-"augroup vimrc_autocmds
-" autocmd BufEnter *.md highlight OverLength cterm=reverse
-"   autocmd BufEnter *.md match OverLength /\%79v.*/
-"augroup END
-
 " Vim
-syntax off
-colorscheme default
+syntax on
+colorscheme zellner
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -92,9 +87,9 @@ set wrapmargin=0
 set formatoptions-=t
 let g:netrw_browsex_viewer='qutebrowser'
 set nobackup
-au BufRead,BufNewFile *.md set filetype=vimwiki
-au FileType markdown setlocal tw=79 wrap colorcolumn=80 
-au FileType vimwiki setlocal tw=79 wrap colorcolumn=80
+"au BufRead,BufNewFile *.md set filetype=vimwiki
+"au FileType markdown setlocal tw=79 wrap colorcolumn=80 
+"au FileType vimwiki setlocal tw=79 wrap colorcolumn=80
 set statusline+=%{wordcount().words}\ words
 set laststatus=2    " enables the statusline.
 set autoread
