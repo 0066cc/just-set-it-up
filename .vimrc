@@ -9,7 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'lervag/vimtex'
-Plugin 'lgalke/vim-ernest'
+Plugin 'morhetz/gruvbox'
 Plugin 'vimwiki/vimwiki'
 Plugin 'junegunn/goyo.vim'
 call vundle#end()
@@ -51,7 +51,7 @@ nmap \p :ProseMode<CR>
 
 " Vim
 syntax on
-colorscheme zellner
+colorscheme gruvbox
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -93,11 +93,4 @@ set nobackup
 set statusline+=%{wordcount().words}\ words
 set laststatus=2    " enables the statusline.
 set autoread
-
-" Ernest
-function! ErnestMode()
-    Ernest
-endfunction
-
-command! ErnestMode call ErnestMode()
-nmap \e :ErnestMode<CR>
+let g:gruvbox_contrast = "hard"
