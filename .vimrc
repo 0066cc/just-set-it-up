@@ -87,9 +87,6 @@ set wrapmargin=0
 set formatoptions-=t
 let g:netrw_browsex_viewer='qutebrowser'
 set nobackup
-"au BufRead,BufNewFile *.md set filetype=vimwiki
-"au FileType markdown setlocal tw=79 wrap colorcolumn=80 
-"au FileType vimwiki setlocal tw=79 wrap colorcolumn=80
 set statusline+=%{wordcount().words}\ words
 set laststatus=2    " enables the statusline.
 set autoread
