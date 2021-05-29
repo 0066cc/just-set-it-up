@@ -153,7 +153,8 @@ bindsym $mod+d exec "dmenu_run -nf '#d79921' -nb '#282828' -sb '#0066CC' -sf '#E
 exec --no-startup-id bash ~/.screenlayout/layout.sh
 exec --no-startup-id unclutter -idle 1
 exec --no-startup-id redshift -l 55.9:-3.1 -b 1:0.45
-exec --no-startup-id setxkbmap -layout gb
+#exec --no-startup-id setxkbmap -layout gb
+exec --no-startup-id setxkbmap us
 exec --no-startup-id xset s off
 #exec --no-startup-id xterm -cm
 exec --no-startup-id rxvt
