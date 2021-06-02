@@ -9,6 +9,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'lervag/vimtex'
+Plugin 'dbmrq/vim-ditto'
+Plugin 'preservim/vim-litecorrect'
 Plugin 'morhetz/gruvbox'
 Plugin 'vimwiki/vimwiki'
 Plugin 'junegunn/goyo.vim'
@@ -91,3 +93,4 @@ set statusline+=%{wordcount().words}\ words
 set laststatus=2    " enables the statusline.
 set autoread
 let g:gruvbox_contrast = "hard"
+au FileType markdown,text,tex DittoOn
