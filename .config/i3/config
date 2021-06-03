@@ -174,7 +174,8 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'Brightness 
 
 # Wallaper
 # exec --no-startup-id xsetroot -gray
-exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Photos/Wallpaper/
+#exec --no-startup-id DISPLAY=:0 feh --recursive --randomize --bg-fill ~/Pictures/Photos/Wallpaper/
+exec --no-startup-id DISPLAY=:0 nitrogen --restore
 
 # Key bindings
 #bindsym $mod+Return exec --no-startup-id xterm -cm -name term
