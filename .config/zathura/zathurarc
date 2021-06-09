@@ -1,4 +1,7 @@
 set page-padding                10
+
+set recolor true
+
 # Lighthaus Colors:
 
 set notification-error-bg       "#FC2929" 
@@ -36,3 +39,6 @@ set render-loading-fg           "#FFEE79"
 set render-loading-bg           "#18191E" 
 
 # Recolor mode settings
+
+set recolor-lightcolor          "#21252D" 
+set recolor-darkcolor           "#FFFADE" 
