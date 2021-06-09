@@ -7,13 +7,15 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " Vim Plugins
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-ruby/vim-ruby'
 Plugin 'lervag/vimtex'
 Plugin 'dbmrq/vim-ditto'
+Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'preservim/vim-litecorrect'
 Plugin 'morhetz/gruvbox'
+Plugin 'reedes/vim-colors-pencil'
 Plugin 'vimwiki/vimwiki'
 Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
 call vundle#end()
 
 " Mappings
@@ -66,7 +68,7 @@ set hidden
 set autochdir
 set nojoinspaces
 set wildmenu
-set background=light
+set background=dark
 set sidescroll=8
 set ignorecase
 hi MatchParen ctermbg=5
@@ -77,13 +79,11 @@ set cursorline
 set nocursorcolumn
 set scrolloff=8
 set encoding=utf-8
-set t_Co=16
+set t_Co=256
 "set columns=80
 set tw=80
 set wrap
 set linebreak
-let g:limelight_conceal_ctermfg = 'gray'
-let g:limelight_conceal_ctermfg = 240
 set textwidth=0
 set wrapmargin=0
 set formatoptions-=t
@@ -93,4 +93,4 @@ set statusline+=%{wordcount().words}\ words
 set laststatus=2    " enables the statusline.
 set autoread
 let g:gruvbox_contrast = "hard"
-au FileType markdown,text,tex DittoOn
+au FileType markdown,text DittoOn
