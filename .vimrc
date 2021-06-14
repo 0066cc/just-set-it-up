@@ -92,5 +92,4 @@ set nobackup
 set statusline+=%{wordcount().words}\ words
 set laststatus=2    " enables the statusline.
 set autoread
-let g:gruvbox_contrast = "hard"
 au FileType markdown,text DittoOn
