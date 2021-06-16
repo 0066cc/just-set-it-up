@@ -8,6 +8,7 @@ call vundle#begin()
 " Vim Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'lervag/vimtex'
+Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'dbmrq/vim-ditto'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'preservim/vim-litecorrect'
@@ -52,6 +53,7 @@ endfunction
 
 command! ProseMode call ProseMode()
 nmap \p :ProseMode<CR>
+nmap \m :MarkdownPreview<CR>
 
 " Vim
 syntax on
@@ -93,3 +95,4 @@ set statusline+=%{wordcount().words}\ words
 set laststatus=2    " enables the statusline.
 set autoread
 au FileType markdown,text DittoOn
+let g:mkdp_browser = 'microsoft-edge'
