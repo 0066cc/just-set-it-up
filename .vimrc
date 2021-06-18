@@ -89,7 +89,7 @@ set linebreak
 set textwidth=0
 set wrapmargin=0
 set formatoptions-=t
-let g:netrw_browsex_viewer='qutebrowser'
+let g:netrw_browsex_viewer='microsoft-edge'
 set nobackup
 set statusline+=%{wordcount().words}\ words
 set laststatus=2    " enables the statusline.
