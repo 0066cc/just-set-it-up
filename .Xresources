@@ -31,7 +31,7 @@ URxvt*blurRadius:  0
 URxvt*depth:  0
 URxvt*inheritPixmap: true
 URxvt.transparent: true
-URxvt.shading: 15
+URxvt.shading: 45
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 
