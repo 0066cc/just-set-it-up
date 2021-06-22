@@ -59,7 +59,7 @@ nmap \m :MarkdownPreview<CR>
 
 " Vim
 syntax off
-colorscheme nofrils-light
+colorscheme nofrils-dark
 set tabstop=4
 set shiftwidth=0
 set expandtab
