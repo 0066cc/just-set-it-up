@@ -6,10 +6,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 "Plugins
 call vundle#begin()
 " Vim Plugins
-Plugin 'VundleVim/Vundle.vim'
 Plugin 'lervag/vimtex'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'dbmrq/vim-ditto'
+Plugin 'robertmeta/nofrils'
+Plugin 'plan9-for-vimspace/acme-colors'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'preservim/vim-litecorrect'
 Plugin 'morhetz/gruvbox'
@@ -56,8 +58,8 @@ nmap \p :ProseMode<CR>
 nmap \m :MarkdownPreview<CR>
 
 " Vim
-syntax on
-colorscheme gruvbox
+syntax off
+colorscheme nofrils-acme
 set tabstop=4
 set shiftwidth=0
 set expandtab
