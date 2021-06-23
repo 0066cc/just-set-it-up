@@ -49,8 +49,8 @@ let g:vimwiki_hl_headers = 1
 " Goyo
 function! ProseMode()
     call goyo#execute(0, [])
-"    set nospell noci nosi noai nolist noshowmode 
-"    set complete+=s
+    "    set nospell noci nosi noai nolist noshowmode 
+    "    set complete+=s
 endfunction
 
 command! ProseMode call ProseMode()
@@ -98,3 +98,9 @@ set laststatus=2    " enables the statusline.
 set autoread
 au FileType markdown,text DittoOn
 let g:mkdp_browser = 'microsoft-edge'
+
+augroup litecorrect
+    autocmd!
+    autocmd FileType markdown,mkd call litecorrect#init()
+    autocmd FileType textile call litecorrect#init()
+augroup END
