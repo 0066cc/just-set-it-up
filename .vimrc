@@ -97,7 +97,11 @@ set statusline+=%{wordcount().words}\ words
 set laststatus=2    " enables the statusline.
 set autoread
 au FileType markdown,text DittoOn
-let g:mkdp_browser = 'microsoft-edge'
+let g:mkdp_browser = 'surf'
+
+augroup markdown_syntax
+autocmd BufNewFile,BufRead *.md syntax on
+augroup END
 
 augroup litecorrect
     autocmd!
