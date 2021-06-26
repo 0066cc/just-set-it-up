@@ -20,15 +20,15 @@ keep-articles-days 7
 article-sort-order date-asc
 
 # externel browser
-browser "surf %u &> /dev/null"
-macro y set browser "mpv --ytdl-format=18 %u"; open-in-browser ; set browser "surf %u &> /dev/null"
-macro t set browser "mpv --ytdl-format=best %u"; open-in-browser ; set browser "surf %u &> /dev/null"
-macro m set browser "mpv --no-video %u"; open-in-browser ; set browser "surf %u &> /dev/null"
-macro u set browser "sudo mplayer -vo fbdev2 $(youtube-dl -g %u)"; open-in-browser ; set browser "surf %u &> /dev/null"
-macro l set browser "links2 -g %u"; open-in-browser ; set browser "surf %u &> /dev/null"
-macro q set browser "surf %u &> /dev/null"; open-in-browser ; set browser "surf %u &> /dev/null"
-macro w set browser "w3m -T text/HTML -cols 80 -o auto_image=TRUE -num -no-mouse %u"; open-in-browser ; set browser "surf %u &> /dev/null"
-macro p set browser "mpv %u"; open-in-browser ; set browser "surf %u &> /dev/null"
+browser "surf %u 2>&1 /dev/null &"
+macro y set browser "mpv --ytdl-format=18 %u"; open-in-browser ; set browser "surf %u 2>&1 /dev/null &"
+macro t set browser "mpv --ytdl-format=best %u"; open-in-browser ; set browser "surf %u 2>&1 /dev/null &"
+macro m set browser "mpv --no-video %u"; open-in-browser ; set browser "surf %u 2>&1 /dev/null &"
+macro u set browser "sudo mplayer -vo fbdev2 $(youtube-dl -g %u)"; open-in-browser ; set browser "surf %u 2>&1 /dev/null &"
+macro l set browser "links2 -g %u"; open-in-browser ; set browser "surf %u 2>&1 /dev/null &"
+macro q set browser "surf %u 2>&1 /dev/null &"; open-in-browser ; set browser "surf %u 2>&1 /dev/null &"
+macro w set browser "w3m -T text/HTML -cols 80 -o auto_image=TRUE -num -no-mouse %u"; open-in-browser ; set browser "surf %u 2>&1 /dev/null &"
+macro p set browser "mpv %u"; open-in-browser ; set browser "surf %u 2>&1 /dev/null &"
 macro o open-in-browser 
 
 # unbind keys
