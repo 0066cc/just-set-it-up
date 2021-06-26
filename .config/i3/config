@@ -145,6 +145,7 @@ assign [class="xterm"] 1
 assign [class="google-chrome"] 2
 assign [class="qutebrowser"] 2
 assign [class="surf"] 2
+assign [class="Surf"] 2
 
 # Program launcher
 #bindsym $mod+d exec rofi -show drun
