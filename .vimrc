@@ -72,7 +72,7 @@ set hidden
 set autochdir
 set nojoinspaces
 set wildmenu
-set background=dark
+set background=light
 set sidescroll=8
 set ignorecase
 hi MatchParen ctermbg=5
