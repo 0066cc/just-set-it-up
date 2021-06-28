@@ -144,6 +144,7 @@ assign [class="URxvt"] 1
 assign [class="xterm"] 1
 assign [class="google-chrome"] 2
 assign [class="qutebrowser"] 2
+assign [class="microsoft-edge"] 3
 assign [class="surf"] 2
 assign [class="Surf"] 2
 
