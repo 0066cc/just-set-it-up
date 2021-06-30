@@ -23,7 +23,7 @@ URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
 URxvt.scrollBar:                false
 URxvt.loginShell:               true
-URxvt.internalBorder:	        15
+URxvt.internalBorder:	        25
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:           qutebrowser
 URxvt*fading:  0
@@ -31,7 +31,7 @@ URxvt*blurRadius:  0
 URxvt*depth:  0
 URxvt*inheritPixmap: true
 URxvt.transparent: true
-URxvt.shading: 75
+URxvt.shading: 35
 URxvt.Geometry: 120x120
 URxvt.matcher.button: 1
 
