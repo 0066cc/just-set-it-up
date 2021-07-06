@@ -193,7 +193,7 @@ bindsym $mod+Shift+q kill
 bar {
     position top
         status_command i3status
-        mode dock
+        mode hide
         colors{
         background #3c3836
         statusline #ebdbb2
