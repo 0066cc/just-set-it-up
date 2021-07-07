@@ -9,10 +9,10 @@ Xft.rgba:                       rgb
 
 !~ URxvt Settings ~!
 URxvt.saveLines:512
-!URxvt*font:        xft:JetBrains Mono Medium-9
-!URxvt.boldfont:    xft:JetBrains Mono Medium-9
-URxvt*font:        xft:iA Writer Mono S:size=9
-URxvt.boldfont:    xft:iA Writer Mono S:size=9:weight=bold
+URxvt*font:        xft:JetBrains Mono Medium-9
+URxvt.boldfont:    xft:JetBrains Mono Medium-9
+!URxvt*font:        xft:iA Writer Mono S:size=9
+!URxvt.boldfont:    xft:iA Writer Mono S:size=9:weight=bold
 
 URxvt.lineSpace:                0
 URxvt.letterSpace:              0
