@@ -59,7 +59,7 @@ nmap \m :MarkdownPreview<CR>
 
 " Vim
 syntax off
-colorscheme default
+colorscheme gruvbox
 set tabstop=4
 set shiftwidth=0
 set expandtab
@@ -72,7 +72,7 @@ set hidden
 set autochdir
 set nojoinspaces
 set wildmenu
-set background=light
+set background=dark
 set sidescroll=8
 set ignorecase
 hi MatchParen ctermbg=5
