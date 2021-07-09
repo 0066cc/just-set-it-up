@@ -59,7 +59,7 @@ nmap \m :MarkdownPreview<CR>
 
 " Vim
 syntax off
-colorscheme gruvbox
+colorscheme elflord
 set tabstop=4
 set shiftwidth=0
 set expandtab

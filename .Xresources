@@ -13,6 +13,9 @@ URxvt*font:        xft:JetBrains Mono Medium-9
 URxvt.boldfont:    xft:JetBrains Mono Medium-9
 !URxvt*font:        xft:iA Writer Mono S:size=9
 !URxvt.boldfont:    xft:iA Writer Mono S:size=9:weight=bold
+!URxvt*font:        xft:IBM Plex Mono SemiBold:style=Medium:size=9
+!URxvt.boldfont:    xft:IBM Plex Mono:size=9:weight=bold
+
 
 URxvt.lineSpace:                0
 URxvt.letterSpace:              0
@@ -23,7 +26,7 @@ URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
 URxvt.scrollBar:                false
 URxvt.loginShell:               true
-URxvt.internalBorder:	        25
+URxvt.internalBorder:	        100
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:           qutebrowser
 URxvt*fading:  0
