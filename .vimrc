@@ -79,7 +79,7 @@ hi MatchParen ctermbg=5
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
-set cursorline
+set nocursorline
 set nocursorcolumn
 set scrolloff=8
 set encoding=utf-8
