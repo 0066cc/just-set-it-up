@@ -98,7 +98,6 @@ set laststatus=2    " enables the statusline.
 set autoread
 au FileType markdown,text DittoOn
 let g:mkdp_browser = 'surf'
-let g:mkdp_markdown_css = '~/markdown.css'
 
 
 augroup markdown_syntax
