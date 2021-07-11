@@ -26,7 +26,8 @@ URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
 URxvt.scrollBar:                false
 URxvt.loginShell:               true
-URxvt.internalBorder:	        100
+!URxvt.internalBorder:	        100
+URxvt.internalBorder:	        10
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:           microsoft-edge
 URxvt*fading:  0
