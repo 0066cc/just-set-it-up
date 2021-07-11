@@ -28,7 +28,7 @@ URxvt.scrollBar:                false
 URxvt.loginShell:               true
 URxvt.internalBorder:	        100
 URxvt.perl-ext:	 		default,matcher
-URxvt.url-launcher:           qutebrowser
+URxvt.url-launcher:           microsoft-edge
 URxvt*fading:  0
 URxvt*blurRadius:  0
 URxvt*depth:  0
